@@ -60,11 +60,15 @@ All external files referenced by this skill (`sync.py`, `SECTION_11.md`, templat
 
 ## Write Capabilities
 
-If `push.py` is available in the data repo, the skill can write planned workouts to the athlete's Intervals.icu calendar:
-- GitHub Actions dispatch (uses existing `ATHLETE_ID` and `INTERVALS_KEY` secrets)
-- Local execution (direct API call)
-- Template ID mappings for all 14 Workout Reference sessions
-- See `examples/agentic/README.md` for workout syntax and usage
+If `push.py` is available in the data repo, the skill can manage the athlete's Intervals.icu calendar and training data:
+- **push** — write planned workouts to calendar
+- **list** — show planned workouts for a date range
+- **move** — reschedule a workout to a different date
+- **delete** — remove a workout from the calendar
+- **set-threshold** — update sport-specific thresholds (FTP, indoor FTP, LTHR, max HR, threshold pace). Only after validated test results, never from estimates
+- **annotate** — add notes to completed activities (description by default, `--chat` for messages panel) or planned workouts (`NOTE:` prepended to description)
+
+All write operations default to preview mode — nothing is written without `--confirm`. Execution via GitHub Actions dispatch (uses existing `ATHLETE_ID` and `INTERVALS_KEY` secrets) or local CLI. See `examples/agentic/README.md` for full usage, workout syntax, and template ID mappings.
 
 Only available on platforms that can execute code or trigger GitHub Actions (OpenClaw, Claude Code, Cowork, etc.). Web chat users cannot use this.
 
