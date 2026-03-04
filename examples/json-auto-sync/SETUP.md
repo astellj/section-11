@@ -81,7 +81,18 @@ Then add these files to your repository:
 
 ---
 
-## Step 4: Enable GitHub Actions
+## Step 4: Enable Workflow Permissions
+
+1. Still in **Settings**, click **Actions → General** in the left sidebar
+2. Scroll down to **"Workflow permissions"**
+3. Select **"Read and write permissions"**
+4. Click **Save**
+
+This allows the sync workflow to commit updated data files to the repo. Without this, the workflow may fail silently on push.
+
+---
+
+## Step 5: Enable GitHub Actions
 
 1. Go to your repo → **Actions** tab
 2. If prompted, enable workflows
@@ -90,9 +101,11 @@ Then add these files to your repository:
 
 Wait 30-60 seconds, then check if `latest.json` has been updated.
 
+If the run fails with a permission error, go back and check that workflow permissions are set to "Read and write" in Step 4.
+
 ---
 
-## Step 5: Verify
+## Step 6: Verify
 
 Your data should now be accessible at:
 ```
