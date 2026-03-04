@@ -99,7 +99,7 @@ No citations, no source markers, no parenthetical references. Raw data and analy
 1. Data timestamp
 2. One-line summary
 3. Session block(s) — one per activity, line-by-line:
-   Activity type & name, start time, duration (actual vs planned), distance, power (avg/NP), power zones (%), Grey Zone (Z3) %, Quality (Z4+) %, HR (avg/max), HR zones (%), cadence, decoupling (with label), Variability Index (with label), calories (kcal), carbs used (g), TSS (actual vs planned)
+   Activity type & name, start time, duration (actual vs planned), distance, power (avg/NP), power zones (%), Grey Zone (Z3) %, Quality (Z4+) %, HR (avg/max), HR zones (%), cadence, decoupling (with label), EF (when power + HR available), Variability Index (with label), calories (kcal), carbs used (g), TSS (actual vs planned)
 4. Weekly totals: Polarization, Durability (7d/28d + trend), TID 28d (+ drift), TSB, CTL, ATL, Ramp rate, ACWR, Hours, TSS
 5. Overall: Coach note (2–4 sentences — compliance, quality observations, load context, recovery note)
 
@@ -204,11 +204,11 @@ After configuration, test with:
 
 **Good response includes:**
 - ✅ Fetched both latest.json and history.json automatically (no asking for it)
-- ✅ Session summary with all fields (type, start time, duration, power, HR, TSS, cadence, decoupling, zones, carbs, energy)
+- ✅ Session summary with all fields (type, start time, duration, power, HR, TSS, cadence, decoupling, EF, zones, carbs, energy)
 - ✅ Training load context (TSB, CTL, ATL, weekly totals)
 - ✅ Brief interpretation
 - ✅ No "(GitHub)" or URL citations
-- ✅ No emojis
+- ✅ No excessive emojis
 - ✅ No false recovery warnings for normal TSB (-10 to -30)
 
 **Bad response:**
