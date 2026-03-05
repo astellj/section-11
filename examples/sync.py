@@ -16,7 +16,7 @@ Version 3.73 - Phase detection: week-aligned prospective windows
 Version 3.72 - Readiness Decision (AAS formalization)
   - Pre-computed go/modify/skip via P0-P3 priority ladder (safety → overload → fatigue → green light)
   - 7 signals evaluated: HRV, RHR, Sleep, TSB, ACWR, Feel, RI — green/amber/red/unavailable
-  - Phase modifiers: Build loosens (3 amber), Taper/Race week/Recovery/Deload tighten (1 amber)
+  - Phase modifiers: Build loosens (3 amber), Taper/Race week tighten (1 amber), others default (2)
   - Structured modification output: triggers + adjustment directions (intensity/volume/cap_zone)
   - Wires into existing tier-1 alerts (P0/P1) — no duplication
   - Top-level readiness_decision object in output JSON, alongside alerts
