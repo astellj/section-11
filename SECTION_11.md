@@ -1,10 +1,19 @@
 # Section 11 — AI Coach Protocol
 
-**Protocol Version:** 11.19  
+**Protocol Version:** 11.20  
 **Last Updated:** 2026-03-22
 **License:** [MIT](https://opensource.org/licenses/MIT)
 
 ### Changelog
+
+**v11.20 — HR Curve Delta (Capability Metric):**
+- New capability metric: `hr_curve_delta` compares max sustained HR at 4 anchor durations (60s/300s/1200s/3600s) across two 28-day windows
+- No sport filter — HR is cross-sport physiological (dominated by hardest efforts regardless of modality)
+- Data key `values` (not `watts` as in power curves). Field names `current_bpm`/`previous_bpm`
+- Ambiguity framing: rising max sustained HR may indicate fitness or fatigue — AI must cross-reference
+- Rotation index: mean(60s,300s) - mean(1200s,3600s). No 5s anchor (peak HR ≠ energy system signal)
+- Field definitions, interpretation guidance, report template additions (weekly + block)
+- sync.py v3.88
 
 **v11.19 — Power Curve Delta (Capability Metric):**
 - New capability metric: `power_curve_delta` compares MMP at 5 anchor durations (5s/60s/300s/1200s/3600s) across two 28-day windows
@@ -117,7 +126,7 @@ Section 11 operates as a **self-contained AI protocol**. All metric definitions,
 | Zone Distribution Metrics | Section 11 (11A, subsection 9) | AI intensity monitoring |
 | Seiler TID Classification | Section 11 (11A, Zone Distribution) | AI TID classification and drift detection |
 | Aggregate Durability | Section 11 (11A, subsection 9) | AI durability trend tracking |
-| Capability Metrics | Section 11 (11A, subsection 9) | AI capability-layer analysis (durability, TID comparison, power curve delta) |
+| Capability Metrics | Section 11 (11A, subsection 9) | AI capability-layer analysis (durability, TID comparison, power curve delta, HR curve delta) |
 | Validation Metadata | Section 11 (11C) | AI audit schema |
 
 AI systems should reference the athlete dossier for athlete-specific values (FTP, zones, goals, schedule) and this protocol for all coaching logic, thresholds, and decision rules.
@@ -1319,7 +1328,7 @@ These metrics are **secondary** to the primary readiness markers defined in Sect
 
 1. **Primary readiness:** RI, HRV, RHR, Sleep
 2. **Secondary load metrics:** Stress Tolerance, Load-Recovery Ratio, Consistency Index
-3. **Tertiary diagnostics:** Zone Distribution Metrics, Durability Sub-Metrics, Capability Metrics (Aggregate Durability, TID Drift, Power Curve Delta)
+3. **Tertiary diagnostics:** Zone Distribution Metrics, Durability Sub-Metrics, Capability Metrics (Aggregate Durability, TID Drift, Power Curve Delta, HR Curve Delta)
 
 Do not override primary readiness signals with secondary load metrics.
 
@@ -1587,6 +1596,52 @@ The per-session and trending capability metrics above (Durability, EF, HRRc) dia
 **References:**
 - Pinot & Grappe (2011): Power profiling across durations for talent identification and training prescription.
 - Quod et al. (2010): MMP tracking as a training monitoring tool in elite cyclists.
+
+---
+
+#### HR Curve Delta (Capability Metric)
+
+While Power Curve Delta tracks *output* adaptation (watts), **HR Curve Delta** tracks *cardiac* adaptation — comparing max sustained heart rate at key durations across two time windows. This is the universal performance curve: it works for every athlete with a heart rate monitor, regardless of sport or power meter availability.
+
+**Data Source:** The `capability.hr_curve_delta` object in the data mirror compares max sustained HR from two 28-day windows fetched via the Intervals.icu `hr-curves` API. No sport filter — HR is physiological, not sport-specific. Max sustained HR at 300s is max sustained HR at 300s whether it came from cycling, running, or SkiErg. The curve is naturally dominated by the hardest efforts regardless of modality.
+
+**Anchor Durations (4 anchors — no 5s):**
+
+| Anchor | Duration | Signal |
+|--------|----------|--------|
+| 60s | 1 minute | Anaerobic HR ceiling |
+| 300s | 5 minutes | VO₂max HR |
+| 1200s | 20 minutes | Threshold HR |
+| 3600s | 60 minutes | Endurance HR |
+
+No 5s anchor — peak HR at 5 seconds is just maximum heart rate, not an energy system signal.
+
+**Rotation Index:**
+
+`rotation_index = mean(60s pct_change, 300s pct_change) - mean(1200s pct_change, 3600s pct_change)`
+
+| Rotation Index | Interpretation |
+|---------------|----------------|
+| Positive (> +1.0) | Intensity-biased HR shift — short-duration max HR rising faster |
+| Near zero (±1.0) | Balanced or minimal change |
+| Negative (< -1.0) | Endurance-biased HR shift — long-duration sustained HR rising faster |
+
+**CRITICAL — Ambiguity of Rising HR:**
+
+Unlike power where higher is always better, rising max sustained HR is **ambiguous**:
+
+- **Positive interpretation:** Improved cardiac output, better ability to reach and sustain high HR (fitness gain, especially after base phase)
+- **Negative interpretation:** Accumulated fatigue, dehydration, heat stress, overreaching — the heart is working harder for the same or less output
+
+The AI coach **must** cross-reference with:
+- Resting HRV and resting HR trends (declining HRV + rising max HR = fatigue signal)
+- RPE trends (rising HR + rising RPE = fatigue; rising HR + stable/lower RPE = fitness)
+- Power curve delta (rising HR + rising power = fitness; rising HR + flat power = efficiency loss)
+- Environmental context (heat elevates HR — see Environmental Conditions Protocol)
+
+**Data Quality Guards:** Same as power_curve_delta — per-anchor null, div-by-zero protection, block-level null when <3 valid anchors.
+
+**Scope:** Display and coaching context only. Not wired into readiness_decision signals. The ambiguity of HR changes makes automated decision-making inappropriate — interpretation requires multi-signal context.
 
 ---
 
@@ -2134,6 +2189,15 @@ This subsection defines the formal self-validation and audit metadata structure 
 | `capability.power_curve_delta.anchors.{dur}.pct_change` | number/null | Percentage change from previous to current window. Rounded to 1 decimal. Null if either window's watts is null. |
 | `capability.power_curve_delta.rotation_index` | number/null | `mean(5s,60s pct_change) - mean(1200s,3600s pct_change)`. Positive = sprint-biased gains, negative = endurance-biased. 300s excluded. Null if any component anchor has null pct_change. Rounded to 1 decimal. |
 | `capability.power_curve_delta.note` | string | Interpretation guidance for AI coaches. |
+| `capability.hr_curve_delta.window_days` | number | Window size in days (default 28). |
+| `capability.hr_curve_delta.current_window` | object | `{start, end}` date strings for the current (recent) window. |
+| `capability.hr_curve_delta.previous_window` | object | `{start, end}` date strings for the previous (comparison) window. |
+| `capability.hr_curve_delta.anchors` | object/null | Per-anchor max sustained HR comparison. Keys: `60s`, `300s`, `1200s`, `3600s`. Each has `current_bpm`, `previous_bpm`, `pct_change`. Null when block-level guard fails. |
+| `capability.hr_curve_delta.anchors.{dur}.current_bpm` | number/null | Max sustained HR (bpm) at this anchor duration in the current window. Null if duration not in data or value is 0. |
+| `capability.hr_curve_delta.anchors.{dur}.previous_bpm` | number/null | Max sustained HR (bpm) at this anchor duration in the previous window. Null if duration not in data or value is 0. |
+| `capability.hr_curve_delta.anchors.{dur}.pct_change` | number/null | Percentage change from previous to current window. Rounded to 1 decimal. Null if either window's value is null. |
+| `capability.hr_curve_delta.rotation_index` | number/null | `mean(60s,300s pct_change) - mean(1200s,3600s pct_change)`. Positive = intensity-biased HR shift, negative = endurance-biased. Null if any component anchor has null pct_change. AMBIGUOUS: rising HR may indicate fitness or fatigue — cross-reference required. |
+| `capability.hr_curve_delta.note` | string | Interpretation guidance for AI coaches. Emphasizes HR ambiguity. |
 
 ---
 
