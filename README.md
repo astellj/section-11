@@ -28,7 +28,7 @@ An open protocol for deterministic, auditable AI-powered endurance coaching. Bui
 | [examples/agentic/](examples/agentic/) | Write planned workouts to Intervals.icu calendar — for agentic AI platforms with code execution |
 | [examples/json-local-sync/](examples/json-local-sync/) | Local automated sync for agentic platforms — no GitHub needed |
 | [DOSSIER_TEMPLATE.md](DOSSIER_TEMPLATE.md) | Blank athlete dossier template — fill in your own data |
-| [examples/](examples/) | JSON sync setup, report templates, README template, example files |
+| [examples/](examples/) | Full examples directory |
 | [SETUP_ASSISTANT.md](SETUP_ASSISTANT.md) | Interactive AI-guided setup — paste into any AI chat to get started |
 | [manifest.json](manifest.json) | Version tracking — consumed by sync.py for update notifications |
 | [LICENSE](LICENSE) | MIT — permissive license, commercial use allowed with attribution |
@@ -94,33 +94,31 @@ For AI platforms that can execute code, access the filesystem, and run shell com
 
 > **Alternative: GitHub sync.** A private repo with GitHub Actions gives you multi-device access and backup. Follow the per-platform instructions below.
 
+Your agent needs `SECTION_11.md` (the protocol) and your `DOSSIER.md`. If you cloned the repos locally, the agent reads them from the filesystem. If using GitHub sync, the agent reads them from the repo — no manual upload needed.
+
 ### OpenClaw (formerly ClawdBot/MoltBot)
 
 This is the reference setup. Section 11 works well with [OpenClaw](https://github.com/openclaw/openclaw): persistent memory, heartbeat scheduling, autonomous execution, and structured validation.
 
 1. Clone or copy the Section 11 skill folder into your OpenClaw skills directory (skills are just directories with a `SKILL.md`)
-2. Authenticate: `gh auth login`
-3. For limited access, use a [fine-grained personal access token](https://github.com/settings/tokens?type=beta) scoped to your data repo only
+2. Authenticate: `gh auth login`, or for limited access use a [fine-grained personal access token](https://github.com/settings/tokens?type=beta) scoped to your data repo only
 
 ### Claude Code
 
-1. Install the Claude GitHub App at [github.com/apps/claude](https://github.com/apps/claude/installations/select_target) and grant access to your private data repo
-2. Or clone the repo locally and work with local files
-3. Claude Code has full filesystem access — point it at your data directory
+1. Install: see [claude.ai/download](https://claude.ai/download) or `npm install -g @anthropic-ai/claude-code`
+2. Authenticate: `gh auth login` for GitHub repo access, or clone your data repo locally
 
 ### Claude Cowork
 
-Cowork runs on your local machine and can read files directly from your filesystem.
+Cowork is a desktop app that can read files directly from your filesystem.
 
-1. Clone your private data repo locally and grant Cowork access to that folder
-2. Or use the GitHub MCP connector in Cowork settings to access repos directly via a personal access token
+1. Clone your data repo locally and grant Cowork access to that folder
+2. Or connect GitHub via Settings → Connectors → GitHub (or configure via `.mcp.json`)
 
 ### ChatGPT Codex
 
-1. Connect your GitHub account via the ChatGPT GitHub connector at [chatgpt.com/codex](https://chatgpt.com/codex)
-2. Authorize access to your private training data repo during setup
-3. Codex clones the repo into an isolated container and reads `latest.json`, `history.json`, and `intervals.json` directly
-4. The Codex CLI works locally with your existing filesystem and Git setup
+1. Connect your GitHub account at [chatgpt.com/codex](https://chatgpt.com/codex) and authorize your data repo — web and desktop app connect directly
+2. Or install the CLI: `npm install -g @openai/codex` — reads from local filesystem
 
 ### Gemini CLI
 
@@ -405,7 +403,7 @@ Standardized metadata schema for audit trails:
   "validation_metadata": {
     "data_source_fetched": true,
     "json_fetch_status": "success",
-    "protocol_version": "11.17",
+    "protocol_version": "11.20",
     "checklist_passed": [0, 1, 2, 3, 4, 5, 6, "6b", 7, 8, 9, 10],
     "checklist_failed": [],
     "data_timestamp": "2026-01-23T10:02:07Z",
