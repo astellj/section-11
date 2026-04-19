@@ -1,10 +1,19 @@
 # Section 11 — AI Coach Protocol
 
-**Protocol Version:** 11.34  
-**Last Updated:** 2026-04-18
+**Protocol Version:** 11.35  
+**Last Updated:** 2026-04-19
 **License:** [MIT](https://opensource.org/licenses/MIT)
 
 ### Changelog
+
+**v11.35 — Aggregate Durability Reliability Gate:**
+- Alert-firing paths now gated on sample size: alarm (28d mean > 5%) requires `qualifying_sessions_28d ≥ 5`; declining warning (7d > 28d by > 2%) requires `qualifying_sessions_7d ≥ 3 AND qualifying_sessions_28d ≥ 5`
+- Below gate, `capability.durability` exposes `reliability_limited: true` and `reliability_note` (both current N values with both minimums) — means remain visible for situational awareness but no alert fires
+- `high_drift_count_7d ≥ 3` warning unchanged (count-based, self-guarding)
+- Filter criteria (VI ≤ 1.05, ≥ 90 min) unchanged — this is a sample-size safeguard, not a metric redefinition
+- Citation fix: `Rothschild & Maunder (2025)` → `Rothschild et al. (2025)` in two places (9-author paper, `et al.` is the correct form)
+- Addresses GitHub issue #11
+- Requires sync.py v3.104
 
 **v11.34 — Testing Protocol & RPE Expectation Bands:**
 - New section: `Testing Protocol` — codifies when formal testing adds value given continuous-data coverage (Benchmark Index, DFA a1 crossings, sustained-power observations, power-curve / HR-curve deltas). Continuous-data-first philosophy; tests as validation/confirmation/onboarding, not primary zone source
@@ -378,7 +387,7 @@ All AI analyses, interpretations, and recommendations must be grounded in valida
 |   Péronnet & Thibault (1989)                                | Long-term power-duration endurance curve validation (used for FTP trend smoothing)                                            |
 |   Treff et al. (2019)                                       | Polarization Index formula for quantitative TID classification: PI = log10((Z1/Z2) × Z3 × 100)                               |
 |   Maunder et al. (2021)                                     | Defined "durability" as resistance to deterioration in physiological profiling during prolonged exercise                       |
-|   Rothschild & Maunder (2025)                               | Validated HR and power decoupling as field-based durability predictors in endurance athletes                                  |
+|   Rothschild et al. (2025)                                 | Validated HR and power decoupling as field-based durability predictors in endurance athletes                                  |
 |   Smyth (2022)                                              | Cardiac drift analysis across 82,303 marathon performances; validated decoupling as durability marker at scale                |
 |   Racinais et al. (2015); Périard et al. (2015) — Heat consensus | Heat acclimatization, environmental performance decrements, session modification in heat                                  |
 
@@ -1992,14 +2001,14 @@ The per-session Durability Sub-Metrics above diagnose *individual session* limit
 - Variability Index (VI) exists, > 0, and ≤ 1.05 (steady-state power only)
 - Moving time ≥ 5400 seconds (90 minutes)
 
-**Rationale:** Per Maunder et al. (2021) and Rothschild & Maunder (2025), meaningful cardiac drift requires prolonged exercise. The 90-minute floor is the practical field threshold where drift becomes detectable. The VI ≤ 1.05 filter excludes interval sessions where decoupling reflects recovery dynamics, not aerobic drift. Negative decoupling values are included — they indicate HR drifted down relative to power (strong durability or cooling conditions).
+**Rationale:** Per Maunder et al. (2021) and Rothschild et al. (2025), meaningful cardiac drift requires prolonged exercise. The 90-minute floor is the practical field threshold where drift becomes detectable. The VI ≤ 1.05 filter excludes interval sessions where decoupling reflects recovery dynamics, not aerobic drift. Negative decoupling values are included — they indicate HR drifted down relative to power (strong durability or cooling conditions).
 
 **Aggregate Metrics:**
 
 | **Metric**               | **Description**                                           | **Minimum Data** |
 |--------------------------|-----------------------------------------------------------|-------------------|
-| mean_decoupling_7d       | Mean decoupling from qualifying sessions in last 7 days   | ≥ 2 sessions      |
-| mean_decoupling_28d      | Mean decoupling from qualifying sessions in last 28 days  | ≥ 2 sessions      |
+| mean_decoupling_7d       | Mean decoupling from qualifying sessions in last 7 days   | ≥ 2 sessions (reliable ≥ 3) |
+| mean_decoupling_28d      | Mean decoupling from qualifying sessions in last 28 days  | ≥ 2 sessions (reliable ≥ 5) |
 | high_drift_count_7d/28d  | Count of qualifying sessions with decoupling > 5%         | —                 |
 | trend                    | 7d vs 28d comparison: improving / stable / declining      | Both windows      |
 
@@ -2012,11 +2021,22 @@ Trend direction matters more than absolute values — an athlete's baseline deco
 
 **Alert Thresholds:**
 
-| Condition                          | Severity | Action                                            |
-|------------------------------------|----------|---------------------------------------------------|
-| 28d mean > 5% (sustained)         | alarm    | Aerobic efficiency concern — review volume/recovery |
-| 7d mean > 28d mean by > 2%        | warning  | Durability declining — check fatigue and recovery   |
-| ≥ 3 sessions with > 5% in 7d      | warning  | Repeated poor durability — investigate root cause   |
+| Condition                                      | Severity | Action                                            |
+|------------------------------------------------|----------|---------------------------------------------------|
+| 28d mean > 5% sustained (N28 ≥ 5)             | alarm    | Aerobic efficiency concern — review volume/recovery |
+| 7d mean > 28d mean by > 2% (N7 ≥ 3, N28 ≥ 5)  | warning  | Durability declining — check fatigue and recovery   |
+| ≥ 3 sessions with > 5% in 7d                  | warning  | Repeated poor durability — investigate root cause   |
+
+**Reliability Gate:**
+
+The 28d mean is computed at ≥ 2 qualifying sessions but alerts require larger samples for statistical reliability. A mean of 2 sessions is too noise-prone for a 28-day trend metric — two unlucky rides can produce a misleading aggregate. The alert gates are:
+
+- **Alarm** (28d mean > 5%): requires `qualifying_sessions_28d ≥ 5`
+- **Declining warning** (7d > 28d by > 2%): requires `qualifying_sessions_7d ≥ 3 AND qualifying_sessions_28d ≥ 5`
+
+Below gate, the durability object exposes `reliability_limited: true` and `reliability_note` with both current counts and minimums. Means remain visible for situational awareness but are not treated as actionable. The `high_drift_count_7d ≥ 3` warning is count-based and not subject to the reliability gate.
+
+This gate is a sample-size safeguard, not a metric redefinition. Athletes whose training rarely produces qualifying sessions (e.g., primarily sub-90-minute indoor/structured sessions) will see `reliability_limited: true` often — this correctly signals that this specific long-duration steady-state durability metric has insufficient data for that training pattern, not that the athlete lacks durability. Interpret via other capability metrics in those cases.
 
 **Relationship to Existing Metrics:**
 
