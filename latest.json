@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-28T11:58:20.962297",
+    "last_updated": "2026-04-28T12:51:19.387438",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -613,7 +613,7 @@
     "p_max": 999,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-28T11:58:20.961216",
+    "calculation_timestamp": "2026-04-28T12:51:19.386349",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -631,7 +631,7 @@
       "id": "i143237936",
       "date": "2026-04-27T00:18:40",
       "type": "Walk",
-      "name": "Early morning Walk",
+      "name": "Walk",
       "duration_hours": 0.34,
       "distance_km": 2.35,
       "tss": 11,
