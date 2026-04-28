@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-28T16:24:52.001314",
+    "last_updated": "2026-04-28T17:06:53.236638",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -129,14 +129,14 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
-      "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "phase": null,
+      "phase_week": 0,
+      "amber_threshold": 2,
+      "modifier_applied": "default"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -177,8 +177,8 @@
       "ctl": 53.78,
       "atl": 58.18,
       "tsb": -4.4,
-      "ramp_rate": 2.21,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": 2.3,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 238.4,
@@ -550,18 +550,25 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": null,
+    "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 0,
+      "planned_days": 1,
       "completed_days": 3,
       "matched_days": 0,
-      "note": "No planned workouts in period"
+      "planned_dates": [
+        "2026-04-28"
+      ],
+      "completed_dates": [
+        "2026-04-24",
+        "2026-04-25",
+        "2026-04-26"
+      ]
     },
     "phase_detection": {
-      "phase": "Build",
-      "confidence": "medium",
+      "phase": null,
+      "confidence": "low",
       "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
+        "BUILD_BASE_AMBIGUOUS"
       ],
       "basis": {
         "stream_1": {
@@ -571,26 +578,26 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 1.06,
+          "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 0,
+          "current_week_hard_days_total": 1,
           "race_proximity": null,
-          "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "next_week_load": 0.5,
+          "plan_coverage_current_week": 0.44,
+          "plan_coverage_next_week": 0.11
         },
         "data_quality": "good",
         "stream_agreement": null
       },
       "previous_phase": null,
-      "phase_duration_weeks": 1,
+      "phase_duration_weeks": 0,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
+    "phase_detected": null,
     "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
+      "BUILD_BASE_AMBIGUOUS"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -613,13 +620,13 @@
     "p_max": 999,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-28T16:24:52.000160",
+    "calculation_timestamp": "2026-04-28T17:06:53.235471",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 10,
       "activities_28d": 35,
-      "planned_workouts_7d": 0,
+      "planned_workouts_7d": 1,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -3649,14 +3656,80 @@
       "readiness": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 107114359,
+      "date": "2026-04-28",
+      "name": "Upper Body & Core Strength",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": 30,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Mobility warmup 5m\n- Chest: bench press or push-ups 3x10 15m\n- Back: rows + lat pulldown or pull-ups 15m\n- Shoulders: overhead press 3x10 10m\n- Core: planks 3x60s dead bugs 3x12 10m\n- Cooldown stretch 5m"
+    },
+    {
+      "id": 107114360,
+      "date": "2026-04-29",
+      "name": "Z2 Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 77,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Warmup 10m Z1 HR\n- Z2 steady 70m Z2 HR\n- Cooldown 10m Z1 HR"
+    },
+    {
+      "id": 107114957,
+      "date": "2026-04-30",
+      "name": "Sweet Spot Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 149,
+      "duration_hours": 2.83,
+      "duration_formatted": "2h50m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Warmup 20m ramp 50%-75%\n- Sweet Spot 1 20m 88-93%\n- Recover when ready 30m\n- Sweet Spot 2 20m 88-93%\n- Z2 endurance 70m 65-75%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 107114362,
+      "date": "2026-05-03",
+      "name": "Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 161,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Warmup 10m Z1 HR\n- Z2 steady 160m Z2 HR\n- Cooldown 10m Z1 HR"
+    },
+    {
+      "id": 107114363,
+      "date": "2026-05-04",
+      "name": "Long Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 213,
+      "duration_hours": 4.0,
+      "duration_formatted": "4h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Warmup 15m Z1 HR\n- Z2 steady 210m Z2 HR\n- Cooldown 15m Z1 HR"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
+    "attempted": 5,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 11.42,
