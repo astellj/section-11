@@ -67,6 +67,7 @@
 
 | Modality | Equipment | Purpose |
 |----------|-----------|---------|
+| Strength Training | Barbell, dumbbells, squat rack, bench (home garage) | Injury prevention (back pain, knee history), on-bike force production, leg hypertrophy |
 
 ### Environment
 
@@ -86,43 +87,47 @@
 
 ### Normal Weekly Schedule
 
-Schedule is irregular — weekends away are common, working pattern varies. No fixed day-by-day plan. Build each week from the session pool below.
+Schedule is irregular — weekends away are common, working pattern varies. No fixed day-by-day plan. Build each week from the session pool below. The table below is an **ideal week template**, not a fixed prescription.
 
 **Rules:**
 - 1 long ride every week (cornerstone — do not skip)
-- Maximum 2 hard sessions per week (evidence: Seiler 2010 — a third hard session increases fatigue without proportional adaptation gain)
+- Maximum 2 hard cycling sessions per week (evidence: Seiler 2010 — a third hard session increases fatigue without proportional adaptation gain)
 - No back-to-back hard sessions
 - At least 1 full rest day per week
 - Remaining sessions: Z2 or active recovery
-- Primary training window: weekday evenings (WFH 4/5 days). Early mornings are low motivation and not a reliable window.
+- Primary cycling window: weekday evenings (WFH 4/5 days). Early mornings are low motivation and not a reliable window.
+- Strength sessions: morning or lunch break — complete before evening cycling on same-day double sessions
 
 | Day | Primary Session | Duration | Secondary |
 |-----|-----------------|----------|-----------|
-| Sunday | [Workout type] | [Duration] | [Optional] |
-| Monday | [Workout type] | [Duration] | [Optional] |
-| Tuesday | [Workout type] | [Duration] | [Optional] |
-| Wednesday | [Workout type] | [Duration] | [Optional] |
-| Thursday | [Workout type] | [Duration] | [Optional] |
-| Friday | [Workout type] | [Duration] | [Optional] |
-| Saturday | [Workout type] | [Duration] | [Optional] |
+| Sunday | Active Recovery / Rest | 60–90 min or rest | — |
+| Monday | Strength A (Quad / Lower) | 45–60 min (morning or lunch) | — |
+| Tuesday | Hard: VO₂max Intervals | 75–90 min (evening) | — |
+| Wednesday | Strength B (Posterior Chain / Hinge) | 45–60 min (morning or lunch) | Z2 Endurance 60 min (optional, evening) |
+| Thursday | Hard: Threshold / Sweetspot | 75–90 min (evening) | — |
+| Friday | Rest or Z1 Recovery Spin | 45–60 min or rest | — |
+| Saturday | Long Ride (cornerstone) | 3–5 h | — |
 
 ### Session Details
 
 | Session Type | Target Power/HR | Duration | Purpose |
 |--------------|-----------------|----------|---------|
-| VO₂Max | [W or % FTP] | [Duration] | [Purpose] |
-| Endurance | [W or % FTP] | [Duration] | [Purpose] |
-| Sweetspot | [W or % FTP] | [Duration] | [Purpose] |
-| Long Ride | [W or % FTP] | [Duration] | [Purpose] |
-| Recovery | [W or % FTP] | [Duration] | [Purpose] |
+| VO₂Max | 106–120% FTP (259–293W); HR ≥90% max (≥176 bpm) | 75–90 min total; 4–6 × 4–5 min efforts, 3–4 min recovery | Raise VO₂max ceiling; top-end adaptation; address current quality deficit |
+| Threshold | 91–105% FTP (222–256W); HR in Z4 | 75–90 min total; 2–3 × 15–20 min efforts, 5 min recovery | FTP development; sustained high fractional utilisation |
+| Sweetspot | 84–97% FTP (205–237W) | 60–90 min; 3–4 × 10–15 min efforts, 5 min recovery | High-volume threshold stimulus with lower recovery cost than pure threshold |
+| Endurance / Z2 | 56–75% FTP (137–183W); HR Z2 | 60–120 min steady | Aerobic base; fat oxidation; recovery between hard sessions |
+| Long Ride | Z2 primarily (NP 137–183W); HR <75% max | 3–5 h | Weekly cornerstone; durability; fat adaptation; 100-mile event preparation |
+| Recovery | <55% FTP (<134W); HR Z1 | 30–60 min | Active recovery; flush fatigue after hard days or long rides |
+| Strength A | Quad / Lower — squat, split squat, hip thrust, Nordic curl, core | 45–60 min | Leg hypertrophy; on-bike force; glute activation for knee and back health |
+| Strength B | Posterior Chain — RDL, step-up, good morning, clamshells, core | 45–60 min | Injury prevention (lower back, knee); hip hinge strength; spinal stability |
 
 ### Recovery Protocol
 
 **Recovery Triggers (Auto-Deload):**
-- HRV ↓ > 20% → [Response]
-- RHR ↑ ≥ 5 bpm → [Response]
-- Feel ≥ 4 → [Response]
-- Two+ triggers → [Response]
+- HRV ↓ > 20% → Convert planned hard session to Z2 or rest. No threshold or VO₂ work. Strength session permitted at reduced RPE (≤6). Reassess next morning.
+- RHR ↑ ≥ 5 bpm → Cap intensity at Z2 max. Strength session permitted at reduced load. Reassess next morning.
+- Feel ≥ 4 → Convert day to active recovery (Z1 spin or walk) or full rest. Flag for daily monitoring until score returns to ≤3.
+- Two+ triggers → Full rest day mandatory. No structured training. Resume with Z2 only once all triggers clear for two consecutive mornings.
 
 **Feel Scale:**
 | Score | Meaning |
@@ -137,9 +142,8 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 
 | Year | Phase | Focus | Primary KPI |
 |------|-------|-------|-------------|
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
+| 2026 | Build → Peak | FTP development, structured intensity introduction, outdoor transition, strength programme establishment | 4 W/kg (272W @ 68kg); complete 100-mile ride; complete hard sportive |
+| 2027 | Racing Foundation | Race-specific fitness, threshold and VO₂max ceiling, UK event calendar entry | ≥4.2 W/kg (286W); first season of competitive events; consistent CTL ≥70 |
 
 ---
 
@@ -207,12 +211,12 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 | Workout Type | Duration | CHO Target | Setup |
 |--------------|----------|------------|-------|
-| Recovery / Z1–Z2 | < 1.5 h | [g/h] | [Description] |
-| Endurance | 1.5–3 h | [g/h] | [Description] |
-| Long Endurance | 3–6 h | [g/h] | [Description] |
-| Threshold / SS | 1–2 h | [g/h] | [Description] |
-| VO₂ / High Intensity | 1–1.5 h | [g/h] | [Description] |
-| Race / Event | 4–6 h | [g/h] | [Description] |
+| Recovery / Z1–Z2 | < 1.5 h | 0–30 g/h | Water only or half-strength HIGH5. No solid food required. Focus on post-ride recovery shake (apple juice + protein). |
+| Endurance | 1.5–3 h | 60 g/h | 1 × 500ml HIGH5 bottle per hour (44g CHO). Supplement with bagel, dates, or banana as needed. |
+| Long Endurance | 3–6 h | 60–90 g/h | 1–2 × HIGH5 bottles per hour + solid food (dates, banana, Haribo) every 30–45 min. Aim for upper limit; train gut progressively. Electrolyte tab per bottle. |
+| Threshold / SS | 1–2 h | 40–60 g/h | 1 × HIGH5 bottle (44g CHO) per hour. Eat solid food (banana or bagel) 45–60 min before session. Keep gut light during efforts. |
+| VO₂ / High Intensity | 1–1.5 h | 40–60 g/h | Pre-load 30g CHO ~30 min before (Lucozade or half bottle HIGH5). During: 1 × HIGH5 bottle. Keep simple — gut absorption is limited at high intensity. |
+| Race / Event | 4–6 h | 60–90 g/h | Maximum tolerable CHO via HIGH5 + real food (dates, banana, Haribo, energy gel on hard sections). Target 90g/h. Requires gut training in long training rides beforehand. |
 
 ### Hydration
 
@@ -225,14 +229,19 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 ### Current Adaptation Focus
 
-- [ ] [Focus item 1]
-- [ ] [Focus item 2]
-- [ ] [Focus item 3]
-- [ ] [Focus item 4]
+- [ ] Recovery from big weekend (2026-04-25/26 — two ×4h endurance rides, 373 TSS). Easy week: Z2/Z1 only, no hard sessions until readiness signals clear.
+- [ ] Establish strength programme 2×/week (injury prevention is priority — current back pain, knee history). Begin at conservative loads; progress over 4–6 weeks.
+- [ ] Introduce structured VO₂max intervals 1×/week. Current quality intensity is only 8.8% (28d TID) — target ≥20% within 4–6 weeks of structured build.
+- [ ] FTP retest in 2–3 weeks once recovery is complete and readiness is consistently green (RI ≥0.8, HRV within 10% of baseline). Conduct on a readiness-positive morning. Outdoor test preferred with new power meter.
 
 ### Next-Phase Options
 
-[Description of upcoming phase transition criteria and options]
+After FTP retest is completed:
+
+- **If FTP improves (≥250W):** Begin structured threshold block — 1 VO₂max + 1 threshold session per week alongside long ride. Shift TID toward polarised (reduce Z3/grey zone, currently 8%).
+- **If FTP flat or declining:** Extend aerobic base for 3–4 more weeks; audit Z3 leakage (grey zone currently 8% — reduce tempo drifting on long rides); then retest.
+- **Outdoor transition:** May–June, shift majority of sessions outdoors. Use HR to validate zones on new power meter until outdoor FTP is formally established.
+- **Phase transition trigger:** CTL ≥60 sustained + 2 hard sessions/week consistent for 3+ weeks + FTP retest completed → enter Peak phase targeting late-2026 events.
 
 ---
 
@@ -257,22 +266,23 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 ### Primary Objective
 
-[Your main goal with target time/performance]
+Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This underpins successful completion of a 100-mile informal ride and a hard UK sportive, and establishes the fitness base for entry into competitive UK cycling in 2027 (event type TBD — time trialling, road racing, or sportive series).
 
 ### Progression Overview
 
 | Year | Focus | FTP Target | W/kg Target | Key Metrics |
 |------|-------|------------|-------------|-------------|
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
+| 2026 | Aerobic base consolidation + structured intensity introduction; outdoor transition; strength programme | 272W | 4.0 W/kg | CTL ≥65; complete 100-mile ride; complete hard sportive; 2×/week strength consistent |
+| 2027 | Racing foundation; threshold and VO₂max ceiling development; UK event calendar | 290–300W | 4.2–4.4 W/kg | First competitive season; consistent CTL ≥70; event-specific preparation |
+| 2028 | Competitive progression | 310–325W | 4.5–4.7 W/kg | Age-group results; event type defined by 2027 experience |
 
 ### Event-Specific Targets (Optional)
 
 | Event/Segment | Year | Priority | Target Time | Target Power |
 |---------------|------|----------|-------------|--------------|
-| [Event] | [Year] | [A/B/C] | [Time] | [W] |
-| [Event] | [Year] | [A/B/C] | [Time] | [W] |
+| 100-mile informal ride (with friends) | 2026 | A | Completion | Z2 sustainable (137–183W NP) |
+| Hard sportive (TBD) | 2026 | A | Completion | Sustained Z3–Z4 on climbs |
+| UK competitive event (type TBD) | 2027 | A | TBD post event selection | TBD |
 
 > **Race tagging for automated protocol activation:** Tag races in Intervals.icu as `RACE_A`, `RACE_B`, or `RACE_C` using the event category selector. The race-week protocol (Section 11A) activates automatically for A and B races within 7 days. C races are training races — no taper adjustments. For best results, also set expected duration (`moving_time`) in the event to enable event-type modifiers (carb loading, opener intensity, TSB targets).
 
@@ -285,6 +295,8 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 - **Outdoor power meter:** Favero Assioma PRO RS-1 fitted April 2026. Single-sided (left pedal doubles to estimate total). Power targeting now possible outdoors. No formal outdoor FTP test yet — eFTP proxy of 240W is the working reference. Outdoor FTP test recommended post-May events once fatigue clears. Note: single-sided meters assume left/right symmetry; any significant leg imbalance would affect accuracy, but for trend tracking and zone-based guidance this is fit for purpose.
 - **Wellness data:** HRV, sleep, and sleep score auto-synced from Garmin Connect via Intervals.icu. Subjective wellness fields (mood, energy, soreness, RPE, feel) logged manually in Intervals.icu — recovery protocol triggers will become more reliable as this data accumulates.
 - **Coaching style:** Flexible structure. Athlete reorganises sessions around schedule changes frequently — key use case is "how do I rearrange this week to get the most out of it?" Build each week from the session pool; prioritise long ride and 2 hard sessions above everything else.
+- **Strength training:** 2×/week mandatory (injury prevention priority). Current back pain means avoid heavy spinal loading initially — prefer goblet squat, leg press (if available), and hip thrust over loaded back squat until back pain resolves. Strength A (quad/hypertrophy focus): back squat or goblet squat, Bulgarian split squat, hip thrust, Nordic curl/leg curl, calf raises, dead bug + plank. Strength B (posterior chain/injury prevention): Romanian deadlift (conservative load), step-ups, good mornings (very light), clamshells/lateral band walks (hip ER — knee tracking), bird dog + side plank (McGill Big 3). Both sessions 45–60 min, completed in morning or at lunch on double-training days. Progressive overload over 4–6 weeks. For leg hypertrophy: 8–12 rep range, 3–4 working sets, weekly load increase of 2.5–5kg once form is solid. Protein target: ≥1.6g/kg/day (≥106g/day at 66kg) — current recovery shake (23g protein) plus dietary sources.
+- **Back pain (current, 2026-04-28):** Begin strength programme conservatively. Avoid any exercise that aggravates. Prioritise hip hinge mechanics (RDL), glute activation (hip thrust), and core stability (McGill Big 3) — these directly address the most common cycling-related back pain causes (weak posterior chain + poor lumbar stability). If pain persists or worsens during/after strength, pause loaded hip hinge and seek physio assessment.
 
 ---
 
@@ -306,32 +318,26 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 ## Data Mirror Configuration
 
-### JSON Endpoint (for AI coaches)
+### Primary Setup: Local (Claude Code on laptop)
 
-**URL:** `https://raw.githubusercontent.com/[username]/[repo]/main/latest.json`
+Claude Code reads files directly from the filesystem — no URLs or connectors needed.
 
-**Archive:** `https://github.com/[username]/[repo]/tree/main/archive`
+**Path:** `latest.json` (this directory)  
+**History:** `history.json` (this directory)  
+**Intervals:** `intervals.json` (this directory — on-demand, for structured session analysis)  
+**Dossier:** `DOSSIER.md` (this directory)
 
-**— OR (GitHub connector) —**
+`sync.py` runs on the same machine and writes directly to these paths. Claude Code picks them up from the working directory on each session.
 
-**Repo:** `[username]/[repo]` (connected via platform's GitHub integration — AI reads files directly, no URLs needed)
+### Remote Setup: GitHub fork (other devices / mobile)
 
-> **Tip:** If you commit `DOSSIER.md` to your data repo alongside `latest.json`, `history.json`, and `intervals.json`, connecting the repo gives the AI both your data and your profile in one connection. The only remaining piece is `SECTION_11.md`, which the AI can fetch from the public CrankAddict/section-11 repo or a second connector.
+**Repo:** `astellj/section-11` (personal fork of `CrankAddict/section-11`)
 
-**— OR (local setup) —**
+When accessing the coach from a device other than the laptop (mobile, tablet, another machine), connect claude.ai to this GitHub repo. The repo contains `DOSSIER.md`, `latest.json`, `history.json`, and `intervals.json` — synced automatically via the laptop pipeline. No extra infrastructure required.
 
-**Path:** `latest.json` (data directory root, alongside this dossier)
+> **Data freshness:** A GitHub Action runs on a schedule (hourly) to pull updated data from Intervals.icu directly into the repo. Remote access is always current — no laptop involvement required.
 
-**History:** `history.json` (data directory root)
-
-**Intervals:** `intervals.json` (data directory root — on-demand, for structured session analysis)
-
-**Data Path (optional):** `[/path/to/training-data/]`
-Only needed if the AI agent's working directory is different from where data files live (e.g., OpenClaw workspace is `~/clawd/` but data is in `~/training-data/`). Leave blank if they are the same directory.
-
-For local setups where sync.py runs on the same machine as the AI agent, files are read directly from the filesystem — no URLs needed. See `examples/json-local-sync/SETUP.md` for the complete local pipeline.
-
-This endpoint provides synchronized Intervals.icu metrics for deterministic AI parsing. See **Section 11** for the full AI Coach Guidance Protocol.
+> **Protocol location:** `SECTION_11.md` is in this repo. A single GitHub connector gives the AI both the data and the protocol in one connection.
 
 ---
 
