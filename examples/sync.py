@@ -4,6 +4,20 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
+Version 3.111 - latest.history.last_generated freshness fix: auto-history
+  generation block (should_generate_history → generate_history → write/publish)
+  moved in main() from after collect_training_data to before it.
+  _get_history_confidence() inside collect_training_data now reads the
+  just-written history.json, so latest.history.last_generated reflects the same
+  generated_at as the on-disk history. Previously, runs that triggered a
+  history rebuild published latest.json with stale last_generated because the
+  freshness read happened during data dict construction, before the rebuild
+  step. Local and GitHub modes share a single guarded block — args.output picks
+  the write target. try/except resilience preserved: failed history regen still
+  permits latest.json publish. Routes/intervals generation unchanged (still
+  runs after collect_training_data, which populates _intervals_data and
+  _routes_data). No schema change.
+
 Version 3.110 - Weekly capability rollup + monthly phase alignment + decoupling 0.0 fix:
   (1) weekly_180d rows now carry six per-week capability fields: durability_mean /
   durability_qualifying (VI<=1.05, VI>0, mt>=5400, decoupling not None), ef_mean /
@@ -211,7 +225,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.110"
+    VERSION = "3.111"
     INTERVALS_FILE = "intervals.json"
     ROUTES_FILE = "routes.json"
 
@@ -9613,6 +9627,23 @@ def main():
     
     print(f"\n🔄 Fetching {args.days} days of data (extended 28 days for ACWR)...")
     
+    # === AUTO HISTORY GENERATION (must precede collect_training_data so latest.json reads fresh history metadata) ===
+    if sync.should_generate_history():
+        try:
+            print("\n📊 Auto-generating history.json...")
+            history = sync.generate_history()
+            if args.output:
+                history_path = sync.data_dir / sync.HISTORY_FILE
+                with open(history_path, 'w') as f:
+                    json.dump(history, f, indent=2, default=str)
+                print(f"   ✅ history.json saved to {history_path}")
+            else:
+                sync.publish_to_github(history, filepath="history.json",
+                                       commit_message=f"Auto-generate history.json - {datetime.now().strftime('%Y-%m-%d')}")
+                print("   ✅ history.json auto-generated and pushed to GitHub")
+        except Exception as e:
+            print(f"   ⚠️ History generation failed (non-critical): {e}")
+    
     data = sync.collect_training_data(days_back=args.days)
     
     # Extract derived metrics for display
@@ -9684,18 +9715,6 @@ def main():
             with open(routes_path, 'w') as f:
                 json.dump(routes_data, f, indent=2, default=str)
             print(f"   🗺️  routes.json saved ({len(routes_data.get('events', []))} event(s))")
-        
-        # === AUTO HISTORY GENERATION (local mode) ===
-        if sync.should_generate_history():
-            try:
-                print("\n📊 Auto-generating history.json...")
-                history = sync.generate_history()
-                history_path = sync.data_dir / sync.HISTORY_FILE
-                with open(history_path, 'w') as f:
-                    json.dump(history, f, indent=2, default=str)
-                print(f"   ✅ history.json saved to {history_path}")
-            except Exception as e:
-                print(f"   ⚠️ History generation failed (non-critical): {e}")
     else:
         raw_url = sync.publish_to_github(data)
         
@@ -9734,17 +9753,6 @@ def main():
                 print(f"   🗺️  routes.json pushed ({len(routes_data.get('events', []))} event(s))")
             except Exception as e:
                 print(f"   ⚠️ routes.json push failed (non-critical): {e}")
-        
-        # === AUTO HISTORY GENERATION (Sundays/Mondays, first two runs after midnight) ===
-        if sync.should_generate_history():
-            try:
-                print("\n📊 Auto-generating history.json...")
-                history = sync.generate_history()
-                sync.publish_to_github(history, filepath="history.json",
-                                       commit_message=f"Auto-generate history.json - {datetime.now().strftime('%Y-%m-%d')}")
-                print("   ✅ history.json auto-generated and pushed to GitHub")
-            except Exception as e:
-                print(f"   ⚠️ History generation failed (non-critical): {e}")
         
         # === UPDATE NOTIFICATIONS ===
         try:
