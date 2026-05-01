@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-01T21:05:46.635923",
+    "last_updated": "2026-05-01T21:35:55.598881",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -252,7 +252,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 13138,
+      "steps": 13346,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -396,35 +396,9 @@
           "start": "2026-03-07",
           "end": "2026-04-03"
         },
-        "anchors": {
-          "5s": {
-            "current_watts": 957,
-            "previous_watts": 455,
-            "pct_change": 110.3
-          },
-          "60s": {
-            "current_watts": 431,
-            "previous_watts": 321,
-            "pct_change": 34.3
-          },
-          "300s": {
-            "current_watts": 255,
-            "previous_watts": 294,
-            "pct_change": -13.3
-          },
-          "1200s": {
-            "current_watts": 222,
-            "previous_watts": 236,
-            "pct_change": -5.9
-          },
-          "3600s": {
-            "current_watts": 186,
-            "previous_watts": 193,
-            "pct_change": -3.6
-          }
-        },
-        "rotation_index": 77.0,
-        "note": "Compares MMP at 5 anchor durations (5s neuromuscular, 60s anaerobic, 300s MAP, 1200s threshold, 3600s endurance) across two 28d windows. rotation_index = mean(5s,60s pct_change) - mean(1200s,3600s pct_change). Positive = sprint-biased gains, negative = endurance-biased. 300s excluded from rotation (transitional). Null when either window has fewer than 3 valid anchor durations."
+        "anchors": null,
+        "rotation_index": null,
+        "note": "Insufficient power data in one or both windows."
       },
       "hr_curve_delta": {
         "window_days": 28,
@@ -436,30 +410,9 @@
           "start": "2026-03-07",
           "end": "2026-04-03"
         },
-        "anchors": {
-          "60s": {
-            "current_bpm": 178,
-            "previous_bpm": 181,
-            "pct_change": -1.7
-          },
-          "300s": {
-            "current_bpm": 175,
-            "previous_bpm": 177,
-            "pct_change": -1.1
-          },
-          "1200s": {
-            "current_bpm": 172,
-            "previous_bpm": 167,
-            "pct_change": 3.0
-          },
-          "3600s": {
-            "current_bpm": 158,
-            "previous_bpm": 159,
-            "pct_change": -0.6
-          }
-        },
-        "rotation_index": -2.6,
-        "note": "Compares max sustained HR at 4 anchor durations (60s anaerobic ceiling, 300s VO2max HR, 1200s threshold HR, 3600s endurance HR) across two 28d windows. rotation_index = mean(60s,300s pct_change) - mean(1200s,3600s pct_change). Positive = intensity-biased HR shift, negative = endurance-biased. No sport filter \u2014 HR is cross-sport physiological (dominated by hardest efforts). IMPORTANT: rising max sustained HR is ambiguous \u2014 may indicate improved cardiac output (good) or accumulated fatigue/dehydration/heat (bad). Cross-reference with resting HRV, resting HR, RPE, and environmental context before interpreting. Null when either window has fewer than 3 valid anchor durations."
+        "anchors": null,
+        "rotation_index": null,
+        "note": "Insufficient HR data in one or both windows."
       },
       "sustainability_profile": {
         "window": {
@@ -470,97 +423,9 @@
         "weight_kg": 65.7,
         "weight_source": "wellness_recent",
         "cycling": {
-          "anchors": {
-            "300s": {
-              "actual_watts": 255,
-              "actual_wpkg": 3.88,
-              "actual_hr": 175,
-              "pct_lthr": 98.3,
-              "source": "observed_outdoor",
-              "coggan_watts": 259,
-              "coggan_wpkg": 3.94,
-              "cp_model_watts": 311,
-              "cp_model_wpkg": 4.73,
-              "model_divergence_pct": -18.0
-            },
-            "600s": {
-              "actual_watts": 231,
-              "actual_wpkg": 3.52,
-              "actual_hr": 174,
-              "pct_lthr": 97.8,
-              "source": "observed_outdoor",
-              "coggan_watts": 237,
-              "coggan_wpkg": 3.61,
-              "cp_model_watts": 277,
-              "cp_model_wpkg": 4.22,
-              "model_divergence_pct": -16.6
-            },
-            "1200s": {
-              "actual_watts": 222,
-              "actual_wpkg": 3.38,
-              "actual_hr": 172,
-              "pct_lthr": 96.6,
-              "source": "observed_outdoor",
-              "coggan_watts": 227,
-              "coggan_wpkg": 3.46,
-              "cp_model_watts": 261,
-              "cp_model_wpkg": 3.97,
-              "model_divergence_pct": -14.9
-            },
-            "1800s": {
-              "actual_watts": 203,
-              "actual_wpkg": 3.09,
-              "actual_hr": 165,
-              "pct_lthr": 92.7,
-              "source": "observed_outdoor",
-              "coggan_watts": 220,
-              "coggan_wpkg": 3.35,
-              "cp_model_watts": 255,
-              "cp_model_wpkg": 3.88,
-              "model_divergence_pct": -20.4
-            },
-            "3600s": {
-              "actual_watts": 193,
-              "actual_wpkg": 2.94,
-              "actual_hr": 159,
-              "pct_lthr": 89.3,
-              "source": "observed_outdoor",
-              "coggan_watts": 210,
-              "coggan_wpkg": 3.2,
-              "cp_model_watts": 250,
-              "cp_model_wpkg": 3.81,
-              "model_divergence_pct": -22.8
-            },
-            "5400s": {
-              "actual_watts": 181,
-              "actual_wpkg": 2.75,
-              "actual_hr": 155,
-              "pct_lthr": 87.1,
-              "source": "observed_outdoor",
-              "coggan_watts": 200,
-              "coggan_wpkg": 3.04,
-              "cp_model_watts": 248,
-              "cp_model_wpkg": 3.77,
-              "model_divergence_pct": -27.0
-            },
-            "7200s": {
-              "actual_watts": 169,
-              "actual_wpkg": 2.57,
-              "actual_hr": 153,
-              "pct_lthr": 86.0,
-              "source": "observed_outdoor",
-              "coggan_watts": 190,
-              "coggan_wpkg": 2.89,
-              "cp_model_watts": 247,
-              "cp_model_wpkg": 3.76,
-              "model_divergence_pct": -31.6
-            }
-          },
-          "coverage_ratio": 1.0,
-          "ftp_used": 244,
-          "w_prime_used": 19983,
-          "ftp_staleness_days": 4,
-          "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
+          "anchors": null,
+          "coverage_ratio": 0.0,
+          "note": "Too few observed anchors (0, need 2+)."
         }
       },
       "dfa_a1_profile": null
@@ -633,7 +498,7 @@
     "p_max": 999,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-01T21:05:46.634817",
+    "calculation_timestamp": "2026-05-01T21:35:55.597709",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3774,7 +3639,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 13138,
+      "steps": 13346,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
