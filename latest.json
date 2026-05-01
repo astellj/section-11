@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-01T08:17:47.739951",
+    "last_updated": "2026-05-01T09:10:29.426801",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -633,7 +633,7 @@
     "p_max": 999,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-01T08:17:47.738849",
+    "calculation_timestamp": "2026-05-01T09:10:29.425670",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -666,11 +666,11 @@
       "max_speed": 64.7,
       "max_speed_unit": "KPH",
       "avg_pace": null,
-      "avg_temp": 17.987352,
+      "avg_temp": 17.005169,
       "avg_temp_unit": "C",
       "weather": null,
       "humidity": null,
-      "wind_speed": null,
+      "wind_speed": 4.652638,
       "wind_speed_unit": "KMH",
       "work_kj": 1365.9,
       "calories": 1555,
@@ -818,7 +818,29 @@
           }
         ]
       },
-      "weather_status": "unavailable"
+      "weather_summary": {
+        "source": "intervals_open_meteo",
+        "units": {
+          "wind": "m/s",
+          "temp": "c",
+          "rain": "mm"
+        },
+        "avg_wind_speed": 4.65,
+        "avg_wind_gust": 10.03,
+        "prevailing_wind_deg": 90,
+        "headwind_pct": 29.37,
+        "tailwind_pct": 25.57,
+        "avg_temp": 17.01,
+        "avg_temp_device": 17.99,
+        "avg_feels_like": 12.84,
+        "min_feels_like": 10.41,
+        "max_feels_like": 15.7,
+        "min_temp": 14.66,
+        "max_temp": 20.36,
+        "clouds_pct": 0,
+        "rain": 0.0,
+        "snow": 0.0
+      }
     },
     {
       "id": "i144156381",
