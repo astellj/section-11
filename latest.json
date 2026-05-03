@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-03T12:06:11.752768",
+    "last_updated": "2026-05-03T11:30:50.703905",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -181,10 +181,10 @@
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
-      "eftp": 238.4,
-      "w_prime": 19983,
+      "eftp": 238.1,
+      "w_prime": 19963,
       "w_prime_kj": 20.0,
-      "p_max": 999,
+      "p_max": 998,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -543,7 +543,7 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 244,
-          "w_prime_used": 19983,
+          "w_prime_used": 19963,
           "ftp_staleness_days": 6,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
@@ -577,14 +577,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.64,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 1.44,
+          "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 1,
+          "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 0.5,
+          "next_week_load": 1.27,
           "plan_coverage_current_week": 0.11,
-          "plan_coverage_next_week": 0.11
+          "plan_coverage_next_week": 0.67
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -611,13 +611,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 238.4,
-    "w_prime": 19983,
+    "eftp": 238.1,
+    "w_prime": 19963,
     "w_prime_kj": 20.0,
-    "p_max": 999,
+    "p_max": 998,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-03T12:06:11.751596",
+    "calculation_timestamp": "2026-05-03T11:30:50.702854",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3667,17 +3667,18 @@
   ],
   "planned_workouts": [
     {
-      "id": 107114362,
+      "id": 107856971,
       "date": "2026-05-03",
-      "name": "Endurance",
+      "name": "VO2max Intervals",
       "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 161,
-      "duration_hours": 3.0,
-      "duration_formatted": "3h",
+      "sport_type": "VirtualRide",
+      "planned_tss": 88,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Warmup 10m Z1 HR\n- Z2 steady 160m Z2 HR\n- Cooldown 10m Z1 HR"
+      "indoor": true,
+      "description": "- 25:00 @ 60%\n5x\n- 5:00 @ 112%\n- 5:00 @ 50%\n- 20:00 @ 55%"
     },
     {
       "id": 107114363,
@@ -3691,15 +3692,80 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "- Warmup 15m Z1 HR\n- Z2 steady 210m Z2 HR\n- Cooldown 15m Z1 HR"
+    },
+    {
+      "id": 107856972,
+      "date": "2026-05-05",
+      "name": "Z2 Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 65,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- 90:00 @ 65%"
+    },
+    {
+      "id": 107856973,
+      "date": "2026-05-06",
+      "name": "Strength B \u2014 Posterior Chain",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": 30,
+      "duration_hours": 0.92,
+      "duration_formatted": "55m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- RDL (conservative \u2014 back pain)\n- Step-ups\n- Clamshells / lateral band walks\n- Bird dog\n- Side plank\n- McGill curl-up"
+    },
+    {
+      "id": 107856974,
+      "date": "2026-05-09",
+      "name": "Strength A \u2014 Quad / Lower",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": 40,
+      "duration_hours": 0.92,
+      "duration_formatted": "55m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Goblet squat (back squat when pain allows)\n- Bulgarian split squat\n- Hip thrust\n- Nordic curl\n- Calf raises\n- Dead bug + plank"
+    },
+    {
+      "id": 107856975,
+      "date": "2026-05-09",
+      "name": "Threshold Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 90,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- 15:00 @ 60%\n3x\n- 15:00 @ 97%\n- 5:00 @ 55%\n- 10:00 @ 55%"
+    },
+    {
+      "id": 107856976,
+      "date": "2026-05-10",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 175,
+      "duration_hours": 4.0,
+      "duration_formatted": "4h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Z2 endurance. NP target 137-183W. Fuel 60-90g CHO/hr."
     }
   ],
   "workout_summary_stats": {
-    "attempted": 2,
+    "attempted": 1,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_workout_doc": 6,
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 6.14,
