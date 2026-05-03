@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-03T14:48:39.371608",
+    "last_updated": "2026-05-03T15:19:36.740141",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -221,8 +221,8 @@
       "sleep_hours": 7.58,
       "sleep_formatted": "7h35m",
       "sleep_score": 80.0,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 1,
+      "soreness": 1,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -618,7 +618,7 @@
     "p_max": 998,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-03T14:48:39.370509",
+    "calculation_timestamp": "2026-05-03T15:19:36.739316",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -666,9 +666,9 @@
       "efficiency_factor": 1.3245033,
       "hrrc": 25,
       "elevation_m": 293.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 2,
+      "rpe": 8,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2506,
@@ -3699,8 +3699,8 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 1,
+      "soreness": 1,
       "stress": null,
       "mood": null,
       "motivation": null,
