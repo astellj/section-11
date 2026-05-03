@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-03T11:30:50.703905",
+    "last_updated": "2026-05-03T12:00:05.196765",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 238,
+      "steps": 2726,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -577,14 +577,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.44,
+          "planned_tss_delta": 1.72,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 1.27,
+          "next_week_load": 1.12,
           "plan_coverage_current_week": 0.11,
-          "plan_coverage_next_week": 0.67
+          "plan_coverage_next_week": 0.56
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -617,7 +617,7 @@
     "p_max": 998,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-03T11:30:50.702854",
+    "calculation_timestamp": "2026-05-03T12:00:05.195629",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -830,7 +830,7 @@
       "id": "i144156381",
       "date": "2026-04-29T19:03:56",
       "type": "VirtualRide",
-      "name": "Z2 Endurance",
+      "name": "Endurance",
       "duration_hours": 1.8,
       "distance_km": 49.08,
       "tss": 62,
@@ -3654,7 +3654,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 238,
+      "steps": 2726,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3667,26 +3667,26 @@
   ],
   "planned_workouts": [
     {
-      "id": 107856971,
+      "id": 107858754,
       "date": "2026-05-03",
-      "name": "VO2max Intervals",
+      "name": "VO2max (5x5)",
       "type": "WORKOUT",
-      "sport_type": "VirtualRide",
-      "planned_tss": 88,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": null,
+      "sport_type": "Ride",
+      "planned_tss": 105,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @122W | 20m @146W | 5\u00d75m @273W / 5m rec | 5m @110W",
       "has_terrain": false,
       "indoor": true,
-      "description": "- 25:00 @ 60%\n5x\n- 5:00 @ 112%\n- 5:00 @ 50%\n- 20:00 @ 55%"
+      "description": "- Warmup 5m ramp 40%-60%\n- 20m 60%\n- Interval 1 5m 112%\n- Recovery 5m 50%\n- Interval 2 5m 112%\n- Recovery 5m 50%\n- Interval 3 5m 112%\n- Recovery 5m 50%\n- Interval 4 5m 112%\n- Recovery 5m 50%\n- Interval 5 5m 112%\n- 15m 55%\n- Cooldown 5m ramp 55%-35%"
     },
     {
       "id": 107114363,
       "date": "2026-05-04",
-      "name": "Long Endurance",
+      "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 213,
+      "planned_tss": 211,
       "duration_hours": 4.0,
       "duration_formatted": "4h",
       "workout_summary": null,
@@ -3694,20 +3694,7 @@
       "description": "- Warmup 15m Z1 HR\n- Z2 steady 210m Z2 HR\n- Cooldown 15m Z1 HR"
     },
     {
-      "id": 107856972,
-      "date": "2026-05-05",
-      "name": "Z2 Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 65,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "- 90:00 @ 65%"
-    },
-    {
-      "id": 107856973,
+      "id": 107858756,
       "date": "2026-05-06",
       "name": "Strength B \u2014 Posterior Chain",
       "type": "WORKOUT",
@@ -3720,7 +3707,7 @@
       "description": "- RDL (conservative \u2014 back pain)\n- Step-ups\n- Clamshells / lateral band walks\n- Bird dog\n- Side plank\n- McGill curl-up"
     },
     {
-      "id": 107856974,
+      "id": 107858757,
       "date": "2026-05-09",
       "name": "Strength A \u2014 Quad / Lower",
       "type": "WORKOUT",
@@ -3733,39 +3720,39 @@
       "description": "- Goblet squat (back squat when pain allows)\n- Bulgarian split squat\n- Hip thrust\n- Nordic curl\n- Calf raises\n- Dead bug + plank"
     },
     {
-      "id": 107856975,
+      "id": 107858758,
       "date": "2026-05-09",
-      "name": "Threshold Intervals",
+      "name": "Threshold (3x15)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 90,
-      "duration_hours": 1.42,
-      "duration_formatted": "1h25m",
-      "workout_summary": null,
+      "planned_tss": 98,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": "15m @146W | 3\u00d715m @236W / 5m rec",
       "has_terrain": false,
-      "description": "- 15:00 @ 60%\n3x\n- 15:00 @ 97%\n- 5:00 @ 55%\n- 10:00 @ 55%"
+      "description": "- Warmup 15m 60%\n- Threshold 1 15m 97%\n- Recovery 5m 55%\n- Threshold 2 15m 97%\n- Recovery 5m 55%\n- Threshold 3 15m 97%\n- Cooldown 10m 55%"
     },
     {
-      "id": 107856976,
+      "id": 107858759,
       "date": "2026-05-10",
-      "name": "Long Ride",
+      "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 175,
+      "planned_tss": 168,
       "duration_hours": 4.0,
       "duration_formatted": "4h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Z2 endurance. NP target 137-183W. Fuel 60-90g CHO/hr."
+      "description": "- Z2 Long Ride 240m 65%"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 0,
+    "attempted": 4,
+    "success": 2,
     "patternA": 0,
-    "patternB": 0,
-    "bail_no_workout_doc": 6,
-    "bail_no_match": 1
+    "patternB": 2,
+    "bail_no_workout_doc": 2,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 6.14,
