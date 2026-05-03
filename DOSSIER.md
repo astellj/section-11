@@ -50,6 +50,7 @@
 |-----------|------------------------------------------------------------------------------------------------|
 | Trainer/Bike | Wahoo Kickr Core + Boardman Road Pro Carbon (same bike as outdoor)                             |
 | Platform | Zwift                                                                                          |
+| ERG Mode | Disabled — free-ride mode preferred to build self-regulation skills transferable to outdoor riding |
 | Cooling | 2 Large Fans                                                                                   |
 | Sensors | Polar H10 HRM, power meter, cadence (both power meter and cadence through Wahoo Kickr Core)    |
 | Pedals | Favero Assioma PRO RS-1 (SPD-SL compatible) (All power data still comes from Wahoo Kickr Core) |
@@ -318,28 +319,35 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 
 ## Data Mirror Configuration
 
-### Primary Setup: Local (Claude Code on laptop)
+### JSON Endpoint (for AI coaches)
 
-Claude Code reads files directly from the filesystem — no URLs or connectors needed.
+**URL:** `https://raw.githubusercontent.com/[username]/[repo]/main/latest.json`
 
-**Path:** `latest.json` (this directory)  
-**History:** `history.json` (this directory)  
-**Intervals:** `intervals.json` (this directory — on-demand, for structured session analysis)  
-**Dossier:** `DOSSIER.md` (this directory)
+**Archive:** `https://github.com/[username]/[repo]/tree/main/archive`
 
-`sync.py` runs on the same machine and writes directly to these paths. Claude Code picks them up from the working directory on each session.
+**— OR (GitHub connector) —**
 
-### Remote Setup: GitHub fork (other devices / mobile)
+**Repo:** `[username]/[repo]` (connected via platform's GitHub integration — AI reads files directly, no URLs needed)
 
-**Repo:** `astellj/section-11` (personal fork of `CrankAddict/section-11`)
+> **Tip:** If you commit `DOSSIER.md` to your data repo alongside `latest.json`, `history.json`, and `intervals.json`, connecting the repo gives the AI both your data and your profile in one connection. The only remaining piece is `SECTION_11.md`, which the AI can fetch from the public CrankAddict/section-11 repo or a second connector.
 
-When accessing the coach from a device other than the laptop (mobile, tablet, another machine), connect claude.ai to this GitHub repo. The repo contains `DOSSIER.md`, `latest.json`, `history.json`, and `intervals.json` — synced automatically via the laptop pipeline. No extra infrastructure required.
+**— OR (local setup) —**
 
-> **Data freshness:** A GitHub Action runs on a schedule (hourly) to pull updated data from Intervals.icu directly into the repo. Remote access is always current — no laptop involvement required.
+**Path:** `latest.json` (data directory root, alongside this dossier)
 
-> **Protocol location:** `SECTION_11.md` is in this repo. A single GitHub connector gives the AI both the data and the protocol in one connection.
+**History:** `history.json` (data directory root)
+
+**Intervals:** `intervals.json` (data directory root — on-demand, for structured session analysis)
+
+**Data Path (optional):** `[/path/to/training-data/]`
+Only needed if the AI agent's working directory is different from where data files live (e.g., OpenClaw workspace is `~/clawd/` but data is in `~/training-data/`). Leave blank if they are the same directory.
+
+For local setups where sync.py runs on the same machine as the AI agent, files are read directly from the filesystem — no URLs needed. See `examples/json-local-sync/SETUP.md` for the complete local pipeline.
+
+This endpoint provides synchronized Intervals.icu metrics for deterministic AI parsing. See **Section 11** for the full AI Coach Guidance Protocol.
 
 ---
+
 
 ## Protocol Reference
 
@@ -353,4 +361,7 @@ This dossier follows the **Section 11 A/B AI Coach Guidance Protocol** for AI in
 
 ### v1.0 (2025-04-28)
 - Initial dossier creation, manual data entry, copied some data from previous DOSSIER that wasn't a fork
+- Finished rest of sections with assistance from AI coach
+
+TODO: Finalise Data Mirror Configuration for optimal setup and update the relevant section above.
 
