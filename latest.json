@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-06T18:02:45.734622",
+    "last_updated": "2026-05-06T18:52:31.284074",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -142,7 +142,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-27",
-    "age_days": 8,
+    "age_days": 9,
     "total_months": 19,
     "history_confidence": "high"
   },
@@ -215,8 +215,8 @@
       "sleep_hours": 7.8,
       "sleep_formatted": "7h48m",
       "sleep_score": 90.0,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 1,
+      "soreness": 1,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -574,13 +574,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.86,
+          "planned_tss_delta": 1.25,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 3,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.44,
+          "plan_coverage_current_week": 0.33,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -614,7 +614,7 @@
     "p_max": 998,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-06T18:02:45.733569",
+    "calculation_timestamp": "2026-05-06T18:52:31.282949",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -656,15 +656,15 @@
       "work_kj": 1068.7,
       "calories": 1020,
       "carbs_used": 250,
-      "carbs_ingested": null,
+      "carbs_ingested": 53,
       "variability_index": 1.0729166,
       "decoupling": -1.6942974,
       "efficiency_factor": 1.3552631,
       "hrrc": null,
       "elevation_m": 663.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 1,
+      "rpe": 6,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 1677,
@@ -3407,8 +3407,8 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 1,
+      "soreness": 1,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -3463,19 +3463,6 @@
       "description": "- Warmup 20m 60%\n- Build 5m ramp 60%-85%\n- Opener 5m 105%\n- Recovery 5m 50%\n- FTP Test 20m MAX\n- Cooldown 15m 50%"
     },
     {
-      "id": 108597958,
-      "date": "2026-05-10",
-      "name": "Long Ride",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 147,
-      "duration_hours": 3.5,
-      "duration_formatted": "3h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "- Z2 Long Ride 210m 65%"
-    },
-    {
       "id": 108598214,
       "date": "2026-05-10",
       "name": "Long Ride",
@@ -3490,12 +3477,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 3,
     "success": 1,
     "patternA": 0,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 8.87,
