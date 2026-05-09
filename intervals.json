@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T23:35:20.838781",
+  "generated_at": "2026-05-09T00:07:05.855720",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -328,44 +328,6 @@
           "zone": 1,
           "training_load": 15.910777,
           "decoupling": 8.537607
-        }
-      ]
-    },
-    {
-      "activity_id": "i142597348",
-      "date": "2026-04-24",
-      "type": "Ride",
-      "name": "Commute",
-      "interval_summary": [
-        "1x 22m3s 137bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1323s@137bpm",
-          "duration_secs": 1323,
-          "avg_hr": 137,
-          "max_hr": 166,
-          "zone": 1
-        }
-      ]
-    },
-    {
-      "activity_id": "i142540970",
-      "date": "2026-04-24",
-      "type": "Ride",
-      "name": "Commute",
-      "interval_summary": [
-        "1x 6m29s 127bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "389s@127bpm",
-          "duration_secs": 389,
-          "avg_hr": 127,
-          "max_hr": 146,
-          "zone": 1
         }
       ]
     },
