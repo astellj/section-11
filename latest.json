@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-12T21:33:10.229233",
+    "last_updated": "2026-05-12T22:11:11.916009",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -231,7 +231,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3552,
+      "steps": 4017,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -563,9 +563,7 @@
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": null,
@@ -574,13 +572,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
-          "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 0,
+          "planned_tss_delta": 0.5,
+          "hard_sessions_planned": 1,
+          "current_week_hard_days_completed": 1,
+          "current_week_hard_days_total": 2,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -592,9 +590,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": 252,
@@ -616,7 +612,7 @@
     "p_max": 993,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-12T21:33:10.228090",
+    "calculation_timestamp": "2026-05-12T22:11:11.914920",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3355,7 +3351,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3552,
+      "steps": 4017,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3366,14 +3362,42 @@
       "readiness": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 109817604,
+      "date": "2026-05-14",
+      "name": "Threshold (2x10)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 55,
+      "duration_hours": 0.92,
+      "duration_formatted": "55m",
+      "workout_summary": "15m @158W | 2\u00d710m @239W / 5m rec | 10m @126W",
+      "has_terrain": false,
+      "indoor": true,
+      "description": "Post-FTP test threshold check \u2014 reduced TH-1 to verify new zones (FTP 252W). Cadence \u226585rpm (knee). Stop if knee pain >3/10.\n\n- 15m ramp 50%-75%\n\n2x\n- 10m 95%\n- 5m 55%\n\n- 10m 50%"
+    },
+    {
+      "id": 109817605,
+      "date": "2026-05-16",
+      "name": "Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 93,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "First Saturday long ride of the block. Outdoor preferred. Steady Z2 \u2014 NP 141-189W, HR <75% max. Cadence 85-95rpm. Fuel: 1 HIGH5 bottle/hour (44g CHO). If knee flares, back off intensity immediately.\n\n- 10m ramp 50%-65%\n- 100m 65-75%\n- 10m ramp 65%-50%"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 2,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 6.43,
