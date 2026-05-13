@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-13T20:41:01.377328",
+    "last_updated": "2026-05-13T21:14:26.686002",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -546,11 +546,12 @@
     },
     "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 1,
+      "planned_days": 2,
       "completed_days": 3,
-      "matched_days": 1,
+      "matched_days": 2,
       "planned_dates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "completed_dates": [
         "2026-05-09",
@@ -570,14 +571,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.64,
+          "planned_tss_delta": 0.76,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 1.08,
+          "next_week_load": 1.29,
           "plan_coverage_current_week": 0.25,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 0.88
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -610,13 +611,13 @@
     "p_max": 992,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-13T20:41:01.376117",
+    "calculation_timestamp": "2026-05-13T21:14:26.684929",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 30,
-      "planned_workouts_7d": 1,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 16
@@ -3254,13 +3255,13 @@
       "name": "Threshold (2x12)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 63,
-      "duration_hours": 0.98,
-      "duration_formatted": "59m",
-      "workout_summary": "15m @158W | 2\u00d712m @242W / 5m rec | 10m @126W",
+      "planned_tss": 69,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "5m @126W | 10m @151W | 5m @202W | 3m @126W | 2\u00d712m @242W / 5m rec | 10m @126W",
       "has_terrain": false,
       "indoor": true,
-      "description": "Block A Wk 1 anchor \u2014 threshold zone verification at new FTP (252W). Duration progression starts here. Target 239-245W (95-97%), RPE 7/10 across both blocks. Cadence \u226585rpm (knee priority). Stop if knee pain >3/10.\n\n- 15m ramp 50%-75%\n\n2x\n- 12m 95-97%\n- 5m 55%\n\n- 10m 50%"
+      "description": "- Warmup 5m ramp 40%-60%\n- 10m 60%\n- 5m ramp 75%-85%\n- 3m 50%\n\n2x\n- 12m 95-97%\n- 5m 55%\n\n- 10m 50%"
     },
     {
       "id": 109817605,
@@ -3268,28 +3269,15 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 93,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
+      "planned_tss": 118,
+      "duration_hours": 2.5,
+      "duration_formatted": "2h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "First Saturday long ride of the block. Outdoor preferred. Steady Z2 \u2014 NP 141-189W, HR <75% max. Cadence 85-95rpm. Fuel: 1 HIGH5 bottle/hour (44g CHO). If knee flares, back off intensity immediately.\n\n- 10m ramp 50%-65%\n- 100m 65-75%\n- 10m ramp 65%-50%"
+      "description": "- 10m ramp 50%-65%\n- 130m 65-75%\n- 10m ramp 65%-50%"
     },
     {
-      "id": 109995106,
-      "date": "2026-05-18",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 52,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "- 10m ramp 50%-65%\n- 50m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109995107,
+      "id": 110001876,
       "date": "2026-05-19",
       "name": "Strength A",
       "type": "WORKOUT",
@@ -3303,20 +3291,20 @@
       "description": ""
     },
     {
-      "id": 109995108,
+      "id": 110001877,
       "date": "2026-05-19",
       "name": "VO2max (4x4)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "10m @138W | 15m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 15m @132W",
+      "planned_tss": 132,
+      "duration_hours": 2.3,
+      "duration_formatted": "2h18m",
+      "workout_summary": "30m @144W | 25m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 45m @172W",
       "has_terrain": false,
-      "description": "- 10m ramp 45%-65%\n- 15m 65-75%\n- 5m ramp 75%-85%\n- 1m 100-105%\n- 4m 50%\n\n4x\n- 4m 110% 95rpm\n- 3m 50%\n\n- 15m ramp 60%-45%"
+      "description": "- 30m 50-65%\n- 25m 65-75%\n- 5m ramp 75%-85%\n- 1m 100-105%\n- 4m 50%\n\n4x\n- 4m 110% 95rpm\n- 3m 50%\n\n- 45m 65-72%"
     },
     {
-      "id": 109995109,
+      "id": 110001878,
       "date": "2026-05-20",
       "name": "Endurance",
       "type": "WORKOUT",
@@ -3329,7 +3317,7 @@
       "description": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
     },
     {
-      "id": 109995110,
+      "id": 110001880,
       "date": "2026-05-21",
       "name": "Strength B",
       "type": "WORKOUT",
@@ -3343,32 +3331,32 @@
       "description_preview": null
     },
     {
-      "id": 109995111,
+      "id": 110001881,
       "date": "2026-05-21",
       "name": "Threshold (2x12)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 73,
-      "duration_hours": 1.2,
-      "duration_formatted": "1h12m",
-      "workout_summary": "10m @138W | 10m @176W | 5m @202W | 3m @126W | 2\u00d712m @242W / 5m rec | 10m @132W",
+      "planned_tss": 124,
+      "duration_hours": 2.28,
+      "duration_formatted": "2h17m",
+      "workout_summary": "30m @144W | 20m @176W | 5m @202W | 3m @126W | 2\u00d712m @242W / 5m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109995112,
+      "id": 110001882,
       "date": "2026-05-23",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 90,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
+      "planned_tss": 115,
+      "duration_hours": 2.5,
+      "duration_formatted": "2h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 15m ramp 50%-65%\n- 90m 65-75%\n- 15m ramp 65%-45%"
+      "description_preview": "- 15m ramp 50%-65%\n- 120m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 109995113,
+      "id": 110001883,
       "date": "2026-05-24",
       "name": "Recovery",
       "type": "WORKOUT",
@@ -3381,20 +3369,7 @@
       "description_preview": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
     },
     {
-      "id": 109995673,
-      "date": "2026-05-25",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 52,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 10m ramp 50%-65%\n- 50m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109995674,
+      "id": 110001885,
       "date": "2026-05-26",
       "name": "Strength A",
       "type": "WORKOUT",
@@ -3408,32 +3383,19 @@
       "description_preview": null
     },
     {
-      "id": 109995675,
+      "id": 110001886,
       "date": "2026-05-26",
       "name": "VO2max (4x4)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "10m @138W | 15m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 15m @132W",
+      "planned_tss": 132,
+      "duration_hours": 2.3,
+      "duration_formatted": "2h18m",
+      "workout_summary": "30m @144W | 25m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109995676,
-      "date": "2026-05-27",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 44,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109995677,
+      "id": 110001887,
       "date": "2026-05-28",
       "name": "Strength B",
       "type": "WORKOUT",
@@ -3447,19 +3409,19 @@
       "description_preview": null
     },
     {
-      "id": 109995679,
+      "id": 110001888,
       "date": "2026-05-28",
       "name": "Threshold (2x15)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "10m @138W | 10m @176W | 5m @202W | 3m @126W | 2\u00d715m @242W / 5m rec | 10m @132W",
+      "planned_tss": 134,
+      "duration_hours": 2.38,
+      "duration_formatted": "2h23m",
+      "workout_summary": "30m @144W | 20m @176W | 5m @202W | 3m @126W | 2\u00d715m @242W / 5m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109995680,
+      "id": 110001889,
       "date": "2026-05-30",
       "name": "Endurance",
       "type": "WORKOUT",
@@ -3472,20 +3434,20 @@
       "description_preview": "- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 109995681,
+      "id": 110002320,
       "date": "2026-05-31",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 100,
-      "duration_hours": 2.5,
-      "duration_formatted": "2h30m",
+      "planned_tss": 163,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 15m ramp 45%-60%\n- 120m 60-70%\n- 15m ramp 60%-45%"
+      "description_preview": "- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 109996560,
+      "id": 110001892,
       "date": "2026-06-02",
       "name": "Strength A",
       "type": "WORKOUT",
@@ -3499,19 +3461,19 @@
       "description_preview": null
     },
     {
-      "id": 109996561,
+      "id": 110001893,
       "date": "2026-06-02",
       "name": "VO2max (4x4)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "10m @138W | 15m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 15m @132W",
+      "planned_tss": 132,
+      "duration_hours": 2.3,
+      "duration_formatted": "2h18m",
+      "workout_summary": "30m @144W | 25m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @277W / 3m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109996562,
+      "id": 110001894,
       "date": "2026-06-03",
       "name": "Endurance",
       "type": "WORKOUT",
@@ -3524,7 +3486,7 @@
       "description_preview": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
     },
     {
-      "id": 109996563,
+      "id": 110001895,
       "date": "2026-06-04",
       "name": "Strength B",
       "type": "WORKOUT",
@@ -3538,32 +3500,32 @@
       "description_preview": null
     },
     {
-      "id": 109996564,
+      "id": 110001896,
       "date": "2026-06-04",
       "name": "Threshold (2x18)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 93,
-      "duration_hours": 1.4,
-      "duration_formatted": "1h24m",
-      "workout_summary": "10m @138W | 10m @176W | 5m @202W | 3m @126W | 2\u00d718m @242W / 5m rec | 10m @132W",
+      "planned_tss": 141,
+      "duration_hours": 2.4,
+      "duration_formatted": "2h24m",
+      "workout_summary": "30m @144W | 20m @176W | 5m @202W | 3m @126W | 2\u00d718m @242W / 5m rec | 40m @172W",
       "has_terrain": false
     },
     {
-      "id": 109996565,
+      "id": 110001897,
       "date": "2026-06-06",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 115,
-      "duration_hours": 2.5,
-      "duration_formatted": "2h30m",
+      "planned_tss": 140,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 15m ramp 50%-65%\n- 120m 65-75%\n- 15m ramp 65%-45%"
+      "description_preview": "- 15m ramp 50%-65%\n- 150m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 109996566,
+      "id": 110001898,
       "date": "2026-06-07",
       "name": "Recovery",
       "type": "WORKOUT",
@@ -3576,20 +3538,7 @@
       "description_preview": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
     },
     {
-      "id": 109996567,
-      "date": "2026-06-08",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 44,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109996568,
+      "id": 110001899,
       "date": "2026-06-09",
       "name": "Strength A",
       "type": "WORKOUT",
@@ -3603,19 +3552,19 @@
       "description_preview": null
     },
     {
-      "id": 109996569,
+      "id": 110001900,
       "date": "2026-06-09",
       "name": "VO2max (3x4)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 68,
-      "duration_hours": 1.08,
-      "duration_formatted": "1h5m",
-      "workout_summary": "10m @138W | 12m @176W | 5m @202W | 1m @258W | 4m @126W | 3\u00d74m @277W / 3m rec | 12m @132W",
+      "planned_tss": 96,
+      "duration_hours": 1.68,
+      "duration_formatted": "1h41m",
+      "workout_summary": "30m @144W | 15m @176W | 5m @202W | 1m @258W | 4m @126W | 3\u00d74m @277W / 3m rec | 25m @172W",
       "has_terrain": false
     },
     {
-      "id": 109996570,
+      "id": 110001902,
       "date": "2026-06-11",
       "name": "Strength B",
       "type": "WORKOUT",
@@ -3629,20 +3578,20 @@
       "description_preview": null
     },
     {
-      "id": 109996571,
+      "id": 110001903,
       "date": "2026-06-11",
       "name": "Threshold (1x15)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 53,
-      "duration_hours": 0.93,
-      "duration_formatted": "56m",
+      "planned_tss": 85,
+      "duration_hours": 1.63,
+      "duration_formatted": "1h38m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 10m ramp 45%-65%\n- 8m 65-75%\n- 5m ramp 75%-85%"
+      "description_preview": "- 30m 50-65%\n- 15m 65-75%\n- 5m ramp 75%-85%"
     },
     {
-      "id": 109996573,
+      "id": 110001904,
       "date": "2026-06-13",
       "name": "Endurance",
       "type": "WORKOUT",
@@ -3655,7 +3604,7 @@
       "description_preview": "- 10m ramp 50%-65%\n- 70m 65-75%\n- 10m ramp 65%-45%"
     },
     {
-      "id": 109996574,
+      "id": 110001905,
       "date": "2026-06-14",
       "name": "Recovery",
       "type": "WORKOUT",
@@ -3668,20 +3617,7 @@
       "description_preview": "- 5m ramp 40%-50%\n- 35m 50-55%\n- 5m ramp 50%-40%"
     },
     {
-      "id": 109996575,
-      "date": "2026-06-15",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 52,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 10m ramp 50%-65%\n- 50m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109996576,
+      "id": 110001906,
       "date": "2026-06-16",
       "name": "Strength A",
       "type": "WORKOUT",
@@ -3695,19 +3631,19 @@
       "description_preview": null
     },
     {
-      "id": 109996577,
+      "id": 110001908,
       "date": "2026-06-16",
       "name": "VO2max (4x4)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "10m @138W | 15m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @280W / 3m rec | 15m @132W",
+      "planned_tss": 134,
+      "duration_hours": 2.3,
+      "duration_formatted": "2h18m",
+      "workout_summary": "30m @144W | 25m @176W | 5m @202W | 1m @258W | 4m @126W | 4\u00d74m @280W / 3m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109996578,
+      "id": 110001909,
       "date": "2026-06-17",
       "name": "Endurance",
       "type": "WORKOUT",
@@ -3720,7 +3656,7 @@
       "description_preview": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
     },
     {
-      "id": 109996579,
+      "id": 110001910,
       "date": "2026-06-18",
       "name": "Strength B",
       "type": "WORKOUT",
@@ -3734,32 +3670,32 @@
       "description_preview": null
     },
     {
-      "id": 109996580,
+      "id": 110001911,
       "date": "2026-06-18",
       "name": "Threshold (2x20)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 100,
-      "duration_hours": 1.47,
-      "duration_formatted": "1h28m",
-      "workout_summary": "10m @138W | 10m @176W | 5m @202W | 3m @126W | 2\u00d720m @242W / 5m rec | 10m @132W",
+      "planned_tss": 148,
+      "duration_hours": 2.47,
+      "duration_formatted": "2h28m",
+      "workout_summary": "30m @144W | 15m @176W | 5m @202W | 3m @126W | 2\u00d720m @242W / 5m rec | 45m @172W",
       "has_terrain": false
     },
     {
-      "id": 109996581,
+      "id": 110001912,
       "date": "2026-06-20",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 127,
-      "duration_hours": 2.75,
-      "duration_formatted": "2h45m",
+      "planned_tss": 163,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 15m ramp 50%-65%\n- 135m 65-75%\n- 15m ramp 65%-45%"
+      "description_preview": "- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 109996582,
+      "id": 110001914,
       "date": "2026-06-21",
       "name": "Recovery",
       "type": "WORKOUT",
@@ -3772,51 +3708,26 @@
       "description_preview": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
     },
     {
-      "id": 109996583,
-      "date": "2026-06-22",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 44,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 10m ramp 50%-65%\n- 40m 65-75%\n- 10m ramp 65%-45%"
-    },
-    {
-      "id": 109996585,
+      "id": 110001915,
       "date": "2026-06-23",
       "name": "Openers (2x5)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 47,
+      "planned_tss": 46,
       "duration_hours": 0.9,
       "duration_formatted": "54m",
-      "workout_summary": "10m @138W | 5m @176W | 5m @202W | 1m @258W | 3m @126W | 2\u00d75m @239W / 5m rec | 10m @132W",
-      "has_terrain": false
-    },
-    {
-      "id": 109996586,
-      "date": "2026-06-24",
-      "name": "Recovery",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 20,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
-      "workout_summary": null,
+      "workout_summary": "15m @158W | 5m @176W | 1m @258W | 3m @126W | 2\u00d75m @239W / 5m rec | 10m @132W",
       "has_terrain": false,
-      "description_preview": "- 5m ramp 40%-50%\n- 35m 50-55%\n- 5m ramp 50%-40%"
+      "indoor": true
     }
   ],
   "workout_summary_stats": {
-    "attempted": 33,
+    "attempted": 26,
     "success": 11,
     "patternA": 11,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 22
+    "bail_no_match": 15
   },
   "weekly_summary": {
     "total_training_hours": 4.88,
