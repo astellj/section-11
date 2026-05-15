@@ -1,8 +1,8 @@
 # Athlete Training Dossier & Performance Roadmap
 
-**Dossier Version:** v1.1.1  
+**Dossier Version:** v1.1.2  
 **Protocol Compatibility:** Section 11 v11.6+  
-**Date:** 2026-04-28 
+**Date:** 2026-05-12 
 **Primary Source Systems:** Intervals.icu
 
 ---
@@ -16,7 +16,7 @@
 | Name | James |
 | Age | 25 |
 | Height | 180cm |
-| Current Weight | 67kg |
+| Current Weight | 66.5kg |
 | Target Weight | 68kg |
 | Location | United Kingdom |
 
@@ -37,8 +37,8 @@
 | 100 mile ride (informal, with friends) | Before end of 2026 |
 | Complete hard sportive (TBD)           | Late 2026          |
 
-**Current Phase:** Build (continuous)
-**Training Style:** 8–12 hrs/week, 2 hard sessions/week, pyramidal/polarised with weekly long ride
+**Current Phase:** Build Block 1 — Threshold + VO₂max (May–Aug 2026)
+**Training Style:** 8–12 hrs/week, 2 hard sessions/week, polarised (VO₂max + Threshold) with weekly long ride
 
 ---
 
@@ -97,28 +97,31 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 - At least 1 full rest day per week
 - Remaining sessions: Z2 or active recovery
 - Primary cycling window: weekday evenings (WFH 4/5 days). Early mornings are low motivation and not a reliable window.
-- Strength sessions: morning or lunch break — complete before evening cycling on same-day double sessions
+- **Hard days hard, easy days easy (polarised principle):** the 80% of weekly training time at Z1–Z2 must be *done as volume*, not skipped. "Easy days easy" means easy intensity (Z1–Z2 spinning), not full rest. Stack stress days (strength + hard cycling on Tue/Thu) so the remaining days can be genuinely aerobic without driving fatigue. Evidence: Seiler 2010, Stöggl & Sperlich 2014.
+- **Strength stacks with hard cycling on Tue + Thu:** consolidates stress days, frees Mon/Wed/Fri/Sun for aerobic volume or rest. Evidence: Schumann et al. 2014/2017, Rønnestad 2014 — same-day concurrent training preserves both adaptations and reduces total weekly stress days vs scattered placement.
+- **Strength order on combined days: AM strength → ≥6h gap → PM cycling.** Reasons: (1) form integrity for injury prevention (knee + back history) requires fresh legs for strength; (2) long-term cycling adaptation is preserved with ≥6h gap (Robineau 2016 — 3–5% acute PM power drop, no FTP cost across weeks); (3) practical — evenings are the established cycling window. Carve-out: skip strength on FTP test days, race days, or after a flagged-readiness morning.
+- **The genuine rest day is Friday** (pre-cornerstone-long-ride freshness), not Sunday. A Z2 long ride is glycogen-depleting, not catabolic — Sunday Z1–Z2 spin aids recovery and adds aerobic volume without compromising Tuesday's hard day. Total weekly volume target (8–12 h) requires Sun + Mon to carry Z1–Z2 work, not be sat out.
 
 | Day | Primary Session | Duration | Secondary |
 |-----|-----------------|----------|-----------|
-| Sunday | Active Recovery / Rest | 60–90 min or rest | — |
-| Monday | Strength A (Quad / Lower) | 45–60 min (morning or lunch) | — |
-| Tuesday | Hard: VO₂max Intervals | 75–90 min (evening) | — |
-| Wednesday | Strength B (Posterior Chain / Hinge) | 45–60 min (morning or lunch) | Z2 Endurance 60 min (optional, evening) |
-| Thursday | Hard: Threshold / Sweetspot | 75–90 min (evening) | — |
-| Friday | Rest or Z1 Recovery Spin | 45–60 min or rest | — |
-| Saturday | Long Ride (cornerstone) | 3–5 h | — |
+| Sunday | Z1–Z2 Recovery Spin (or rest if Sat was ≥4h) | 45–90 min | Flush glycogen, light aerobic volume |
+| Monday | Z2 Endurance (or rest if Sun was 90'+) | 60–90 min | Aerobic base — Z2 is sub-threshold, doesn't compromise Tue |
+| Tuesday | **Strength A (AM)** + **Hard: VO₂max (PM)** | 45–60 min strength · 75–90 min cycling | ≥6h gap between sessions |
+| Wednesday | Z2 Endurance (optional) | 60–75 min or rest | — |
+| Thursday | **Strength B (AM)** + **Hard: Threshold (PM)** | 45–60 min strength · 75–90 min cycling | ≥6h gap between sessions |
+| Friday | **Rest or Z1 Recovery Spin** (pre-long-ride freshness — the genuine rest day) | rest or 30–45 min | — |
+| Saturday | Long Ride (cornerstone) | 2–5 h | — |
 
 ### Session Details
 
 | Session Type | Target Power/HR | Duration | Purpose |
 |--------------|-----------------|----------|---------|
-| VO₂Max | 106–120% FTP (259–293W); HR ≥90% max (≥176 bpm) | 75–90 min total; 4–6 × 4–5 min efforts, 3–4 min recovery | Raise VO₂max ceiling; top-end adaptation; address current quality deficit |
-| Threshold | 91–105% FTP (222–256W); HR in Z4 | 75–90 min total; 2–3 × 15–20 min efforts, 5 min recovery | FTP development; sustained high fractional utilisation |
-| Sweetspot | 84–97% FTP (205–237W) | 60–90 min; 3–4 × 10–15 min efforts, 5 min recovery | High-volume threshold stimulus with lower recovery cost than pure threshold |
-| Endurance / Z2 | 56–75% FTP (137–183W); HR Z2 | 60–120 min steady | Aerobic base; fat oxidation; recovery between hard sessions |
-| Long Ride | Z2 primarily (NP 137–183W); HR <75% max | 3–5 h | Weekly cornerstone; durability; fat adaptation; 100-mile event preparation |
-| Recovery | <55% FTP (<134W); HR Z1 | 30–60 min | Active recovery; flush fatigue after hard days or long rides |
+| VO₂Max | 106–120% FTP (267–302W); HR ≥90% max (≥176 bpm) | 75–90 min total; 4–5 × 4–5 min efforts, 3–4 min recovery | Raise VO₂max ceiling; top-end adaptation; primary hard session 1 |
+| Threshold | 95–105% FTP (239–264W); HR in Z4 | 75–90 min total; 2–3 × 15–20 min efforts, 5 min recovery | FTP development; direct lactate threshold stimulus; primary hard session 2 |
+| Sweetspot | 84–94% FTP (212–244W) | 60–90 min; 2–4 × 10–15 min efforts, 5 min recovery | Fallback for modify-readiness days or deload weeks only — not a primary hard session |
+| Endurance / Z2 | 56–75% FTP (141–189W); HR Z2 | 60–120 min steady | Aerobic base; fat oxidation; recovery between hard sessions |
+| Long Ride | Z2 primarily (NP 141–189W); HR <75% max | 3–5 h | Weekly cornerstone; durability; fat adaptation; 100-mile event preparation |
+| Recovery | <55% FTP (<139W); HR Z1 | 30–60 min | Active recovery; flush fatigue after hard days or long rides |
 | Strength A | Quad / Lower — squat, split squat, hip thrust, Nordic curl, core | 45–60 min | Leg hypertrophy; on-bike force; glute activation for knee and back health |
 | Strength B | Posterior Chain — RDL, step-up, good morning, clamshells, core | 45–60 min | Injury prevention (lower back, knee); hip hinge strength; spinal stability |
 
@@ -154,17 +157,17 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0–55% | 0–134W | Active Recovery |
-| Z2 | 56–75% | 137–183W | Endurance (Base) |
-| Z3 | 76–90% | 186–220W | Tempo |
-| Z4 | 91–105% | 222–256W | Threshold |
-| Z5 | 106–120% | 259–293W | VO₂max |
-| Z6 | 121–150% | 295–366W | Anaerobic |
-| Z7 | 151%+ | 369W+ | Neuromuscular |
-| SS | 84–97% | 205–237W | Sweetspot |
+| Z1 | 0–55% | 0–138W | Active Recovery |
+| Z2 | 56–75% | 141–189W | Endurance (Base) |
+| Z3 | 76–90% | 191–227W | Tempo |
+| Z4 | 91–105% | 229–264W | Threshold |
+| Z5 | 106–120% | 267–302W | VO₂max |
+| Z6 | 121–150% | 305–378W | Anaerobic |
+| Z7 | 151%+ | 381W+ | Neuromuscular |
+| SS | 84–94% | 212–244W | Sweetspot (fallback only — see Session Details) |
 
 
-**Current FTP:** Unknown (Indoor: 244W)  
+**Current FTP:** 252W (Indoor: 252W, tested 2026-05-12)
 **Max HR:** 196 bpm
 **Threshold HR:** Unknown (no LTHR test)
 
@@ -172,13 +175,13 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 
 | Metric | Value           | Notes                                                      |
 |--------|-----------------|------------------------------------------------------------|
-| FTP (Outdoor) | Unknown         | Power meter fitted April 2026. No formal outdoor test yet. |
-| FTP (Indoor) | 244W            | Tested ~early February 2026                                |
+| FTP (Outdoor) | ~252W (proxy)   | No formal outdoor test yet. Using indoor FTP as proxy. Outdoor test recommended late summer. |
+| FTP (Indoor) | 252W            | Tested 2026-05-12 (Zwift Standard FTP Test). Previous: 244W (2026-02-01). |
 | LT2 Power (MLSS) | [W]             |                                                            |
 | LT2 HR | [bpm]           |                                                            |
 | LT1 (AeT) | [W]             |                                                            |
-| VO₂max Interval Power | ~259–293W       | Estimated from FTP zones                                   |
-| Sweetspot Target | 205–237W        |                                                            |
+| VO₂max Interval Power | 267–302W        | Estimated from FTP zones (106–120%)                        |
+| Threshold Target | 239–264W        | 95–105% FTP — primary hard session focus                   |
 | Weekly Volume | 8–12 hrs target | Typical ~10 hrs                                            |
 
 ### Weight Tracking
@@ -230,19 +233,19 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 ### Current Adaptation Focus
 
-- [ ] Recovery from big weekend (2026-04-25/26 — two ×4h endurance rides, 373 TSS). Easy week: Z2/Z1 only, no hard sessions until readiness signals clear.
-- [ ] Establish strength programme 2×/week (injury prevention is priority — current back pain, knee history). Begin at conservative loads; progress over 4–6 weeks.
-- [ ] Introduce structured VO₂max intervals 1×/week. Current quality intensity is only 8.8% (28d TID) — target ≥20% within 4–6 weeks of structured build.
-- [ ] FTP retest in 2–3 weeks once recovery is complete and readiness is consistently green (RI ≥0.8, HRV within 10% of baseline). Conduct on a readiness-positive morning. Outdoor test preferred with new power meter.
+- [x] FTP retest completed 2026-05-12: 252W (+8W on previous 244W). Analysis identified that previous block was 83–98% Z1/Z2 with almost no threshold stimulus — the primary cause of modest gain.
+- [ ] 12-week structured Build block begins immediately (2026-05-12). Focus: polarised VO₂max + Threshold (not sweet spot). Target FTP ≥272W by end of block (~Aug 2026).
+- [ ] Establish strength programme 2×/week (injury prevention priority — back and knee history). Strength A (quad/lower) Monday, Strength B (posterior chain) Wednesday.
+- [ ] Hard sessions: outdoor on power meter (Favero Assioma). No Z3 grey zone on hard days — either properly threshold/VO₂max or properly Z2.
+- [ ] FTP retest target: ~Week 13 (early August 2026). Conditions: CTL ≥60, TSB +10 to +15, readiness green.
 
-### Next-Phase Options
+### Deload Protocol
 
-After FTP retest is completed:
+**Evidence-based rule (Bosquet et al. 2007, Mujika & Padilla 2003):** Reduce total volume 40% — do NOT drop intensity. Keep one shortened hard session per deload week (same zone, fewer intervals). Dropping intensity while keeping volume causes measurable decay of threshold and VO₂max adaptations within 7–10 days.
 
-- **If FTP improves (≥250W):** Begin structured threshold block — 1 VO₂max + 1 threshold session per week alongside long ride. Shift TID toward polarised (reduce Z3/grey zone, currently 8%).
-- **If FTP flat or declining:** Extend aerobic base for 3–4 more weeks; audit Z3 leakage (grey zone currently 8% — reduce tempo drifting on long rides); then retest.
-- **Outdoor transition:** May–June, shift majority of sessions outdoors. Use HR to validate zones on new power meter until outdoor FTP is formally established.
-- **Phase transition trigger:** CTL ≥60 sustained + 2 hard sessions/week consistent for 3+ weeks + FTP retest completed → enter Peak phase targeting late-2026 events.
+- Deload hard session: 1 shortened threshold or SS session (e.g., TH-1 2×20 → 1×15, VO2-1 4×4 → 3×3)
+- Long ride replaced with AE-2 (90–120 min)
+- All other sessions: Z1–Z2 only
 
 ---
 
@@ -292,7 +295,7 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 ## 9. Coach Notes
 
 - **Knee health is a priority concern.** Right knee niggle reported 2026-03-25 following VO2 max session. History of knee injury severe enough to quit cycling ~5–6 years ago. Any knee pain during or after sessions triggers immediate load review. Avoid aggressive ramp rates. This applies during both 100-mile events — if knee pain develops mid-ride, back off intensity immediately.
-- **FTP:** Current working FTP is 244W (indoor, tested ~early February 2026). Retest recommended. eFTP from Intervals.icu (240W) is consistent with this — no change needed.
+- **FTP:** Current working FTP is 252W (indoor, tested 2026-05-12). Previous: 244W (2026-02-01). +8W (+3.3%) in 14.5 weeks — modest gain attributed to insufficient threshold stimulus in previous block (83–98% Z1/Z2 across most weeks).
 - **Outdoor power meter:** Favero Assioma PRO RS-1 fitted April 2026. Single-sided (left pedal doubles to estimate total). Power targeting now possible outdoors. No formal outdoor FTP test yet — eFTP proxy of 240W is the working reference. Outdoor FTP test recommended post-May events once fatigue clears. Note: single-sided meters assume left/right symmetry; any significant leg imbalance would affect accuracy, but for trend tracking and zone-based guidance this is fit for purpose.
 - **Wellness data:** HRV, sleep, and sleep score auto-synced from Garmin Connect via Intervals.icu. Subjective wellness fields (mood, energy, soreness, RPE, feel) logged manually in Intervals.icu — recovery protocol triggers will become more reliable as this data accumulates.
 - **Coaching style:** Flexible structure. Athlete reorganises sessions around schedule changes frequently — key use case is "how do I rearrange this week to get the most out of it?" Build each week from the session pool; prioritise long ride and 2 hard sessions above everything else.
@@ -314,6 +317,7 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 | 2026-03-25 | Right knee niggle            | Occurred after Monday VO2 max session. Monitoring.                                 |
 | 2026-04-28 | Dossier created              | Section 11 setup complete                                                          |
 | 2026-04-10 | Bike re-fit completed        | Shim under left foot cleat. New saddle fitted. Monitor comfort on longer sessions. |
+| 2026-05-12 | FTP test                     | 252W indoor. Zwift Standard FTP Test. Previous: 244W (2026-02-01). +8W (+3.3%) in 14.5 weeks. |
 
 ---
 
@@ -358,6 +362,9 @@ This dossier follows the **Section 11 A/B AI Coach Guidance Protocol** for AI in
 ---
 
 ## Changelog
+
+### v1.1.2 (2026-05-12)
+- Restructured §3 weekly schedule for polarised "hard days hard, easy days easy" stacking. Strength now combined with hard cycling on Tue + Thu (AM strength → ≥6h gap → PM cycling). Sun = Z1–Z2 recovery spin, Mon = Z2 endurance, Fri = the genuine rest day. Rationale captured inline in §3 Rules. Evidence: Schumann 2014/2017, Rønnestad 2014, Robineau 2016, Seiler 2010, Stöggl & Sperlich 2014.
 
 ### v1.0 (2025-04-28)
 - Initial dossier creation, manual data entry, copied some data from previous DOSSIER that wasn't a fork
