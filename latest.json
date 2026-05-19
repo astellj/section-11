@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-19T14:25:46.686695",
+    "last_updated": "2026-05-19T15:45:55.808748",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -119,7 +119,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 2.5
+        "value": 2.0
       }
     },
     "signal_summary": {
@@ -174,10 +174,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 51.0,
-      "atl": 48.46,
-      "tsb": 2.54,
-      "ramp_rate": -2.6,
+      "ctl": 51.11,
+      "atl": 49.12,
+      "tsb": 1.99,
+      "ramp_rate": -2.48,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -577,7 +577,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.79,
+          "planned_tss_delta": 1.81,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
@@ -617,7 +617,7 @@
     "p_max": 986,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-19T14:25:46.685461",
+    "calculation_timestamp": "2026-05-19T15:45:55.807631",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3071,12 +3071,13 @@
       "name": "VO2max (5x3 @ 110%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 86,
+      "planned_tss": 91,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
-      "workout_summary": "30m @157W | 5\u00d73m @277W / 3m rec | 30m @144W",
+      "workout_summary": "15m @144W | 5m @189W | 4m @239W | 4m @126W | 3\u00d720s @327W / 40s rec | 4m @126W | 5\u00d73m @277W / 3m rec | 25m @144W",
       "has_terrain": false,
-      "description": "- 30m 55-70%\n\n5x\n- 3m 110%\n- 3m 55%\n\n- 30m 50-65%"
+      "indoor": true,
+      "description": "- 15m 50-65%\n- 5m 75%\n- 4m 95%\n- 4m 50%\n\n3x\n- 20s 130%\n- 40s 50%\n\n- 4m 50%\n\n5x\n- 3m 110%\n- 3m 55%\n\n- 25m 50-65%"
     },
     {
       "id": 110294906,
