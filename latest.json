@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-20T13:02:39.846148",
+    "last_updated": "2026-05-20T14:08:48.841252",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -119,7 +119,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 0.1
+        "value": 3.4
       }
     },
     "signal_summary": {
@@ -174,10 +174,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 51.45,
-      "atl": 51.38,
-      "tsb": 0.07,
-      "ramp_rate": -0.89,
+      "ctl": 50.74,
+      "atl": 47.39,
+      "tsb": 3.35,
+      "ramp_rate": -1.6,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 5536,
+      "steps": 5698,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -579,7 +579,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.74,
+          "planned_tss_delta": 1.6,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
@@ -619,7 +619,7 @@
     "p_max": 985,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-20T13:02:39.844988",
+    "calculation_timestamp": "2026-05-20T14:08:48.840172",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -637,7 +637,7 @@
       "id": "i150006002",
       "date": "2026-05-20T13:26:32",
       "type": "Walk",
-      "name": "Lunch Walk",
+      "name": "Walk",
       "duration_hours": 0.42,
       "distance_km": 2.25,
       "tss": 9,
@@ -3124,7 +3124,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 5536,
+      "steps": 5698,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3142,12 +3142,12 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 34,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 90m 60-70%"
+      "description": "- 5m ramp 40%-55%\n\n- 50m 55-65%\n\n- Cooldown 5m ramp 50%-35%"
     },
     {
       "id": 110243382,
