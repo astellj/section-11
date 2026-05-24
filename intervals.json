@@ -1,31 +1,10 @@
 {
-  "generated_at": "2026-05-23T23:36:49.298637",
+  "generated_at": "2026-05-24T00:07:18.432095",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i146690425",
-      "date": "2026-05-09",
-      "type": "VirtualRide",
-      "name": "FTP Test (20min)",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3551,
-          "avg_power": 135,
-          "max_power": 284,
-          "avg_hr": 139,
-          "max_hr": 157,
-          "avg_cadence": 87.008446,
-          "zone": 2,
-          "training_load": 31.983873,
-          "decoupling": -1.0220722
-        }
-      ]
-    },
     {
       "activity_id": "i147325477",
       "date": "2026-05-11",
