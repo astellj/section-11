@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T15:10:28.259856",
+    "last_updated": "2026-05-30T15:43:18.652553",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -636,7 +636,7 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 60.0,
-    "calculation_timestamp": "2026-05-30T15:10:28.259036",
+    "calculation_timestamp": "2026-05-30T15:43:18.651362",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -654,7 +654,7 @@
       "id": "i152741438",
       "date": "2026-05-30T10:56:01",
       "type": "Ride",
-      "name": "Morning Ride",
+      "name": "Endurance",
       "duration_hours": 3.94,
       "distance_km": 86.14,
       "tss": 163,
