@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-02T19:47:18.198883",
+    "last_updated": "2026-06-02T21:10:22.790669",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -255,7 +255,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3673,
+      "steps": 3792,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -600,7 +600,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.58,
+          "planned_tss_delta": 1.49,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 3,
@@ -640,7 +640,7 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-02T19:47:18.197808",
+    "calculation_timestamp": "2026-06-02T21:10:22.789512",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -682,15 +682,15 @@
       "work_kj": 826.4,
       "calories": 786,
       "carbs_used": 254,
-      "carbs_ingested": null,
+      "carbs_ingested": 81,
       "variability_index": 1.2828947,
       "decoupling": 5.8360057,
       "efficiency_factor": 1.3175676,
       "hrrc": 28,
       "elevation_m": 566.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 4,
+      "rpe": 9,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2544,
@@ -718,7 +718,7 @@
       "id": "i153638539",
       "date": "2026-06-02T18:12:01",
       "type": "Walk",
-      "name": "Evening Walk",
+      "name": "Pre-Ride Activation",
       "duration_hours": 0.18,
       "distance_km": 0.0,
       "tss": 3,
@@ -4284,7 +4284,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3673,
+      "steps": 3792,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4329,12 +4329,12 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 38,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 90m 60-70%"
+      "description": "- Warmup 5m ramp 40%-55% (100-138w) (100-138w)\n\n- 55m 55-68%\n\n- Cooldown 5m ramp 50%-35% (126-88w) (126-88w)"
     },
     {
       "id": 110243413,
