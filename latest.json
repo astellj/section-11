@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-03T09:55:26.849635",
+    "last_updated": "2026-06-03T11:43:46.490337",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -648,7 +648,7 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-03T09:55:26.848548",
+    "calculation_timestamp": "2026-06-03T11:43:46.489227",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4310,6 +4310,19 @@
       "description": "- 90m 60-70%"
     },
     {
+      "id": 110246043,
+      "date": "2026-06-08",
+      "name": "Deload",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
+    },
+    {
       "id": 110243417,
       "date": "2026-06-09",
       "name": "Strength A",
@@ -4375,19 +4388,6 @@
       "description_preview": "- 15m 50-70%\n- 20m 95%\n- 10m 50%"
     },
     {
-      "id": 110246043,
-      "date": "2026-06-12",
-      "name": "Deload",
-      "type": "NOTE",
-      "sport_type": null,
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": null
-    },
-    {
       "id": 113966079,
       "date": "2026-06-13",
       "name": "Endurance (Z2 2h)",
@@ -4419,23 +4419,51 @@
       "name": "VO2 Max (5x4 @ 110%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 77,
-      "duration_hours": 1.08,
-      "duration_formatted": "1h5m",
-      "workout_summary": "15m @151W | 5\u00d74m @277W / 4m rec | 10m @126W",
-      "has_terrain": false
+      "planned_tss": 99,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "30 min ride out, then 5x4 min at 110% FTP with 3 min recovery, 30 min ride home."
+    },
+    {
+      "id": 113971237,
+      "date": "2026-06-16",
+      "name": "Strength A",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": null
     },
     {
       "id": 110293320,
       "date": "2026-06-18",
-      "name": "Threshold (2x18 @ 98%)",
+      "name": "Threshold (2x20 @ 98%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 85,
-      "duration_hours": 1.18,
-      "duration_formatted": "1h11m",
-      "workout_summary": "15m @151W | 2\u00d718m @246W / 5m rec | 10m @126W",
-      "has_terrain": false
+      "planned_tss": 117,
+      "duration_hours": 1.83,
+      "duration_formatted": "1h50m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "30 min ride out, then 2x20 min at 98% FTP with 5 min recovery, 30 min ride home."
+    },
+    {
+      "id": 113971247,
+      "date": "2026-06-18",
+      "name": "Strength B",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": null
     },
     {
       "id": 110245575,
@@ -4464,6 +4492,19 @@
       "description_preview": "W5 easy Z2 post-test \u2014 90' outdoor preferred.\n- 10m ramp 50%-65%\n- 160m 65-72%"
     },
     {
+      "id": 113970945,
+      "date": "2026-06-21",
+      "name": "Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- 90m 60-70%"
+    },
+    {
       "id": 110243427,
       "date": "2026-06-23",
       "name": "Strength A",
@@ -4479,14 +4520,15 @@
     {
       "id": 110293321,
       "date": "2026-06-23",
-      "name": "VO2 Max (5x4 @ 110%)",
+      "name": "VO2 Max (6x4 @ 110%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 99,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "30m @157W | 5\u00d74m @277W / 3m rec | 30m @144W",
-      "has_terrain": false
+      "planned_tss": 110,
+      "duration_hours": 1.7,
+      "duration_formatted": "1h42m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "30 min ride out, then 6x4 min at 110% FTP with 3 min recovery, 30 min ride home."
     },
     {
       "id": 110294911,
@@ -4568,14 +4610,15 @@
     {
       "id": 110293323,
       "date": "2026-06-30",
-      "name": "VO2max (4x5 @ 112%)",
+      "name": "VO2max (5x5 @ 112%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 103,
-      "duration_hours": 1.6,
-      "duration_formatted": "1h36m",
-      "workout_summary": "30m @157W | 4\u00d75m @282W / 4m rec | 30m @144W",
-      "has_terrain": false
+      "planned_tss": 115,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "30 min ride out, then 5x5 min at 112% FTP with 4 min recovery, 30 min ride home."
     },
     {
       "id": 110294912,
@@ -4770,12 +4813,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 27,
-    "success": 11,
-    "patternA": 11,
+    "attempted": 24,
+    "success": 7,
+    "patternA": 7,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 16
+    "bail_no_workout_doc": 4,
+    "bail_no_match": 17
   },
   "weekly_summary": {
     "total_training_hours": 13.05,
