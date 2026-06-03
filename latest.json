@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-03T11:43:46.490337",
+    "last_updated": "2026-06-03T13:17:05.701489",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -648,7 +648,7 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-03T11:43:46.489227",
+    "calculation_timestamp": "2026-06-03T13:17:05.700326",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4422,9 +4422,8 @@
       "planned_tss": 99,
       "duration_hours": 1.58,
       "duration_formatted": "1h35m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "30 min ride out, then 5x4 min at 110% FTP with 3 min recovery, 30 min ride home."
+      "workout_summary": "30m @157W | 5\u00d74m @277W / 3m rec | 30m @144W",
+      "has_terrain": false
     },
     {
       "id": 113971237,
@@ -4448,9 +4447,8 @@
       "planned_tss": 117,
       "duration_hours": 1.83,
       "duration_formatted": "1h50m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "30 min ride out, then 2x20 min at 98% FTP with 5 min recovery, 30 min ride home."
+      "workout_summary": "30m @157W | 2\u00d720m @246W / 5m rec | 30m @144W",
+      "has_terrain": false
     },
     {
       "id": 113971247,
@@ -4526,9 +4524,8 @@
       "planned_tss": 110,
       "duration_hours": 1.7,
       "duration_formatted": "1h42m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "30 min ride out, then 6x4 min at 110% FTP with 3 min recovery, 30 min ride home."
+      "workout_summary": "30m @157W | 6\u00d74m @277W / 3m rec | 30m @144W",
+      "has_terrain": false
     },
     {
       "id": 110294911,
@@ -4613,12 +4610,11 @@
       "name": "VO2max (5x5 @ 112%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 115,
+      "planned_tss": 118,
       "duration_hours": 1.75,
       "duration_formatted": "1h45m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "30 min ride out, then 5x5 min at 112% FTP with 4 min recovery, 30 min ride home."
+      "workout_summary": "30m @157W | 5\u00d75m @282W / 4m rec | 30m @144W",
+      "has_terrain": false
     },
     {
       "id": 110294912,
@@ -4813,11 +4809,11 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 24,
-    "success": 7,
-    "patternA": 7,
+    "attempted": 28,
+    "success": 11,
+    "patternA": 11,
     "patternB": 0,
-    "bail_no_workout_doc": 4,
+    "bail_no_workout_doc": 0,
     "bail_no_match": 17
   },
   "weekly_summary": {
