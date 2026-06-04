@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-04T13:49:22.670814",
+    "last_updated": "2026-06-04T15:07:56.373785",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -129,7 +129,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -17.7
+        "value": -15.4
       }
     },
     "signal_summary": {
@@ -196,10 +196,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 55.79,
-      "atl": 73.53,
-      "tsb": -17.74,
-      "ramp_rate": 1.91,
+      "ctl": 55.3,
+      "atl": 70.74,
+      "tsb": -15.44,
+      "ramp_rate": 1.41,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -236,7 +236,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 66.599,
+      "weight_kg": 66.6,
       "resting_hr": 50,
       "hrv": 55.0,
       "sleep_quality": 2,
@@ -602,7 +602,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.62,
+          "planned_tss_delta": 1.52,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
@@ -642,7 +642,7 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-04T13:49:22.669611",
+    "calculation_timestamp": "2026-06-04T15:07:56.372626",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4337,7 +4337,7 @@
     },
     {
       "date": "2026-06-03",
-      "weight_kg": 66.599,
+      "weight_kg": 66.6,
       "resting_hr": 51,
       "hrv_rmssd": 48.0,
       "hrv_sdnn": null,
@@ -4348,13 +4348,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 3,
+      "stress": 1,
+      "mood": 2,
+      "motivation": 3,
+      "injury": 1,
+      "hydration": 2,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -4434,12 +4434,13 @@
       "name": "Threshold (2x20 @ 98%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 117,
-      "duration_hours": 1.83,
-      "duration_formatted": "1h50m",
-      "workout_summary": "30m @157W | 2\u00d720m @246W / 5m rec | 30m @144W",
+      "planned_tss": 96,
+      "duration_hours": 1.35,
+      "duration_formatted": "1h21m",
+      "workout_summary": "5m @119W | 10m @157W | 3\u00d730s @277W / 1m30s rec | 5m @138W | 2\u00d720m @246W / 5m rec | 5m @107W",
       "has_terrain": false,
-      "description": "- 30m 55-70%\n\n2x\n- 20m 98%\n- 5m 55%\n\n- 30m 50-65%"
+      "indoor": true,
+      "description": "- Warmup 5m ramp 40%-55% (100-138w) (100-138w)\n- 10m 55-70%\n\n3x\n- 30s 110%\n- 90s 55%\n\n- 5m 55%\n\n2x\n- 20m 98%\n- 5m 55%\n\n- Cooldown 5m ramp 50%-35% (126-88w) (126-88w)"
     },
     {
       "id": 110243415,
