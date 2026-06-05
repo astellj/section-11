@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-05T12:27:14.011245",
+    "last_updated": "2026-06-05T13:36:21.354764",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -593,7 +593,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.43,
+          "planned_tss_delta": 1.41,
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 2,
@@ -633,13 +633,13 @@
     "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-05T12:27:14.010145",
+    "calculation_timestamp": "2026-06-05T13:36:21.353565",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 12,
       "activities_28d": 43,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 8,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 39
@@ -675,7 +675,7 @@
       "work_kj": 745.0,
       "calories": 711,
       "carbs_used": 205,
-      "carbs_ingested": null,
+      "carbs_ingested": 62,
       "variability_index": 1.1656442,
       "decoupling": 7.448578,
       "efficiency_factor": 1.3103448,
@@ -4470,10 +4470,10 @@
       "abdomen_cm": null,
       "steps": 4340,
       "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
+      "kcal_consumed": 3656,
+      "carbohydrates_g": 437.0,
+      "protein_g": 200.0,
+      "fat_g": 122.0,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
@@ -4520,30 +4520,30 @@
   ],
   "planned_workouts": [
     {
-      "id": 110243415,
+      "id": 110294918,
       "date": "2026-06-06",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 163,
-      "duration_hours": 3.5,
-      "duration_formatted": "3h30m",
+      "planned_tss": 85,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "W3 long ride \u2014 3h Z2 outdoor preferred.\n\n- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
+      "description": "- 120m 60-70%"
     },
     {
-      "id": 110294918,
+      "id": 110243415,
       "date": "2026-06-07",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 140,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 90m 60-70%"
+      "description": "W3 long ride \u2014 3h Z2 outdoor preferred.\n\n- 15m ramp 50%-65%\n- 150m 65-75%\n- 15m ramp 65%-45%"
     },
     {
       "id": 110246043,
