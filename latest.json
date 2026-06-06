@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-06T10:27:49.538378",
+    "last_updated": "2026-06-06T11:05:12.921201",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -193,10 +193,10 @@
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
-      "eftp": 249.2,
-      "w_prime": 20665,
+      "eftp": 249.5,
+      "w_prime": 20686,
       "w_prime_kj": 20.7,
-      "p_max": 982,
+      "p_max": 983,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -555,7 +555,7 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 252,
-          "w_prime_used": 20665,
+          "w_prime_used": 20686,
           "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
@@ -592,7 +592,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.12,
+          "planned_tss_delta": 2.14,
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 2,
@@ -626,13 +626,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 249.2,
-    "w_prime": 20665,
+    "eftp": 249.5,
+    "w_prime": 20686,
     "w_prime_kj": 20.7,
-    "p_max": 982,
+    "p_max": 983,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-06T10:27:49.537284",
+    "calculation_timestamp": "2026-06-06T11:05:12.919913",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4365,30 +4365,30 @@
   ],
   "planned_workouts": [
     {
-      "id": 110294918,
+      "id": 110243415,
       "date": "2026-06-06",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 85,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
+      "planned_tss": 163,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 120m 60-70%"
+      "description": "W3 long ride \u2014 3h Z2 outdoor preferred.\n\n- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
     },
     {
-      "id": 110243415,
+      "id": 110294918,
       "date": "2026-06-07",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 140,
-      "duration_hours": 3.0,
-      "duration_formatted": "3h",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "W3 long ride \u2014 3h Z2 outdoor preferred.\n\n- 15m ramp 50%-65%\n- 150m 65-75%\n- 15m ramp 65%-45%"
+      "description": "- 90m 60-70%"
     },
     {
       "id": 110246043,
