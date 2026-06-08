@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-08T16:38:59.081675",
+    "last_updated": "2026-06-08T17:42:36.692114",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -627,7 +627,7 @@
     "p_max": 980,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-08T16:38:59.080527",
+    "calculation_timestamp": "2026-06-08T17:42:36.690878",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4438,20 +4438,23 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "has_terrain": false,
+      "coach_notes": [
+        "De-load week: drop 1 set from every exercise - 2 sets on main lifts (not 3), 1 set on accessories. Keep the same load and reps. Session should take 35-40 min. Do not add sets because it feels easy - the whole point is reduced volume."
+      ],
       "description": ""
     },
     {
-      "id": 110296392,
+      "id": 114972548,
       "date": "2026-06-09",
-      "name": "VO2max Deload (3x4 @ 105%)",
+      "name": "Sweetspot \u2014 Deload (2\u00d715 @ 88%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 48,
-      "duration_hours": 0.82,
-      "duration_formatted": "49m",
-      "workout_summary": "15m @144W | 3\u00d74m @264W / 4m rec | 10m @126W",
+      "planned_tss": 59,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": "10m @144W | 2\u00d715m @224W / 5m rec | 10m @132W",
       "has_terrain": false,
-      "description": "- 15m 50-65%\n\n3x\n- 4m 105%\n- 4m 55%\n\n- 10m 50%"
+      "description": "- 10m 50-65%\n\n2x\n- 15m 84-94%\n- 5m 50%\n\n- 10m 50-55%\n\nDe-load week: replaces VO2max. Aerobic stimulus without CNS stress.\nIf legs feel heavy from Strength A this morning or HRV is below baseline, drop both intervals to Z2 (60-75%). Do not push above 94%. The only way to fail this session is to go too hard."
     },
     {
       "id": 110294910,
@@ -4464,6 +4467,9 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "has_terrain": false,
+      "coach_notes": [
+        "De-load week Z2. Keep power 141-189W throughout. If legs are still heavy from Tuesday's double session, shorten to 60 min. No tempo, no drifting above Z2."
+      ],
       "description": "- 90m 60-70%"
     },
     {
@@ -4477,20 +4483,23 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "has_terrain": false,
+      "coach_notes": [
+        "De-load week: drop 1 set from every exercise - 2 sets on primary lifts, 1 set Good Mornings, 2 sets on core. Same load. Session 30-35 min. The reduced volume is intentional."
+      ],
       "description": ""
     },
     {
-      "id": 110293318,
+      "id": 114972549,
       "date": "2026-06-11",
-      "name": "Threshold Deload (1x20 @ 95%)",
+      "name": "Threshold/Sweetspot \u2014 Deload (1\u00d715)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 48,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "planned_tss": 36,
+      "duration_hours": 0.58,
+      "duration_formatted": "35m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 15m 50-70%\n\n- 20m 95%\n\n- 10m 50%"
+      "description": "- 10m 50-65%\n- 15m 88-100%\n- 10m 50-55%\n\nDe-load week: one short effort. Decision on the day:\nTuesday easy + HRV trending up: use upper range 95-105% FTP (239-264W)\nTuesday heavy or HRV flat: use lower range 84-94% FTP (212-237W)\nHRV significantly low or feel score 4+: Z2 only (60-75%)\n\nGoal: arrive at Monday of week 5 feeling fresher than the end of week 3. If in doubt, go easier."
     },
     {
       "id": 113966079,
@@ -4503,6 +4512,9 @@
       "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
+      "coach_notes": [
+        "De-load long ride: Z2 only (141-189W). Cap at 90 min if fatigue is still present from the week. This is not a training ride - it is the final fatigue flush before week 5."
+      ],
       "description": "- 2h 60-70%\n\nSteady aerobic endurance. Keep HR in Z2, cadence 85-95rpm."
     },
     {
@@ -4516,6 +4528,9 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
+      "coach_notes": [
+        "Final de-load day: sub-Z2 only, power below 138W. If you feel genuinely good today, the de-load worked. Week 5 starts tomorrow - arrive fresh."
+      ],
       "description": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
     },
     {
@@ -4931,7 +4946,7 @@
     "success": 10,
     "patternA": 10,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 2,
     "bail_no_match": 15
   },
   "weekly_summary": {
