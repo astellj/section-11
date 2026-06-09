@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-09T13:29:18.118179",
+    "last_updated": "2026-06-09T14:26:34.223711",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -586,7 +586,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.8,
+          "planned_tss_delta": 0.76,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
@@ -626,7 +626,7 @@
     "p_max": 979,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-09T13:29:18.116995",
+    "calculation_timestamp": "2026-06-09T14:26:34.222605",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4386,15 +4386,15 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 42,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
       "coach_notes": [
-        "De-load week Z2. Keep power 141-189W throughout. If legs are still heavy from Tuesday's double session, shorten to 60 min. No tempo, no drifting above Z2."
+        "De-load week Z2. Keep power 141-189W throughout. No tempo, no drifting above Z2."
       ],
-      "description": "- 90m 60-70%"
+      "description": "- 60m 60-70%"
     },
     {
       "id": 110243420,
@@ -4418,12 +4418,12 @@
       "name": "Threshold/Sweetspot \u2014 Deload (1\u00d715)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 36,
-      "duration_hours": 0.58,
-      "duration_formatted": "35m",
+      "planned_tss": 46,
+      "duration_hours": 0.87,
+      "duration_formatted": "52m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 10m 50-65%\n- 15m 88-100%\n- 10m 50-55%\n\nDe-load week: one short effort. Decision on the day:\nTuesday easy + HRV trending up: use upper range 95-105% FTP (239-264W)\nTuesday heavy or HRV flat: use lower range 84-94% FTP (212-237W)\nHRV significantly low or feel score 4+: Z2 only (60-75%)\n\nGoal: arrive at Monday of week 5 feeling fresher than the end of week 3. If in doubt, go easier."
+      "description": "- 15m 50-65%\n- 15m 88-100%\n- 22m 50-55%\n\nDe-load week: one short effort. Decision on the day:\nTuesday easy + HRV trending up: use upper range 95-105% FTP (239-264W)\nTuesday heavy or HRV flat: use lower range 84-94% FTP (212-237W)\nHRV significantly low or feel score 4+: Z2 only (60-75%)\n\nGoal: arrive at Monday of week 5 feeling fresher than the end of week 3. If in doubt, go easier."
     },
     {
       "id": 113966079,
