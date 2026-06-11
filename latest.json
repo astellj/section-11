@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-11T09:01:37.199305",
+    "last_updated": "2026-06-11T10:53:53.935066",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -243,7 +243,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 165,
+      "steps": 1098,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -631,7 +631,7 @@
     "p_max": 977,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-11T09:01:37.198201",
+    "calculation_timestamp": "2026-06-11T10:53:53.933868",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -649,7 +649,7 @@
       "id": "i156302726",
       "date": "2026-06-11T08:51:17",
       "type": "WeightTraining",
-      "name": "Morning Weight Training",
+      "name": "Strength B",
       "duration_hours": 0.96,
       "distance_km": 0.0,
       "tss": 17,
@@ -4361,7 +4361,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 165,
+      "steps": 1098,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4400,7 +4400,7 @@
       "duration_formatted": "52m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 15m 50-65%\n- 15m 88-100%\n- 22m 50-55%\n\nDe-load week: one short effort. Decision on the day:\nTuesday easy + HRV trending up: use upper range 95-105% FTP (239-264W)\nTuesday heavy or HRV flat: use lower range 84-94% FTP (212-237W)\nHRV significantly low or feel score 4+: Z2 only (60-75%)\n\nGoal: arrive at Monday of week 5 feeling fresher than the end of week 3. If in doubt, go easier."
+      "description": "- 15m 50-65%\n- 15m 84-94%  \u2190 TODAY: lower range selected (212-237W)\n- 22m 50-55%\n\nDe-load week: one short effort. Decision on the day:\nTuesday easy + HRV trending up: use upper range 95-105% FTP (239-264W)\nTuesday heavy or HRV flat: use lower range 84-94% FTP (212-237W)  \u2713 SELECTED\nHRV significantly low or feel score 4+: Z2 only (60-75%)\n\nToday (Thu 11 Jun): HRV flat at baseline (55.0 vs 55.3 7d), Tuesday sweet spot was heavy (feel 4, negative effort response). Lower range applies.\n\nGoal: arrive at Monday of week 5 feeling fresher than the end of week 3. If in doubt, go easier."
     },
     {
       "id": 110243423,
