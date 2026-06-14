@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-14T16:04:02.930740",
+    "last_updated": "2026-06-14T16:47:13.454099",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -627,7 +627,7 @@
     "p_max": 974,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 60.0,
-    "calculation_timestamp": "2026-06-14T16:04:02.929657",
+    "calculation_timestamp": "2026-06-14T16:47:13.452906",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4616,21 +4616,8 @@
       "description": ""
     },
     {
-      "id": 110243426,
-      "date": "2026-06-20",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 135,
-      "duration_hours": 3.0,
-      "duration_formatted": "3h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "W5 easy Z2 post-test \u2014 90' outdoor preferred.\n\n- 10m ramp 50%-65%\n- 160m 65-72%\n- 10m ramp 65%-45%"
-    },
-    {
       "id": 113970945,
-      "date": "2026-06-21",
+      "date": "2026-06-20",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -4640,6 +4627,19 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "- 90m 60-70%"
+    },
+    {
+      "id": 110243426,
+      "date": "2026-06-21",
+      "name": "Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 135,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "W5 easy Z2 post-test \u2014 90' outdoor preferred.\n\n- 10m ramp 50%-65%\n- 160m 65-72%\n- 10m ramp 65%-45%"
     },
     {
       "id": 110243427,
