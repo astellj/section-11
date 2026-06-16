@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-16T12:16:53.238765",
+    "last_updated": "2026-06-16T14:20:07.559730",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -119,7 +119,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -3.4
+        "value": -1.9
       }
     },
     "signal_summary": {
@@ -180,10 +180,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 51.59,
-      "atl": 54.98,
-      "tsb": -3.39,
-      "ramp_rate": -2.55,
+      "ctl": 51.26,
+      "atl": 53.12,
+      "tsb": -1.86,
+      "ramp_rate": -2.88,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -586,7 +586,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.51,
+          "planned_tss_delta": 1.45,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
@@ -626,7 +626,7 @@
     "p_max": 972,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-16T12:16:53.237575",
+    "calculation_timestamp": "2026-06-16T14:20:07.558560",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4552,12 +4552,12 @@
       "name": "VO2 Max (5x4 @ 110%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 99,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "30m @157W | 5\u00d74m @277W / 3m rec | 30m @144W",
+      "planned_tss": 85,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": "10m @119W | 5m @189W | 4m @239W | 4m @126W | 3\u00d720s @327W / 40s rec | 4m @126W | 5\u00d74m @277W / 3m rec | 5m @107W",
       "has_terrain": false,
-      "description": "- 30m 55-70%\n\n5x\n- 4m 110%\n- 3m 55%\n\n- 30m 50-65%"
+      "description": "- 10m ramp 40%-55% (100-138w) (100-138w)\n- 5m 75% (189w) (189w)\n- 4m 95% (239w) (239w)\n- 4m 50% (126w) (126w)\n\n3x\n- 20s 130% (327w) (327w)\n- 40s 50% (126w) (126w)\n\n- 4m 50% (126w) (126w)\n\n5x\n- 4m 110%\n- 3m 55%\n\n-5m ramp 50%-35% (126-88w) (126-88w)"
     },
     {
       "id": 113971237,
