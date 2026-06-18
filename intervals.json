@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T17:14:38.971433",
+  "generated_at": "2026-06-18T18:15:44.136304",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -555,6 +555,25 @@
           "zone": 1,
           "training_load": 21.43347,
           "decoupling": -3.046277
+        }
+      ]
+    },
+    {
+      "activity_id": "i158424706",
+      "date": "2026-06-18",
+      "type": "Ride",
+      "name": "Evening Ride",
+      "interval_summary": [
+        "1x 6m51s 137bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "411s@137bpm",
+          "duration_secs": 411,
+          "avg_hr": 137,
+          "max_hr": 152,
+          "zone": 1
         }
       ]
     }
