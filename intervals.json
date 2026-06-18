@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T21:19:18.139751",
+  "generated_at": "2026-06-18T22:17:16.904050",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -573,6 +573,32 @@
           "duration_secs": 411,
           "avg_hr": 137,
           "max_hr": 152,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i158465005",
+      "date": "2026-06-18",
+      "type": "Ride",
+      "name": "Night Ride",
+      "interval_summary": [
+        "1x 11m59s 126bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "719s@126bpm",
+          "duration_secs": 719,
+          "avg_hr": 126,
+          "max_hr": 153,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 114,
+          "max_hr": 114,
           "zone": 1
         }
       ]
