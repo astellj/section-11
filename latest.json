@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-18T09:03:33.090990",
+    "last_updated": "2026-06-18T10:48:02.269756",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -594,13 +594,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.72,
+          "planned_tss_delta": 1.75,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
           "next_week_load": 1.35,
-          "plan_coverage_current_week": 0.56,
+          "plan_coverage_current_week": 0.44,
           "plan_coverage_next_week": 0.78
         },
         "data_quality": "good",
@@ -634,13 +634,13 @@
     "p_max": 970,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-18T09:03:33.089902",
+    "calculation_timestamp": "2026-06-18T10:48:02.268624",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 39,
-      "planned_workouts_7d": 6,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 52
@@ -4311,28 +4311,15 @@
     {
       "id": 110293320,
       "date": "2026-06-18",
-      "name": "Threshold (2x20 @ 98%)",
+      "name": "Easy Spin",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 117,
-      "duration_hours": 1.83,
-      "duration_formatted": "1h50m",
-      "workout_summary": "30m @157W | 2\u00d720m @246W / 5m rec | 30m @144W",
-      "has_terrain": false,
-      "description": "- 30m 55-70%\n\n2x\n- 20m 98%\n- 5m 55%\n\n- 30m 50-65%"
-    },
-    {
-      "id": 113971247,
-      "date": "2026-06-18",
-      "name": "Strength B",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": ""
+      "description": "Recovery spin to flush the legs after Tuesday VO2 session. Z1/Z2 only \u2014 no structure, just turn the pedals.\n\n- 10m 50-65%\n- 40m 60-70%\n- 10m 50-60%"
     },
     {
       "id": 110245575,
@@ -4353,25 +4340,25 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "- 90m 60-70%"
-    },
-    {
-      "id": 110243426,
-      "date": "2026-06-21",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 135,
+      "planned_tss": 127,
       "duration_hours": 3.0,
       "duration_formatted": "3h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "W5 easy Z2 post-test \u2014 90' outdoor preferred.\n\n- 10m ramp 50%-65%\n- 160m 65-72%\n- 10m ramp 65%-45%"
+      "description": "- 180m 60-70%"
+    },
+    {
+      "id": 110243426,
+      "date": "2026-06-21",
+      "name": "Threshold (2x20 @ 98%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 156,
+      "duration_hours": 2.83,
+      "duration_formatted": "2h50m",
+      "workout_summary": "30m @157W | 2\u00d720m @246W / 5m rec | 1h30m @144W",
+      "has_terrain": false,
+      "description": "Moved from Thursday. Proper threshold session \u2014 execute fresh after Friday rest and Saturday Z2.\n\n- 30m 55-70%\n\n2x\n- 20m 98%\n- 5m 55%\n\n- 90m 50-65%"
     },
     {
       "id": 110243427,
