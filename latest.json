@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-21T13:38:53.216581",
+    "last_updated": "2026-06-21T14:33:04.026269",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -243,7 +243,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10011,
+      "steps": 10422,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -558,14 +558,13 @@
     },
     "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 3,
       "completed_days": 4,
-      "matched_days": 4,
+      "matched_days": 3,
       "planned_dates": [
         "2026-06-16",
         "2026-06-18",
-        "2026-06-20",
-        "2026-06-21"
+        "2026-06-20"
       ],
       "completed_dates": [
         "2026-06-16",
@@ -586,13 +585,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 3.39,
-          "hard_sessions_planned": 1,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 3,
-          "current_week_hard_days_total": 4,
+          "current_week_hard_days_total": 3,
           "race_proximity": null,
           "next_week_load": 1.35,
-          "plan_coverage_current_week": 0.11,
+          "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.78
         },
         "data_quality": "good",
@@ -626,13 +625,13 @@
     "p_max": 969,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 61.0,
-    "calculation_timestamp": "2026-06-21T13:38:53.215484",
+    "calculation_timestamp": "2026-06-21T14:33:04.025075",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 12,
       "activities_28d": 39,
-      "planned_workouts_7d": 6,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 55
@@ -644,7 +643,7 @@
       "id": "i159134361",
       "date": "2026-06-21T12:14:24",
       "type": "Ride",
-      "name": "Lunch Ride",
+      "name": "Tempo",
       "duration_hours": 2.11,
       "distance_km": 48.13,
       "tss": 95,
@@ -668,15 +667,15 @@
       "work_kj": 1165.6,
       "calories": 1346,
       "carbs_used": 240,
-      "carbs_ingested": null,
+      "carbs_ingested": 183,
       "variability_index": 1.1266667,
       "decoupling": -0.6936738,
       "efficiency_factor": 1.1655172,
       "hrrc": null,
       "elevation_m": 726.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 1,
+      "rpe": 6,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2702,
@@ -795,7 +794,7 @@
       "id": "i159075714",
       "date": "2026-06-21T09:51:43",
       "type": "Walk",
-      "name": "Morning Walk",
+      "name": "Walk",
       "duration_hours": 1.42,
       "distance_km": 6.31,
       "tss": 16,
@@ -1009,7 +1008,7 @@
       "carbs_used": 343,
       "carbs_ingested": 124,
       "variability_index": 1.3450705,
-      "decoupling": -0.7998332,
+      "decoupling": -8.661502,
       "efficiency_factor": 1.2905406,
       "hrrc": 24,
       "elevation_m": 346.0,
@@ -4243,7 +4242,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10011,
+      "steps": 10422,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4255,19 +4254,6 @@
     }
   ],
   "planned_workouts": [
-    {
-      "id": 110243426,
-      "date": "2026-06-21",
-      "name": "Threshold (2x20 @ 98%)",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 156,
-      "duration_hours": 2.83,
-      "duration_formatted": "2h50m",
-      "workout_summary": "30m @157W | 2\u00d720m @246W / 5m rec | 1h30m @144W",
-      "has_terrain": false,
-      "description": "Moved from Thursday. Proper threshold session \u2014 execute fresh after Friday rest and Saturday Z2.\n\n- 30m 55-70%\n\n2x\n- 20m 98%\n- 5m 55%\n\n- 90m 50-65%"
-    },
     {
       "id": 110243427,
       "date": "2026-06-23",
@@ -4781,9 +4767,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 26,
-    "success": 12,
-    "patternA": 12,
+    "attempted": 25,
+    "success": 11,
+    "patternA": 11,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 14
