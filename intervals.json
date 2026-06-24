@@ -1,83 +1,10 @@
 {
-  "generated_at": "2026-06-23T23:38:59.653643",
+  "generated_at": "2026-06-24T00:06:56.240947",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i155830618",
-      "date": "2026-06-09",
-      "type": "VirtualRide",
-      "name": "Zwift - Sweet Spot (Deload)",
-      "interval_summary": [
-        "2x 15m1s 211w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1029,
-          "avg_power": 109,
-          "max_power": 481,
-          "avg_hr": 122,
-          "max_hr": 155,
-          "avg_cadence": 86.207,
-          "zone": 1,
-          "training_load": 7.005519,
-          "decoupling": -13.173619
-        },
-        {
-          "type": "WORK",
-          "label": "901s@211w93rpm",
-          "duration_secs": 900,
-          "avg_power": 210,
-          "max_power": 303,
-          "avg_hr": 160,
-          "max_hr": 166,
-          "avg_cadence": 94.71111,
-          "zone": 3,
-          "training_load": 17.36111,
-          "decoupling": 3.2354085
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 300,
-          "avg_power": 105,
-          "max_power": 190,
-          "avg_hr": 132,
-          "max_hr": 163,
-          "avg_cadence": 79.37,
-          "zone": 1,
-          "training_load": 1.7963436,
-          "decoupling": -12.679012
-        },
-        {
-          "type": "WORK",
-          "label": "901s@211w93rpm",
-          "duration_secs": 901,
-          "avg_power": 211,
-          "max_power": 328,
-          "avg_hr": 161,
-          "max_hr": 168,
-          "avg_cadence": 90.873474,
-          "zone": 3,
-          "training_load": 17.546324,
-          "decoupling": 2.9937482
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 610,
-          "avg_power": 104,
-          "max_power": 179,
-          "avg_hr": 129,
-          "max_hr": 168,
-          "avg_cadence": 82.89672,
-          "zone": 1,
-          "training_load": 3.4506016,
-          "decoupling": 1.9854343
-        }
-      ]
-    },
     {
       "activity_id": "i156188479",
       "date": "2026-06-10",
