@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T12:23:03.541656",
+  "generated_at": "2026-06-25T13:18:00.235617",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -635,6 +635,54 @@
           "zone": 2,
           "training_load": 76.982414,
           "decoupling": 0.45458943
+        }
+      ]
+    },
+    {
+      "activity_id": "i160235803",
+      "date": "2026-06-25",
+      "type": "Ride",
+      "name": "Lunch Ride",
+      "interval_summary": [
+        "1x 5m22s 205w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4614,
+          "avg_power": 147,
+          "max_power": 442,
+          "avg_hr": 155,
+          "max_hr": 174,
+          "avg_cadence": 80.798744,
+          "zone": 2,
+          "training_load": 49.16709,
+          "decoupling": -2.0690005
+        },
+        {
+          "type": "WORK",
+          "label": "322s@205w65rpm",
+          "duration_secs": 322,
+          "avg_power": 205,
+          "max_power": 301,
+          "avg_hr": 167,
+          "max_hr": 171,
+          "avg_cadence": 65.440994,
+          "zone": 3,
+          "training_load": 5.919159,
+          "decoupling": -2.2549179
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3356,
+          "avg_power": 134,
+          "max_power": 337,
+          "avg_hr": 153,
+          "max_hr": 172,
+          "avg_cadence": 72.57269,
+          "zone": 1,
+          "training_load": 33.91989,
+          "decoupling": 11.176904
         }
       ]
     }
