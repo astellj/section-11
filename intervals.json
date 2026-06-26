@@ -1,58 +1,10 @@
 {
-  "generated_at": "2026-06-25T23:33:16.396886",
+  "generated_at": "2026-06-26T00:10:15.343900",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i156422838",
-      "date": "2026-06-11",
-      "type": "VirtualRide",
-      "name": "Zwift - Speed Spot (Deload)",
-      "interval_summary": [
-        "1x 15m 213w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1530,
-          "avg_power": 128,
-          "max_power": 354,
-          "avg_hr": 127,
-          "max_hr": 156,
-          "avg_cadence": 87.71242,
-          "zone": 1,
-          "training_load": 14.061768,
-          "decoupling": -3.8980057
-        },
-        {
-          "type": "WORK",
-          "label": "900s@213w91rpm",
-          "duration_secs": 900,
-          "avg_power": 213,
-          "max_power": 396,
-          "avg_hr": 162,
-          "max_hr": 168,
-          "avg_cadence": 90.954445,
-          "zone": 3,
-          "training_load": 17.860685,
-          "decoupling": -0.49530253
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 639,
-          "avg_power": 101,
-          "max_power": 194,
-          "avg_hr": 128,
-          "max_hr": 165,
-          "avg_cadence": 77.36307,
-          "zone": 1,
-          "training_load": 3.6791646,
-          "decoupling": 4.342085
-        }
-      ]
-    },
     {
       "activity_id": "i157197625",
       "date": "2026-06-14",
