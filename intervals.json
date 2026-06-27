@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T13:12:03.496338",
+  "generated_at": "2026-06-27T13:56:54.902893",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -635,6 +635,27 @@
           "zone": 1,
           "training_load": 33.91989,
           "decoupling": 11.176904
+        }
+      ]
+    },
+    {
+      "activity_id": "i160741568",
+      "date": "2026-06-27",
+      "type": "Ride",
+      "name": "Lunch Ride",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 7124,
+          "avg_power": 140,
+          "max_power": 463,
+          "avg_hr": 144,
+          "max_hr": 166,
+          "avg_cadence": 75.07357,
+          "zone": 2,
+          "training_load": 73.94819,
+          "decoupling": 0.25602323
         }
       ]
     }
