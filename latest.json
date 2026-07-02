@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-02T21:11:38.691102",
+    "last_updated": "2026-07-02T22:28:25.992128",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -216,17 +216,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 52.09,
-      "atl": 78.2,
-      "tsb": -26.11,
-      "ramp_rate": 2.5,
+      "ctl": 48.56,
+      "atl": 58.23,
+      "tsb": -9.67,
+      "ramp_rate": -1.03,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 244.1,
-      "w_prime": 20236,
+      "eftp": 243.8,
+      "w_prime": 20215,
       "w_prime_kj": 20.2,
-      "p_max": 962,
+      "p_max": 961,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -263,13 +263,13 @@
       "sleep_hours": 6.6,
       "sleep_formatted": "6h36m",
       "sleep_score": 75.0,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 2,
+      "stress": 1,
+      "mood": 3,
+      "motivation": 2,
+      "injury": 1,
+      "hydration": 2,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -281,10 +281,10 @@
       "abdomen_cm": null,
       "steps": 9945,
       "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
+      "kcal_consumed": 2851,
+      "carbohydrates_g": 404.0,
+      "protein_g": 122.0,
+      "fat_g": 73.0,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
@@ -585,24 +585,23 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 252,
-          "w_prime_used": 20236,
+          "w_prime_used": 20215,
           "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.6,
+    "consistency_index": 0.75,
     "consistency_details": {
-      "planned_days": 5,
+      "planned_days": 4,
       "completed_days": 3,
       "matched_days": 3,
       "planned_dates": [
         "2026-06-27",
         "2026-06-28",
         "2026-06-30",
-        "2026-07-01",
-        "2026-07-02"
+        "2026-07-01"
       ],
       "completed_dates": [
         "2026-06-27",
@@ -622,13 +621,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.17,
+          "planned_tss_delta": 1.07,
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 1,
           "race_proximity": null,
           "next_week_load": 2.38,
-          "plan_coverage_current_week": 0.38,
+          "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 0.88
         },
         "data_quality": "good",
@@ -656,19 +655,19 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 244.1,
-    "w_prime": 20236,
+    "eftp": 243.8,
+    "w_prime": 20215,
     "w_prime_kj": 20.2,
-    "p_max": 962,
+    "p_max": 961,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-02T21:11:38.689860",
+    "calculation_timestamp": "2026-07-02T22:28:25.990954",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 8,
       "activities_28d": 31,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 66
@@ -3779,13 +3778,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 2,
+      "stress": 1,
+      "mood": 3,
+      "motivation": 2,
+      "injury": 1,
+      "hydration": 2,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -3797,29 +3796,16 @@
       "abdomen_cm": null,
       "steps": 9945,
       "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
+      "kcal_consumed": 2851,
+      "carbohydrates_g": 404.0,
+      "protein_g": 122.0,
+      "fat_g": 73.0,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 119585350,
-      "date": "2026-07-02",
-      "name": "Chain Gang",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 150,
-      "duration_hours": 2.5,
-      "duration_formatted": "2h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": ""
-    },
     {
       "id": 110243437,
       "date": "2026-07-03",
