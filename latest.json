@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-12T19:52:33.230966",
+    "last_updated": "2026-07-12T20:53:06.602607",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -99,7 +99,7 @@
   ],
   "readiness_decision": {
     "recommendation": "skip",
-    "priority": 1,
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "red",
@@ -126,10 +126,14 @@
         "status": "green",
         "value": 0.73,
         "value_yesterday": 0.96
+      },
+      "tsb": {
+        "status": "green",
+        "value": -13.2
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 1,
       "red": 2,
       "unavailable": 0
@@ -142,7 +146,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P1 acute overload. TSB -33.87 < -30 with HRV -21.3% below baseline.",
+    "reason": "P2 signal count. 2 red (hrv, sleep), 1 amber (rhr).",
     "alarm_refs": []
   },
   "history": {
@@ -186,10 +190,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 55.4,
-      "atl": 89.27,
-      "tsb": -33.87,
-      "ramp_rate": 4.6,
+      "ctl": 50.96,
+      "atl": 64.11,
+      "tsb": -13.15,
+      "ramp_rate": 0.15,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -233,13 +237,13 @@
       "sleep_hours": 4.8,
       "sleep_formatted": "4h48m",
       "sleep_score": 52.0,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 2,
+      "stress": 3,
+      "mood": 2,
+      "motivation": 3,
+      "injury": 3,
+      "hydration": 3,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -633,7 +637,7 @@
     "p_max": 959,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 59.0,
-    "calculation_timestamp": "2026-07-12T19:52:33.229782",
+    "calculation_timestamp": "2026-07-12T20:53:06.601411",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -675,14 +679,14 @@
       "work_kj": 1222.8,
       "calories": 1436,
       "carbs_used": 272,
-      "carbs_ingested": null,
+      "carbs_ingested": 200,
       "variability_index": 1.1666666,
       "decoupling": 5.318672,
       "efficiency_factor": 1.084507,
       "hrrc": null,
       "elevation_m": 972.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 5,
+      "rpe": 7,
       "effort_response": null,
       "zone_distribution": {
         "hr_zones": {
@@ -4601,13 +4605,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 59.0,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 2,
+      "soreness": 1,
+      "stress": 3,
+      "mood": 2,
+      "motivation": 2,
+      "injury": 2,
+      "hydration": 3,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -4640,13 +4644,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 59.0,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 2,
+      "stress": 3,
+      "mood": 2,
+      "motivation": 3,
+      "injury": 3,
+      "hydration": 3,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
