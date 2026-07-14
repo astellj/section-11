@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-14T08:55:06.207481",
+    "last_updated": "2026-07-14T10:49:18.088341",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -183,8 +183,8 @@
       "ctl": 48.75,
       "atl": 48.98,
       "tsb": -0.23,
-      "ramp_rate": 0.31,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ramp_rate": -2.35,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 243.1,
@@ -556,17 +556,16 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.6,
+    "consistency_index": 0.75,
     "consistency_details": {
-      "planned_days": 5,
+      "planned_days": 4,
       "completed_days": 3,
       "matched_days": 3,
       "planned_dates": [
         "2026-07-08",
         "2026-07-09",
         "2026-07-11",
-        "2026-07-12",
-        "2026-07-14"
+        "2026-07-12"
       ],
       "completed_dates": [
         "2026-07-09",
@@ -586,13 +585,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.21,
-          "hard_sessions_planned": 1,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 1,
+          "current_week_hard_days_total": 0,
           "race_proximity": null,
           "next_week_load": 1.63,
-          "plan_coverage_current_week": 0.43,
+          "plan_coverage_current_week": 0.14,
           "plan_coverage_next_week": 1.14
         },
         "data_quality": "good",
@@ -626,7 +625,7 @@
     "p_max": 958,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-14T08:55:06.206315",
+    "calculation_timestamp": "2026-07-14T10:49:18.087302",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4387,7 +4386,7 @@
     },
     {
       "date": "2026-07-13",
-      "weight_kg": 67.599,
+      "weight_kg": 67.6,
       "resting_hr": 49,
       "hrv_rmssd": 54.0,
       "hrv_sdnn": null,
@@ -4398,13 +4397,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 2,
+      "soreness": 2,
+      "stress": 3,
+      "mood": 3,
+      "motivation": 4,
+      "injury": 4,
+      "hydration": 3,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -4465,32 +4464,6 @@
     }
   ],
   "planned_workouts": [
-    {
-      "id": 110243451,
-      "date": "2026-07-14",
-      "name": "Strength A",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": ""
-    },
-    {
-      "id": 110293327,
-      "date": "2026-07-14",
-      "name": "VO2 Max (4x3 @ 110%)",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 55,
-      "duration_hours": 0.9,
-      "duration_formatted": "54m",
-      "workout_summary": "15m @144W | 4\u00d73m @277W / 3m rec | 15m @126W",
-      "has_terrain": false,
-      "description": "- 15m 50-65%\n\n4x\n- 3m 110%\n- 3m 55%\n\n- 15m 50%"
-    },
     {
       "id": 110243847,
       "date": "2026-07-15",
@@ -4852,9 +4825,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 19,
-    "success": 7,
-    "patternA": 7,
+    "attempted": 18,
+    "success": 6,
+    "patternA": 6,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 12
