@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T18:00:35.977213",
+  "generated_at": "2026-07-21T19:51:39.970909",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -237,6 +237,54 @@
           "zone": 1,
           "training_load": 94.0385,
           "decoupling": 0.45687002
+        }
+      ]
+    },
+    {
+      "activity_id": "i167860957",
+      "date": "2026-07-21",
+      "type": "Ride",
+      "name": "Evening Ride",
+      "interval_summary": [
+        "1x 93s 266w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 642,
+          "avg_power": 145,
+          "max_power": 347,
+          "avg_hr": 141,
+          "max_hr": 162,
+          "avg_cadence": 83.31191,
+          "zone": 2,
+          "training_load": 6.587363,
+          "decoupling": -14.960127
+        },
+        {
+          "type": "WORK",
+          "label": "93s@266w74rpm",
+          "duration_secs": 93,
+          "avg_power": 266,
+          "max_power": 361,
+          "avg_hr": 169,
+          "max_hr": 177,
+          "avg_cadence": 74.07527,
+          "zone": 5,
+          "training_load": 2.665995,
+          "decoupling": 4.938901
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3063,
+          "avg_power": 143,
+          "max_power": 319,
+          "avg_hr": 145,
+          "max_hr": 177,
+          "avg_cadence": 72.96239,
+          "zone": 2,
+          "training_load": 34.128826,
+          "decoupling": -1.1895534
         }
       ]
     }
