@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-28T12:26:50.000930",
+    "last_updated": "2026-07-28T15:01:25.282457",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -119,7 +119,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 1.6
+        "value": 1.3
       }
     },
     "signal_summary": {
@@ -180,10 +180,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 42.85,
-      "atl": 41.25,
-      "tsb": 1.6,
-      "ramp_rate": -0.12,
+      "ctl": 42.92,
+      "atl": 41.65,
+      "tsb": 1.27,
+      "ramp_rate": -0.05,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -585,10 +585,10 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.63,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": 1.64,
+          "hard_sessions_planned": 3,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 2,
+          "current_week_hard_days_total": 3,
           "race_proximity": null,
           "next_week_load": 2.18,
           "plan_coverage_current_week": 1.0,
@@ -625,7 +625,7 @@
     "p_max": 946,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-28T12:26:50.000096",
+    "calculation_timestamp": "2026-07-28T15:01:25.281152",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4035,17 +4035,17 @@
       "description": ""
     },
     {
-      "id": 125755787,
+      "id": 125775560,
       "date": "2026-07-28",
-      "name": "Recovery",
+      "name": "Activations",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 19,
-      "duration_hours": 0.67,
-      "duration_formatted": "40m",
-      "workout_summary": null,
+      "planned_tss": 22,
+      "duration_hours": 0.63,
+      "duration_formatted": "38m",
+      "workout_summary": "12m @138W | 3\u00d740s @252W / 3m rec",
       "has_terrain": false,
-      "description": "- Recovery 40m 50-58%"
+      "description": "- Warmup 12m 55%\n- Opener 1 40s 100%\n- Recovery 3m 50%\n- Opener 2 40s 100%\n- Recovery 3m 50%\n- Opener 3 40s 100%\n- Cooldown 18m 52%"
     },
     {
       "id": 110296395,
@@ -4087,9 +4087,9 @@
       "description": ""
     },
     {
-      "id": 125757682,
+      "id": 125775563,
       "date": "2026-07-31",
-      "name": "VO2max (4x4 @ 112%)",
+      "name": "VO2 Max (4x4 @ 112%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
       "planned_tss": 60,
@@ -4270,11 +4270,11 @@
   ],
   "workout_summary_stats": {
     "attempted": 12,
-    "success": 4,
+    "success": 5,
     "patternA": 3,
-    "patternB": 1,
+    "patternB": 2,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 8
+    "bail_no_match": 7
   },
   "weekly_summary": {
     "total_training_hours": 9.45,
