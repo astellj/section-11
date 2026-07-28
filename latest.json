@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-28T10:45:07.194005",
+    "last_updated": "2026-07-28T12:26:50.000930",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -119,7 +119,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -6.4
+        "value": 1.6
       }
     },
     "signal_summary": {
@@ -180,17 +180,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 44.56,
-      "atl": 50.97,
-      "tsb": -6.41,
-      "ramp_rate": 1.59,
+      "ctl": 42.85,
+      "atl": 41.25,
+      "tsb": 1.6,
+      "ramp_rate": -0.12,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 240.4,
-      "w_prime": 19934,
+      "eftp": 240.2,
+      "w_prime": 19914,
       "w_prime_kj": 19.9,
-      "p_max": 947,
+      "p_max": 946,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -243,7 +243,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 772,
+      "steps": 2128,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -549,7 +549,7 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 252,
-          "w_prime_used": 19934,
+          "w_prime_used": 19914,
           "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
@@ -585,13 +585,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.57,
+          "planned_tss_delta": 1.63,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
           "next_week_load": 2.18,
-          "plan_coverage_current_week": 1.14,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -619,13 +619,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 240.4,
-    "w_prime": 19934,
+    "eftp": 240.2,
+    "w_prime": 19914,
     "w_prime_kj": 19.9,
-    "p_max": 947,
+    "p_max": 946,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-28T10:45:07.192895",
+    "calculation_timestamp": "2026-07-28T12:26:50.000096",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -643,7 +643,7 @@
       "id": "i169984597",
       "date": "2026-07-28T08:55:36",
       "type": "WeightTraining",
-      "name": "Morning Weight Training",
+      "name": "Strength A",
       "duration_hours": 1.7,
       "distance_km": 0.0,
       "tss": 38,
@@ -694,7 +694,7 @@
       "id": "i169766562",
       "date": "2026-07-27T17:10:16",
       "type": "Walk",
-      "name": "Afternoon Walk",
+      "name": "Walk",
       "duration_hours": 0.51,
       "distance_km": 2.61,
       "tss": 6,
@@ -3954,13 +3954,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 2,
+      "soreness": 3,
+      "stress": 1,
+      "mood": 1,
+      "motivation": 2,
+      "injury": 1,
+      "hydration": 2,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -4009,7 +4009,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 772,
+      "steps": 2128,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4035,30 +4035,30 @@
       "description": ""
     },
     {
-      "id": 110293330,
+      "id": 125755787,
       "date": "2026-07-28",
-      "name": "VO2 Max (3x6 @ 108%)",
+      "name": "Recovery",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 92,
-      "duration_hours": 1.55,
-      "duration_formatted": "1h33m",
-      "workout_summary": "30m @157W | 3\u00d76m @272W / 5m rec | 30m @144W",
-      "has_terrain": false,
-      "description": "- 30m 55-70%\n\n3x\n- 6m 108%\n- 5m 55%\n\n- 30m 50-65%"
-    },
-    {
-      "id": 110294915,
-      "date": "2026-07-29",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 19,
+      "duration_hours": 0.67,
+      "duration_formatted": "40m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 90m 60-70%"
+      "description": "- Recovery 40m 50-58%"
+    },
+    {
+      "id": 110296395,
+      "date": "2026-07-29",
+      "name": "Over-Unders (2x(6x2/2) @ 105/93%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 131,
+      "duration_hours": 1.88,
+      "duration_formatted": "1h53m",
+      "workout_summary": "30m @157W | 6\u00d72m @264W / 2m rec | 5m @138W | 6\u00d72m @264W / 2m rec | 30m @144W",
+      "has_terrain": false,
+      "description": "- 30m 55-70%\n\n6x\n- 2m 105%\n- 2m 93%\n\n- 5m 55%\n\n6x\n- 2m 105%\n- 2m 93%\n\n- 30m 50-65%"
     },
     {
       "id": 110243476,
@@ -4074,19 +4074,6 @@
       "description": ""
     },
     {
-      "id": 110296395,
-      "date": "2026-07-30",
-      "name": "Over-Unders (2x(6x2/2) @ 105/93%)",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 131,
-      "duration_hours": 1.88,
-      "duration_formatted": "1h53m",
-      "workout_summary": "30m @157W | 6\u00d72m @264W / 2m rec | 5m @138W | 6\u00d72m @264W / 2m rec | 30m @144W",
-      "has_terrain": false,
-      "description": "- 30m 55-70%\n\n6x\n- 2m 105%\n- 2m 93%\n\n- 5m 55%\n\n6x\n- 2m 105%\n- 2m 93%\n\n- 30m 50-65%"
-    },
-    {
       "id": 110246556,
       "date": "2026-07-31",
       "name": "Chris Stussy",
@@ -4100,30 +4087,30 @@
       "description": ""
     },
     {
-      "id": 110243482,
-      "date": "2026-08-01",
-      "name": "Recovery",
+      "id": 125757682,
+      "date": "2026-07-31",
+      "name": "VO2max (4x4 @ 112%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 26,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
+      "planned_tss": 60,
+      "duration_hours": 0.8,
+      "duration_formatted": "48m",
+      "workout_summary": "15m @151W | 4\u00d74m @282W / 3m rec",
       "has_terrain": false,
-      "description": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
+      "description": "- Warmup 15m 60%\n- VO2 1 4m 112%\n- Recovery 3m 50%\n- VO2 2 4m 112%\n- Recovery 3m 50%\n- VO2 3 4m 112%\n- Recovery 3m 50%\n- VO2 4 4m 112%\n- Cooldown 8m 55%"
     },
     {
-      "id": 110246793,
+      "id": 125755789,
       "date": "2026-08-02",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 163,
-      "duration_hours": 3.5,
-      "duration_formatted": "3h30m",
+      "planned_tss": 92,
+      "duration_hours": 2.17,
+      "duration_formatted": "2h10m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "W10 long ride \u2014 3h30 Z2 outdoor preferred.\n\n- 15m ramp 50%-65%\n- 180m 65-75%\n- 15m ramp 65%-45%"
+      "description": "- Endurance 130m 60-70%"
     },
     {
       "id": 110243485,
@@ -4282,12 +4269,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 13,
+    "attempted": 12,
     "success": 4,
-    "patternA": 4,
-    "patternB": 0,
+    "patternA": 3,
+    "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 9
+    "bail_no_match": 8
   },
   "weekly_summary": {
     "total_training_hours": 9.45,
