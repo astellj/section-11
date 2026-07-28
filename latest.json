@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-28T15:01:25.282457",
+    "last_updated": "2026-07-28T16:50:47.092363",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -129,14 +129,14 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Base",
+      "phase": "Taper",
       "phase_week": 1,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "amber_threshold": 1,
+      "modifier_applied": "taper_tightened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 2), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 1), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -574,9 +574,11 @@
       ]
     },
     "phase_detection": {
-      "phase": "Base",
+      "phase": "Taper",
       "confidence": "medium",
-      "reason_codes": [],
+      "reason_codes": [
+        "RACE_IMMINENT"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": -2.95,
@@ -585,14 +587,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.64,
+          "planned_tss_delta": 2.73,
           "hard_sessions_planned": 3,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 3,
-          "race_proximity": null,
-          "next_week_load": 2.18,
-          "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 1.0
+          "race_proximity": 11,
+          "next_week_load": 2.06,
+          "plan_coverage_current_week": 1.14,
+          "plan_coverage_next_week": 0.71
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -602,8 +604,10 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Base",
-    "phase_triggers": [],
+    "phase_detected": "Taper",
+    "phase_triggers": [
+      "RACE_IMMINENT"
+    ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
       "current_ftp": 252,
@@ -625,13 +629,13 @@
     "p_max": 946,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-28T15:01:25.281152",
+    "calculation_timestamp": "2026-07-28T16:50:47.091183",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 28,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 8,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 92
@@ -3826,7 +3830,7 @@
     },
     {
       "date": "2026-07-24",
-      "weight_kg": 66.699,
+      "weight_kg": 66.7,
       "resting_hr": 50,
       "hrv_rmssd": 49.0,
       "hrv_sdnn": null,
@@ -3837,13 +3841,13 @@
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
+      "fatigue": 3,
+      "soreness": 3,
+      "stress": 3,
+      "mood": 3,
+      "motivation": 2,
+      "injury": 2,
+      "hydration": 3,
       "spO2": null,
       "blood_glucose": null,
       "systolic": null,
@@ -3865,7 +3869,7 @@
     },
     {
       "date": "2026-07-25",
-      "weight_kg": null,
+      "weight_kg": 66.7,
       "resting_hr": 53,
       "hrv_rmssd": 52.0,
       "hrv_sdnn": null,
@@ -4074,6 +4078,19 @@
       "description": ""
     },
     {
+      "id": 125800597,
+      "date": "2026-07-30",
+      "name": "Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 138,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "- Endurance 210m 63%"
+    },
+    {
       "id": 110246556,
       "date": "2026-07-31",
       "name": "Chris Stussy",
@@ -4105,12 +4122,12 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 92,
-      "duration_hours": 2.17,
-      "duration_formatted": "2h10m",
+      "planned_tss": 155,
+      "duration_hours": 3.67,
+      "duration_formatted": "3h40m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Endurance 130m 60-70%"
+      "description": "- Endurance 220m 60-70%"
     },
     {
       "id": 110243485,
@@ -4139,56 +4156,30 @@
       "description": "- 30m 55-70%\n\n4x\n- 4m 115%\n- 4m 55%\n\n- 30m 50-65%"
     },
     {
-      "id": 110294916,
-      "date": "2026-08-05",
-      "name": "Endurance",
+      "id": 125808363,
+      "date": "2026-08-06",
+      "name": "Sweet Spot (2x20 @ 90%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 64,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 74,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- 90m 60-70%"
-    },
-    {
-      "id": 110243489,
-      "date": "2026-08-06",
-      "name": "Strength B",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": null
-    },
-    {
-      "id": 110293333,
-      "date": "2026-08-06",
-      "name": "Threshold (1x40 @ 95%)",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 105,
-      "duration_hours": 1.67,
-      "duration_formatted": "1h40m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 30m 55-70%\n- 40m 95%\n- 30m 50-65%"
+      "description_preview": "- 15m 55%\n- 20m 90%\n- 5m 55%"
     },
     {
       "id": 110243491,
       "date": "2026-08-08",
-      "name": "Endurance",
-      "type": "WORKOUT",
+      "name": "Peak District 100km",
+      "type": "RACE_B",
       "sport_type": "Ride",
-      "planned_tss": 181,
-      "duration_hours": 3.83,
-      "duration_formatted": "3h50m",
+      "planned_tss": 250,
+      "duration_hours": 4.5,
+      "duration_formatted": "4h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "W12 final long ride \u2014 3h50 Z2 outdoor preferred. Last ride before Center Parcs taper.\n- 15m ramp 50%-65%\n- 200m 65-75%"
+      "description_preview": "Peak District 100km hilly \u2014 PR attempts up the climbs (~4:30). B event: arrive semi-fresh, then send the climbs. Steady Z2 between, full-gas on the marked climbs. Easy spin Sun."
     },
     {
       "id": 110243492,
@@ -4266,6 +4257,19 @@
       "workout_summary": null,
       "has_terrain": false,
       "description_preview": null
+    },
+    {
+      "id": 125808368,
+      "date": "2026-09-05",
+      "name": "100 Mile Flat",
+      "type": "RACE_B",
+      "sport_type": "Ride",
+      "planned_tss": 300,
+      "duration_hours": 6.0,
+      "duration_formatted": "6h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "First-ever 100-miler (flat, ~160km). Goal: survive/finish strong; may ride a moderately fast group. NEXT-BLOCK durability focus \u2014 longest ride to date ~3.9h, so 4-5h long rides are the priority when planning Aug 19+."
     }
   ],
   "workout_summary_stats": {
@@ -4273,7 +4277,7 @@
     "success": 5,
     "patternA": 3,
     "patternB": 2,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 1,
     "bail_no_match": 7
   },
   "weekly_summary": {
@@ -4285,8 +4289,38 @@
     "avg_resting_hr": 48.6
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "Peak District 100km",
+      "date": "2026-08-08",
+      "category": "RACE_B",
+      "type": "Ride",
+      "days_until": 11,
+      "moving_time_seconds": 16200,
+      "distance_meters": null,
+      "has_terrain": false
+    },
+    "all_races": [
+      {
+        "name": "Peak District 100km",
+        "date": "2026-08-08",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 11,
+        "moving_time_seconds": 16200,
+        "distance_meters": null,
+        "has_terrain": false
+      },
+      {
+        "name": "100 Mile Flat",
+        "date": "2026-09-05",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 39,
+        "moving_time_seconds": 21600,
+        "distance_meters": null,
+        "has_terrain": false
+      }
+    ],
     "taper_alert": {
       "active": false
     },
