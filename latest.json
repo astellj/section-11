@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-29T20:30:39.361067",
+    "last_updated": "2026-07-29T21:38:25.786771",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -648,7 +648,7 @@
     "p_max": 946,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 59.0,
-    "calculation_timestamp": "2026-07-29T20:30:39.359906",
+    "calculation_timestamp": "2026-07-29T21:38:25.785590",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -666,7 +666,7 @@
       "id": "i170568467",
       "date": "2026-07-29T18:43:20",
       "type": "Ride",
-      "name": "Evening Ride",
+      "name": "Over-Unders (2x(6x2/2) @ 105/93%)",
       "duration_hours": 1.97,
       "distance_km": 48.11,
       "tss": 119,
@@ -690,15 +690,15 @@
       "work_kj": 1175.1,
       "calories": 1329,
       "carbs_used": 305,
-      "carbs_ingested": null,
+      "carbs_ingested": 164,
       "variability_index": 1.1878788,
       "decoupling": 7.9303193,
       "efficiency_factor": 1.2645161,
       "hrrc": null,
       "elevation_m": 831.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 1,
+      "rpe": 7,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2228,
@@ -855,7 +855,11 @@
         "clouds_pct": 43,
         "rain": 0.0,
         "snow": 0.0
-      }
+      },
+      "chat_notes": [
+        "Climb was too short to finish reps",
+        "Left calf beginning to cramp again halfway through 2nd set, managed to keep it under control"
+      ]
     },
     {
       "id": "i169984597",
