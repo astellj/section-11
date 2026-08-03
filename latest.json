@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-03T13:45:33.175683",
+    "last_updated": "2026-08-03T16:27:37.016382",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -605,10 +605,10 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.04,
-          "hard_sessions_planned": 3,
+          "planned_tss_delta": 1.59,
+          "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 3,
+          "current_week_hard_days_total": 2,
           "race_proximity": 5,
           "next_week_load": 0.38,
           "plan_coverage_current_week": 0.83,
@@ -647,7 +647,7 @@
     "p_max": 944,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-03T13:45:33.174551",
+    "calculation_timestamp": "2026-08-03T16:27:37.015208",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3890,7 +3890,7 @@
     },
     {
       "id": 110293332,
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "name": "VO2 Max (4x4 @ 115%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -3902,17 +3902,17 @@
       "description": "- 30m 55-70%\n\n4x\n- 4m 115%\n- 4m 55%\n\n- 30m 50-65%"
     },
     {
-      "id": 125808363,
+      "id": 127063535,
       "date": "2026-08-06",
-      "name": "Sweet Spot (2x20 @ 90%)",
+      "name": "Strength B",
       "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 106,
-      "duration_hours": 2.08,
-      "duration_formatted": "2h5m",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- 50m 55%\n- 20m 90%\n- 5m 55%\n- 20m 90%\n- 30m 50%"
+      "description": ""
     },
     {
       "id": 110243491,
@@ -4019,12 +4019,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 7,
+    "attempted": 6,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 5
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 15.25,
