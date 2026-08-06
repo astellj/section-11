@@ -62,15 +62,15 @@
       "menstrual": "menstrual_phase and menstrual_phase_predicted are not on the 1-4 scale. Values: PERIOD, FOLLICULAR, OVULATION, LUTEAL, etc."
     },
     "quick_stats": {
-      "total_training_hours": 9.61,
-      "total_training_formatted": "9h36m",
-      "total_activities": 4,
-      "total_tss": 337
+      "total_training_hours": 10.49,
+      "total_training_formatted": "10h29m",
+      "total_activities": 5,
+      "total_tss": 351
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-06T13:20:38.864964",
+    "last_updated": "2026-08-06T15:42:22.792929",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -129,7 +129,7 @@
       },
       "acwr": {
         "status": "green",
-        "value": 1.13
+        "value": 1.16
       },
       "ri": {
         "status": "green",
@@ -138,7 +138,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -2.3
+        "value": -3.8
       }
     },
     "signal_summary": {
@@ -168,8 +168,8 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 9.61,
-    "total_activities": 4,
+    "total_duration_decimal_hours": 10.49,
+    "total_activities": 5,
     "by_activity_type": {
       "Ride": {
         "duration_decimal_hours": 3.29,
@@ -178,10 +178,10 @@
         "distance_km": 84.4
       },
       "Walk": {
-        "duration_decimal_hours": 0.48,
-        "count": 1,
-        "tss": 7,
-        "distance_km": 2.3
+        "duration_decimal_hours": 1.36,
+        "count": 2,
+        "tss": 21,
+        "distance_km": 6.9
       },
       "WeightTraining": {
         "duration_decimal_hours": 1.2,
@@ -199,11 +199,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 42.24,
-      "atl": 44.52,
-      "tsb": -2.28,
-      "ramp_rate": -0.93,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ctl": 42.57,
+      "atl": 46.39,
+      "tsb": -3.82,
+      "ramp_rate": -1.96,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 239.0,
@@ -262,7 +262,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1467,
+      "steps": 8098,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -282,44 +282,44 @@
     "rhr_baseline_28d": 48.7,
     "latest_hrv": 57.0,
     "latest_rhr": 53,
-    "acwr": 1.13,
+    "acwr": 1.16,
     "acwr_interpretation": "optimal",
-    "monotony": 0.62,
+    "monotony": 0.66,
     "monotony_interpretation": "normal",
     "primary_sport": "cycling",
     "primary_sport_monotony": null,
     "primary_sport_tss_7d": 205.0,
-    "effective_monotony": 0.62,
+    "effective_monotony": 0.66,
     "multi_sport_detected": true,
-    "strain": 209.0,
-    "stress_tolerance": 3.4,
-    "load_recovery_ratio": 3.4,
-    "tss_7d_total": 337.0,
-    "tss_28d_total": 1192.0,
+    "strain": 232.0,
+    "stress_tolerance": 3.5,
+    "load_recovery_ratio": 3.5,
+    "tss_7d_total": 351.0,
+    "tss_28d_total": 1206.0,
     "zone_distribution_7d": {
-      "z1_hours": 7.47,
+      "z1_hours": 8.35,
       "z2_hours": 0.79,
       "z3_hours": 0.58,
       "z4_plus_hours": 0.76,
-      "total_hours": 9.61,
+      "total_hours": 10.49,
       "zone_basis": "mixed"
     },
-    "grey_zone_percentage": 6.1,
+    "grey_zone_percentage": 5.6,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 7.9,
+    "quality_intensity_percentage": 7.3,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "easy_time_ratio": 0.86,
+    "easy_time_ratio": 0.87,
     "easy_time_ratio_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 0,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 29750,
+      "z1_seconds": 32912,
       "z2_seconds": 2097,
       "z3_seconds": 2748,
-      "z1_pct": 86.0,
-      "z2_pct": 6.1,
-      "z3_pct": 7.9,
-      "polarization_index": 2.05,
+      "z1_pct": 87.2,
+      "z2_pct": 5.6,
+      "z3_pct": 7.3,
+      "polarization_index": 2.06,
       "classification": "Polarized",
       "zone_basis": "mixed"
     },
@@ -336,12 +336,12 @@
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 112777,
+      "z1_seconds": 115939,
       "z2_seconds": 7468,
       "z3_seconds": 7380,
-      "z1_pct": 88.4,
-      "z2_pct": 5.9,
-      "z3_pct": 5.8,
+      "z1_pct": 88.6,
+      "z2_pct": 5.7,
+      "z3_pct": 5.6,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
@@ -390,7 +390,7 @@
       "tid_comparison": {
         "classification_7d": "Polarized",
         "classification_28d": "Pyramidal",
-        "pi_7d": 2.05,
+        "pi_7d": 2.06,
         "pi_28d": null,
         "pi_delta": null,
         "drift": "shifting",
@@ -646,12 +646,12 @@
     "p_max": 942,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-06T13:20:38.863862",
+    "calculation_timestamp": "2026-08-06T15:42:22.791731",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 4,
-      "activities_28d": 24,
+      "activities_7d": 5,
+      "activities_28d": 25,
       "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
@@ -660,6 +660,100 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "i173115071",
+      "date": "2026-08-06T15:27:39",
+      "type": "Walk",
+      "name": "Afternoon Walk",
+      "duration_hours": 0.88,
+      "distance_km": 4.59,
+      "tss": 14,
+      "intensity_factor": 39.271206,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 104,
+      "max_hr": 123,
+      "avg_cadence": 55.9968,
+      "avg_speed": 5.1,
+      "avg_speed_unit": "KPH",
+      "max_speed": 6.4,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": 17.510191,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": 5.1713114,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 277,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 59.0,
+      "feel": null,
+      "rpe": null,
+      "effort_response": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 3162,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": false,
+      "has_dfa": false,
+      "terrain_summary": {
+        "source": "activity_streams",
+        "total_distance_km": 4.7,
+        "total_elevation_m": 61,
+        "elevation_per_km": 13.0,
+        "course_character": "rolling",
+        "max_grade_pct": 4.7,
+        "grade_distribution": {
+          "flat_pct": 25.7,
+          "gentle_pct": 42.9,
+          "moderate_pct": 31.4,
+          "steep_pct": 0.0
+        },
+        "start_coords": [
+          53.24984,
+          -1.44596
+        ],
+        "climbs": [],
+        "descents": []
+      },
+      "weather_summary": {
+        "source": "intervals_open_meteo",
+        "units": {
+          "wind": "m/s",
+          "temp": "c",
+          "rain": "mm"
+        },
+        "avg_wind_speed": 5.17,
+        "avg_wind_gust": 10.37,
+        "prevailing_wind_deg": 292,
+        "headwind_pct": 30.96,
+        "tailwind_pct": 31.78,
+        "avg_temp": 17.51,
+        "avg_temp_device": null,
+        "avg_feels_like": 14.34,
+        "min_feels_like": 13.84,
+        "max_feels_like": 14.77,
+        "min_temp": 17.31,
+        "max_temp": 17.78,
+        "clouds_pct": 85,
+        "rain": 0.0,
+        "snow": 0.0
+      }
+    },
     {
       "id": "i172735606",
       "date": "2026-08-05T13:55:45",
@@ -3428,7 +3522,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1467,
+      "steps": 8098,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3566,10 +3660,10 @@
     "bail_no_match": 4
   },
   "weekly_summary": {
-    "total_training_hours": 9.61,
-    "total_training_formatted": "9h36m",
-    "total_tss": 337,
-    "activities_count": 4,
+    "total_training_hours": 10.49,
+    "total_training_formatted": "10h29m",
+    "total_tss": 351,
+    "activities_count": 5,
     "avg_hrv": 55.7,
     "avg_resting_hr": 51.7
   },
@@ -3619,18 +3713,18 @@
       "event_moving_time_seconds": 16200,
       "days_until_event": 2,
       "current_day": "D-2",
-      "ctl_baseline": 42.2,
-      "normal_weekly_tss": 295.7,
+      "ctl_baseline": 42.6,
+      "normal_weekly_tss": 298.0,
       "race_week_tss_budget": {
-        "min": 148,
-        "max": 192
+        "min": 149,
+        "max": 194
       },
-      "race_week_tss_spent": 239,
+      "race_week_tss_spent": 253,
       "race_week_tss_remaining": {
         "min": 0,
         "max": 0
       },
-      "projected_race_day_tsb": 6.8,
+      "projected_race_day_tsb": 5.7,
       "tsb_target_range": {
         "min": 5,
         "max": 20
