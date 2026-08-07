@@ -1,46 +1,10 @@
 {
-  "generated_at": "2026-08-06T15:42:22.788731",
+  "generated_at": "2026-08-07T00:41:13.620626",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i168581524",
-      "date": "2026-07-23",
-      "type": "Ride",
-      "name": "7HCC \u26d3\ufe0f",
-      "interval_summary": [
-        "1x 42m23s 216w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2543s@216w90rpm",
-          "duration_secs": 2543,
-          "avg_power": 216,
-          "max_power": 545,
-          "avg_hr": 181,
-          "max_hr": 192,
-          "avg_cadence": 90.49446,
-          "zone": 3,
-          "training_load": 64.68276,
-          "decoupling": -5.5005717
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 6532,
-          "avg_power": 129,
-          "max_power": 395,
-          "avg_hr": 151,
-          "max_hr": 175,
-          "avg_cadence": 75.91675,
-          "zone": 1,
-          "training_load": 49.91686,
-          "decoupling": -23.963541
-        }
-      ]
-    },
     {
       "activity_id": "i169511323",
       "date": "2026-07-26",
