@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-08T14:06:28.982125",
+    "last_updated": "2026-08-08T14:49:52.858135",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -89,26 +89,26 @@
   "alerts": [
     {
       "metric": "race_week",
-      "value": 0,
+      "value": 1,
       "severity": "info",
       "threshold": "RACE_B within 7 days",
-      "context": "Race week D-0 of 'Peak District 100km'. Today: Race day, 0-0 TSS. Race effort",
+      "context": "Race week D-1 of 'Peak District 100km'. Today: Rest / minimal, 0-9 TSS. Z1 only if active",
       "persistence_days": null,
       "tier": 1
     },
     {
       "metric": "race_week_tsb",
-      "value": -32.1,
+      "value": 0.6,
       "severity": "warning",
       "threshold": "TSB target 5-20",
-      "context": "Projected race-day TSB -32.1 is below target range 5-20. Consider additional rest to reach target.",
+      "context": "Projected race-day TSB 0.6 is below target range 5-20. Consider additional rest to reach target.",
       "persistence_days": null,
       "tier": 1
     }
   ],
   "readiness_decision": {
-    "recommendation": "skip",
-    "priority": 1,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "amber",
@@ -135,10 +135,14 @@
         "status": "green",
         "value": 0.8,
         "value_yesterday": 0.58
+      },
+      "tsb": {
+        "status": "green",
+        "value": -4.7
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 4,
       "amber": 2,
       "red": 0,
       "unavailable": 0
@@ -149,9 +153,19 @@
       "amber_threshold": 1,
       "modifier_applied": "race_week_tightened"
     },
-    "race_week_defers": false,
-    "modification": null,
-    "reason": "P1 acute overload. TSB -32.12 < -30 with HRV -13.6% below baseline.",
+    "race_week_defers": true,
+    "modification": {
+      "triggers": [
+        "hrv",
+        "rhr"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 2 amber (hrv, rhr) >= threshold 1.",
     "alarm_refs": []
   },
   "history": {
@@ -189,10 +203,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 48.75,
-      "atl": 80.87,
-      "tsb": -32.12,
-      "ramp_rate": 6.29,
+      "ctl": 42.86,
+      "atl": 47.59,
+      "tsb": -4.73,
+      "ramp_rate": 0.41,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -565,16 +579,17 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.25,
+    "consistency_index": 0.4,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 5,
       "completed_days": 2,
-      "matched_days": 1,
+      "matched_days": 2,
       "planned_dates": [
         "2026-08-02",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-08"
       ],
       "completed_dates": [
         "2026-08-02",
@@ -599,7 +614,7 @@
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
-          "race_proximity": 0,
+          "race_proximity": 1,
           "next_week_load": 0.38,
           "plan_coverage_current_week": 0.33,
           "plan_coverage_next_week": 0.5
@@ -637,7 +652,7 @@
     "p_max": 941,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 58.0,
-    "calculation_timestamp": "2026-08-08T14:06:28.981005",
+    "calculation_timestamp": "2026-08-08T14:49:52.856931",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -3480,21 +3495,8 @@
   ],
   "planned_workouts": [
     {
-      "id": 110243491,
-      "date": "2026-08-08",
-      "name": "Peak District 100km",
-      "type": "RACE_B",
-      "sport_type": "Ride",
-      "planned_tss": 250,
-      "duration_hours": 4.5,
-      "duration_formatted": "4h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "Peak District 100km hilly \u2014 PR attempts up the climbs (~4:30). B event: arrive semi-fresh, then send the climbs. Steady Z2 between, full-gas on the marked climbs. Easy spin Sun."
-    },
-    {
       "id": 110243492,
-      "date": "2026-08-09",
+      "date": "2026-08-08",
       "name": "Recovery",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -3504,6 +3506,19 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "- 5m ramp 40%-50%\n- 50m 50-55%\n- 5m ramp 50%-40%"
+    },
+    {
+      "id": 110243491,
+      "date": "2026-08-09",
+      "name": "Peak District 100km",
+      "type": "RACE_B",
+      "sport_type": "Ride",
+      "planned_tss": 250,
+      "duration_hours": 4.5,
+      "duration_formatted": "4h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "Peak District 100km hilly \u2014 PR attempts up the climbs (~4:30). B event: arrive semi-fresh, then send the climbs. Steady Z2 between, full-gas on the marked climbs. Easy spin Sun."
     },
     {
       "id": 110244379,
@@ -3602,10 +3617,10 @@
   "race_calendar": {
     "next_race": {
       "name": "Peak District 100km",
-      "date": "2026-08-08",
+      "date": "2026-08-09",
       "category": "RACE_B",
       "type": "Ride",
-      "days_until": 0,
+      "days_until": 1,
       "moving_time_seconds": 16200,
       "distance_meters": null,
       "has_terrain": false
@@ -3613,10 +3628,10 @@
     "all_races": [
       {
         "name": "Peak District 100km",
-        "date": "2026-08-08",
+        "date": "2026-08-09",
         "category": "RACE_B",
         "type": "Ride",
-        "days_until": 0,
+        "days_until": 1,
         "moving_time_seconds": 16200,
         "distance_meters": null,
         "has_terrain": false
@@ -3638,54 +3653,54 @@
     "race_week": {
       "active": true,
       "event_name": "Peak District 100km",
-      "event_date": "2026-08-08",
+      "event_date": "2026-08-09",
       "event_category": "RACE_B",
       "event_type": "Ride",
       "event_duration_class": "long_endurance",
       "event_moving_time_seconds": 16200,
-      "days_until_event": 0,
-      "current_day": "D-0",
-      "ctl_baseline": 48.8,
-      "normal_weekly_tss": 341.2,
+      "days_until_event": 1,
+      "current_day": "D-1",
+      "ctl_baseline": 42.9,
+      "normal_weekly_tss": 300.0,
       "race_week_tss_budget": {
-        "min": 171,
-        "max": 222
+        "min": 150,
+        "max": 195
       },
       "race_week_tss_spent": 350,
       "race_week_tss_remaining": {
         "min": 0,
         "max": 0
       },
-      "projected_race_day_tsb": -32.1,
+      "projected_race_day_tsb": 0.6,
       "tsb_target_range": {
         "min": 5,
         "max": 20
       },
       "today": {
-        "label": "Race day",
+        "label": "Rest / minimal",
         "load_target_tss": {
           "min": 0,
-          "max": 0
+          "max": 9
         },
-        "zones": "Race effort",
-        "purpose": "Go/no-go assessment. Execute race plan."
+        "zones": "Z1 only if active",
+        "purpose": "Final rest, logistics, equipment check."
       },
       "carb_loading": {
         "applicable": true,
         "active": true,
         "starts": "D-4",
-        "start_date": "2026-08-04",
+        "start_date": "2026-08-05",
         "note": "10-12 g\u00b7kg\u207b\u00b9/day. No depletion phase needed."
       },
       "opener": {
         "day": "D-2",
-        "date": "2026-08-06",
+        "date": "2026-08-07",
         "intensity": "lighter"
       },
       "go_no_go": {
         "tsb_status": "flag",
         "notes": [
-          "Projected race-day TSB -32.1 is significantly below target range 5-20. Fatigue may impact performance."
+          "Projected race-day TSB 0.6 is below target range 5-20. Consider additional rest."
         ]
       }
     }
