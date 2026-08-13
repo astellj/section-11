@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T16:09:49.051313",
+  "generated_at": "2026-08-13T17:13:06.800129",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -528,6 +528,32 @@
           "zone": 1,
           "training_load": 73.67393,
           "decoupling": -2.5225492
+        }
+      ]
+    },
+    {
+      "activity_id": "i175502800",
+      "date": "2026-08-13",
+      "type": "Ride",
+      "name": "Afternoon Ride",
+      "interval_summary": [
+        "1x 8m18s 102bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "498s@102bpm",
+          "duration_secs": 498,
+          "avg_hr": 102,
+          "max_hr": 125,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 83,
+          "max_hr": 83,
+          "zone": 1
         }
       ]
     }
