@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:17:58.662918",
+  "generated_at": "2026-08-15T13:52:12.084435",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -535,6 +535,53 @@
           "avg_hr": 99,
           "max_hr": 142,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i176096989",
+      "date": "2026-08-15",
+      "type": "Ride",
+      "name": "Endurance",
+      "interval_summary": [
+        "1x 12m15s 216w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 17347,
+          "avg_power": 133,
+          "max_power": 900,
+          "avg_hr": 140,
+          "max_hr": 173,
+          "avg_cadence": 67.477776,
+          "zone": 1,
+          "training_load": 159.38283
+        },
+        {
+          "type": "WORK",
+          "label": "735s@216w86rpm",
+          "duration_secs": 735,
+          "avg_power": 216,
+          "max_power": 311,
+          "avg_hr": 165,
+          "max_hr": 171,
+          "avg_cadence": 86.29388,
+          "zone": 3,
+          "training_load": 15.139211,
+          "decoupling": -0.7114843
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 862,
+          "avg_power": 125,
+          "max_power": 322,
+          "avg_hr": 150,
+          "max_hr": 169,
+          "avg_cadence": 71.39327,
+          "zone": 1,
+          "training_load": 8.351556,
+          "decoupling": 17.7279
         }
       ]
     }
