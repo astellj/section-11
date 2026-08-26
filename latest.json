@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-26T16:19:22.836536",
+    "last_updated": "2026-08-26T18:15:21.552250",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -88,8 +88,8 @@
   "athlete_notes": null,
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "green",
@@ -118,13 +118,13 @@
         "value_yesterday": 0.98
       },
       "tsb": {
-        "status": "green",
-        "value": -8.4
+        "status": "amber",
+        "value": -22.1
       }
     },
     "signal_summary": {
-      "green": 6,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
       "unavailable": 0
     },
@@ -135,8 +135,17 @@
       "modifier_applied": "taper_tightened"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 1), 0 red.",
+    "modification": {
+      "triggers": [
+        "tsb"
+      ],
+      "suggested_adjustments": {
+        "intensity": "preserve",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 amber (tsb) >= threshold 1.",
     "alarm_refs": []
   },
   "history": {
@@ -186,10 +195,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 47.65,
-      "atl": 56.07,
-      "tsb": -8.42,
-      "ramp_rate": 1.44,
+      "ctl": 50.6,
+      "atl": 72.71,
+      "tsb": -22.11,
+      "ramp_rate": 4.38,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -562,18 +571,25 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": null,
+    "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 0,
+      "planned_days": 1,
       "completed_days": 3,
       "matched_days": 0,
-      "note": "No planned workouts in period"
+      "planned_dates": [
+        "2026-08-26"
+      ],
+      "completed_dates": [
+        "2026-08-20",
+        "2026-08-22",
+        "2026-08-23"
+      ]
     },
     "phase_detection": {
       "phase": "Taper",
-      "confidence": "medium",
+      "confidence": "high",
       "reason_codes": [
-        "RACE_IMMINENT"
+        "RACE_IMMINENT_VOLUME_REDUCING"
       ],
       "basis": {
         "stream_1": {
@@ -583,13 +599,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.76,
+          "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 0,
+          "current_week_hard_days_total": 2,
           "race_proximity": 10,
           "next_week_load": 0.83,
-          "plan_coverage_current_week": 0.17,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 0.17
         },
         "data_quality": "good",
@@ -602,7 +618,7 @@
     },
     "phase_detected": "Taper",
     "phase_triggers": [
-      "RACE_IMMINENT"
+      "RACE_IMMINENT_VOLUME_REDUCING"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -625,13 +641,13 @@
     "p_max": 941,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-26T16:19:22.835414",
+    "calculation_timestamp": "2026-08-26T18:15:21.551134",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 9,
       "activities_28d": 26,
-      "planned_workouts_7d": 1,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 121
@@ -4058,6 +4074,20 @@
   ],
   "planned_workouts": [
     {
+      "id": 131913056,
+      "date": "2026-08-26",
+      "name": "VO2 Max (5x4 @ 113%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 125,
+      "duration_hours": 1.9,
+      "duration_formatted": "1h54m",
+      "workout_summary": "10m @154W | 3\u00d71m @239W / 1m rec | 5\u00d74m @284W / 4m rec | 50m @176W | 8m @131W",
+      "has_terrain": false,
+      "indoor": true,
+      "description": "- Warmup 10m ramp 58%-65%\n- Build 1 1m 95%\n- Easy 1 1m 55%\n- Build 2 1m 95%\n- Easy 2 1m 55%\n- Build 3 1m 95%\n- Easy 3 1m 55%\n- VO2 1 4m 113%\n- Recovery 1 4m 55%\n- VO2 2 4m 113%\n- Recovery 2 4m 55%\n- VO2 3 4m 113%\n- Recovery 3 4m 55%\n- VO2 4 4m 113%\n- Recovery 4 4m 55%\n- VO2 5 4m 113%\n- Recovery 5 4m 55%\n- Endurance 50m 70%\n- Cooldown 8m 52%"
+    },
+    {
       "id": 109991902,
       "date": "2026-08-28",
       "name": "Lakes w Erin",
@@ -4069,6 +4099,20 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": ""
+    },
+    {
+      "id": 131913058,
+      "date": "2026-08-28",
+      "name": "Threshold (3x12 @ 94%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 71,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": "10m @157W | 3\u00d712m @236W / 4m rec",
+      "has_terrain": false,
+      "indoor": true,
+      "description": "- Warmup 10m ramp 55%-70%\n- Threshold 1 12m 94%\n- Recovery 1 4m 60%\n- Threshold 2 12m 94%\n- Recovery 2 4m 60%\n- Threshold 3 12m 94%\n- Cooldown 6m 54%"
     },
     {
       "id": 125808368,
@@ -4085,10 +4129,10 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
+    "attempted": 2,
+    "success": 2,
     "patternA": 0,
-    "patternB": 0,
+    "patternB": 2,
     "bail_no_workout_doc": 1,
     "bail_no_match": 0
   },
