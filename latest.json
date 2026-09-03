@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-03T11:33:13.165537",
+    "last_updated": "2026-09-03T15:12:07.442983",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -92,7 +92,16 @@
       "value": 2,
       "severity": "info",
       "threshold": "RACE_B within 7 days",
-      "context": "Race week D-2 of '100 Mile Flat'. Today: Opener, 14-24 TSS. 3-4 efforts Z4 only (20-60s), moderate cadence, full recovery",
+      "context": "Race week D-2 of '100 Mile Flat'. Today: Opener, 15-24 TSS. 3-4 efforts Z4 only (20-60s), moderate cadence, full recovery",
+      "persistence_days": null,
+      "tier": 1
+    },
+    {
+      "metric": "race_week_tsb",
+      "value": 3.2,
+      "severity": "warning",
+      "threshold": "TSB target 5-20",
+      "context": "Projected race-day TSB 3.2 is below target range 5-20. Consider additional rest to reach target.",
       "persistence_days": null,
       "tier": 1
     }
@@ -129,7 +138,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -1.1
+        "value": -8.9
       }
     },
     "signal_summary": {
@@ -211,10 +220,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 47.21,
-      "atl": 48.29,
-      "tsb": -1.08,
-      "ramp_rate": -2.03,
+      "ctl": 48.88,
+      "atl": 57.74,
+      "tsb": -8.86,
+      "ramp_rate": -0.36,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -587,13 +596,14 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 1.0,
+    "consistency_index": 0.5,
     "consistency_details": {
-      "planned_days": 1,
+      "planned_days": 2,
       "completed_days": 2,
       "matched_days": 1,
       "planned_dates": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-09-03"
       ],
       "completed_dates": [
         "2026-08-28",
@@ -614,13 +624,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.7,
-          "hard_sessions_planned": 1,
+          "planned_tss_delta": 2.1,
+          "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 2,
+          "current_week_hard_days_total": 3,
           "race_proximity": 2,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.12,
+          "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -656,13 +666,13 @@
     "p_max": 937,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-03T11:33:13.164397",
+    "calculation_timestamp": "2026-09-03T15:12:07.441833",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 11,
       "activities_28d": 33,
-      "planned_workouts_7d": 2,
+      "planned_workouts_7d": 3,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 129
@@ -4569,6 +4579,20 @@
   ],
   "planned_workouts": [
     {
+      "id": 133616998,
+      "date": "2026-09-03",
+      "name": "Tempo (2x12 @ 83%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 71,
+      "duration_hours": 1.43,
+      "duration_formatted": "1h26m",
+      "workout_summary": "10m @132W | 10m @166W | 2\u00d712m @209W / 6m rec | 15m @166W | 3\u00d720s @365W / 3m rec | 5m @126W",
+      "has_terrain": false,
+      "indoor": true,
+      "description": "- Warmup 10m ramp 40%-65%\n- 10m 62-70%\n\n2x\n- 12m 83%\n- 6m 55%\n\n- 15m 62-70%\n\n3x\n- 20s 145%\n- 3m 50%\n\n- 5m 50%"
+    },
+    {
       "id": 125808368,
       "date": "2026-09-05",
       "name": "100 Mile Flat",
@@ -4583,9 +4607,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 1,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 1,
     "bail_no_match": 0
@@ -4634,18 +4658,18 @@
       "event_moving_time_seconds": 21600,
       "days_until_event": 2,
       "current_day": "D-2",
-      "ctl_baseline": 47.2,
-      "normal_weekly_tss": 330.5,
+      "ctl_baseline": 48.9,
+      "normal_weekly_tss": 342.2,
       "race_week_tss_budget": {
-        "min": 165,
-        "max": 215
+        "min": 171,
+        "max": 222
       },
       "race_week_tss_spent": 214,
       "race_week_tss_remaining": {
         "min": 0,
-        "max": 1
+        "max": 8
       },
-      "projected_race_day_tsb": 8.7,
+      "projected_race_day_tsb": 3.2,
       "tsb_target_range": {
         "min": 5,
         "max": 20
@@ -4653,7 +4677,7 @@
       "today": {
         "label": "Opener",
         "load_target_tss": {
-          "min": 14,
+          "min": 15,
           "max": 24
         },
         "zones": "3-4 efforts Z4 only (20-60s), moderate cadence, full recovery",
@@ -4672,8 +4696,10 @@
         "intensity": "lighter"
       },
       "go_no_go": {
-        "tsb_status": "green",
-        "notes": []
+        "tsb_status": "flag",
+        "notes": [
+          "Projected race-day TSB 3.2 is below target range 5-20. Consider additional rest."
+        ]
       }
     }
   }
