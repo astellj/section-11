@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T12:33:56.425615",
+  "generated_at": "2026-09-05T15:34:30.213223",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1180,6 +1180,58 @@
           "zone": 1,
           "training_load": 0.643431,
           "decoupling": 3.84459
+        }
+      ]
+    },
+    {
+      "activity_id": "i183609875",
+      "date": "2026-09-05",
+      "type": "Ride",
+      "name": "Big 100",
+      "interval_summary": [
+        "1x 1h34m 138w",
+        "1x 30m55s 188w",
+        "1x 5h11m 141w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "5658s@138w71rpm",
+          "duration_secs": 5658,
+          "avg_power": 138,
+          "max_power": 478,
+          "avg_hr": 145,
+          "max_hr": 180,
+          "avg_cadence": 71.45449,
+          "zone": 1,
+          "training_load": 58.483505,
+          "decoupling": -2.3703763
+        },
+        {
+          "type": "WORK",
+          "label": "1855s@188w88rpm",
+          "duration_secs": 1855,
+          "avg_power": 188,
+          "max_power": 992,
+          "avg_hr": 165,
+          "max_hr": 189,
+          "avg_cadence": 87.83568,
+          "zone": 2,
+          "training_load": 35.988464,
+          "decoupling": 4.9007096
+        },
+        {
+          "type": "WORK",
+          "label": "18680s@141w72rpm",
+          "duration_secs": 18680,
+          "avg_power": 141,
+          "max_power": 612,
+          "avg_hr": 153,
+          "max_hr": 184,
+          "avg_cadence": 72.16483,
+          "zone": 2,
+          "training_load": 177.57338,
+          "decoupling": 9.272263
         }
       ]
     }
