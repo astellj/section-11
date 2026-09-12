@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-12T08:51:10.740343",
+    "last_updated": "2026-09-12T12:43:02.590589",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -601,12 +601,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.51,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 2.96,
+          "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 1,
+          "current_week_hard_days_total": 2,
           "race_proximity": 15,
-          "next_week_load": 1.17,
+          "next_week_load": 1.28,
           "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 0.7
         },
@@ -641,7 +641,7 @@
     "p_max": 991,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-12T08:51:10.739122",
+    "calculation_timestamp": "2026-09-12T12:43:02.589606",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -4360,17 +4360,18 @@
   ],
   "planned_workouts": [
     {
-      "id": 134778787,
+      "id": 135620686,
       "date": "2026-09-12",
-      "name": "Monsal Head Recon",
+      "name": "VO2 Max (2x2 @ 159%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 90,
-      "duration_hours": 1.53,
-      "duration_formatted": "1h32m",
-      "workout_summary": null,
+      "planned_tss": 131,
+      "duration_hours": 2.3,
+      "duration_formatted": "2h18m",
+      "workout_summary": "10m @103W | 8m @199W | 3m @100W | 3\u00d71m @239W / 1m rec | 30s @400W | 2m @100W | 30s @400W | 8m @100W | 2m @400W | 20m @126W | 2m @400W | 10m @126W | 1h @163W | 5m @126W",
       "has_terrain": false,
-      "description": "- Warmup 30m 60%\n- Recon Lap 3m 75%\n- Recovery 15m 50%\n- Effort 1 2m 159%\n- Recovery 20m 50%\n- Effort 2 2m 159%\n- Cooldown 20m 55%"
+      "indoor": true,
+      "description": "- Easy 10m ramp 32%-50%\n- Steady 8m 79%\n- Easy 3m 40%\n- Primer 1 1m 95%\n- Easy 1m 40%\n- Primer 2 1m 95%\n- Easy 1m 40%\n- Primer 3 1m 95%\n- Easy 2m 40%\n- Opener 1 30s 159%\n- Easy 2m 40%\n- Opener 2 30s 159%\n- Easy 8m 40%\n- Effort 1 2m 159%\n- Recovery 20m 50%\n- Effort 2 2m 159%\n- Recovery 10m 50%\n- Endurance 60m 65%\n- Cooldown 5m 50%"
     },
     {
       "id": 134775702,
@@ -4466,17 +4467,18 @@
       "description": "- Recovery 60m 55%"
     },
     {
-      "id": 134775708,
+      "id": 135620687,
       "date": "2026-09-20",
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 69,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 105,
+      "duration_hours": 2.5,
+      "duration_formatted": "2h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- Endurance 90m 68%"
+      "indoor": true,
+      "description_preview": "- Endurance 150m 65%"
     },
     {
       "id": 134777789,
@@ -4662,11 +4664,11 @@
   ],
   "workout_summary_stats": {
     "attempted": 15,
-    "success": 7,
+    "success": 8,
     "patternA": 0,
-    "patternB": 7,
+    "patternB": 8,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 8
+    "bail_no_match": 7
   },
   "weekly_summary": {
     "total_training_hours": 6.76,
