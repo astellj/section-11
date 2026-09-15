@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-15T20:27:28.345182",
+    "last_updated": "2026-09-15T23:07:01.446461",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -249,7 +249,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4688,
+      "steps": 4923,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -594,12 +594,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.4,
+          "planned_tss_delta": 1.36,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 3,
           "race_proximity": 12,
-          "next_week_load": 1.23,
+          "next_week_load": 1.28,
           "plan_coverage_current_week": 0.8,
           "plan_coverage_next_week": 0.7
         },
@@ -634,7 +634,7 @@
     "p_max": 991,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-15T20:27:28.344342",
+    "calculation_timestamp": "2026-09-15T23:07:01.445260",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -676,15 +676,15 @@
       "work_kj": 839.8,
       "calories": 801,
       "carbs_used": 256,
-      "carbs_ingested": null,
+      "carbs_ingested": 0,
       "variability_index": 1.2874252,
       "decoupling": -3.1821647,
       "efficiency_factor": 1.4827586,
       "hrrc": 23,
       "elevation_m": 367.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 2,
+      "rpe": 9,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2258,
@@ -706,13 +706,16 @@
         }
       },
       "has_intervals": true,
-      "has_dfa": false
+      "has_dfa": false,
+      "chat_notes": [
+        "Felt like I couldn't get my heart rate up into the appropriate zone again. My legs were burning though, I don't think I could have pushed necessarily much harder earlier on in the session."
+      ]
     },
     {
       "id": "i186842585",
       "date": "2026-09-15T07:34:40",
       "type": "Padel",
-      "name": "Morning Padel",
+      "name": "Padel",
       "duration_hours": 0.92,
       "distance_km": 0.23,
       "tss": 24,
@@ -763,7 +766,7 @@
       "id": "i186671460",
       "date": "2026-09-14T17:27:56",
       "type": "Walk",
-      "name": "Afternoon Walk",
+      "name": "Walk",
       "duration_hours": 0.47,
       "distance_km": 2.35,
       "tss": 8,
@@ -4453,7 +4456,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4688,
+      "steps": 4923,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4485,13 +4488,13 @@
       "name": "Endurance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 73,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 61,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
       "workout_summary": null,
       "has_terrain": false,
       "indoor": true,
-      "description": "- Endurance 90m 70%"
+      "description": "- Endurance 75m 70%"
     },
     {
       "id": 134777787,
@@ -4518,6 +4521,9 @@
       "duration_formatted": "1h24m20s",
       "workout_summary": "30m @151W | 20s @151W | 4\u00d72m @390W / 7m rec",
       "has_terrain": false,
+      "coach_notes": [
+        "Stop-rule: rep 1 at 380 W, reps 2-4 at 390-395 W. If rep 3 averages under 370 W, skip rep 4 - quality per rep beats completion in this block. This IS the session where HR is the scorecard: expect 185-190 bpm by reps 3-4. Reference: 12 Sep 2x2 gave 393 W then 383 W, fresher and with no strength that morning. Today: TSB approx -25, Strength A AM."
+      ],
       "indoor": true,
       "description": "- Warmup 30m 60%\n- Standing Start 20s 60%\n- Hill Rep 1 2m 155%\n- Recovery 7m 50%\n- Hill Rep 2 2m 155%\n- Recovery 7m 50%\n- Hill Rep 3 2m 155%\n- Recovery 7m 50%\n- Hill Rep 4 2m 155%\n- Cooldown 25m 55%"
     },
@@ -4593,15 +4599,19 @@
     {
       "id": 134829634,
       "date": "2026-09-22",
-      "name": "VO2 Max (3x(13x30/15s) @ 127/50%)",
+      "name": "VO2 Max (3x(15x30/15s) @ 131/50%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 93,
-      "duration_hours": 1.32,
-      "duration_formatted": "1h19m30s",
-      "workout_summary": "25m @151W | 14\u00d730s @320W / 15s rec | 13\u00d730s @320W / 15s rec | 12\u00d730s @320W / 15s rec",
+      "planned_tss": 109,
+      "duration_hours": 1.37,
+      "duration_formatted": "1h22m",
+      "workout_summary": "10m @113W | 8m @199W | 3m @100W | 1m @239W | 1m @100W | 1m @239W | 2m @100W | 30s @352W | 2m @100W | 30s @352W | 4m @151W | 16\u00d730s @330W / 15s rec | 15\u00d730s @330W / 15s rec | 14\u00d730s @330W / 15s rec",
       "has_terrain": false,
-      "description": "- Warmup 25m 60%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Set Recovery 3m 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Set Recovery 3m 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Recovery 15s 50%\n- Work 30s 127%\n- Cooldown 20m 55%"
+      "coach_notes": [
+        "Hold the 15s floats at 125 W. Do not coast below 110 W"
+      ],
+      "indoor": true,
+      "description": "- Easy 10m 45%\n- Steady 8m 79%\n- Easy 3m 40%\n- Primer 1 1m 95%\n- Easy 1m 40%\n- Primer 2 1m 95%\n- Easy 2m 40%\n- Opener 1 30s 140%\n- Easy 2m 40%\n- Opener 2 30s 140%\n- Easy 4m 60%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Set Recovery 3m 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Set Recovery 3m 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Recovery 15s 50%\n- Work 30s 131%\n- Cooldown 10m 40%"
     },
     {
       "id": 134829635,
