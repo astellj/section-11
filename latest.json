@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-17T19:18:00.799831",
+    "last_updated": "2026-09-17T22:21:22.375869",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -253,7 +253,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2655,
+      "steps": 3628,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -604,7 +604,7 @@
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 3,
           "race_proximity": 10,
-          "next_week_load": 1.26,
+          "next_week_load": 1.2,
           "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 0.7
         },
@@ -639,7 +639,7 @@
     "p_max": 991,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-17T19:18:00.798625",
+    "calculation_timestamp": "2026-09-17T22:21:22.374697",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -681,15 +681,15 @@
       "work_kj": 597.7,
       "calories": 569,
       "carbs_used": 270,
-      "carbs_ingested": null,
+      "carbs_ingested": 0,
       "variability_index": 1.640625,
       "decoupling": 19.382895,
       "efficiency_factor": 1.5555556,
       "hrrc": 26,
       "elevation_m": 273.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 4,
+      "rpe": 7,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2961,
@@ -711,7 +711,10 @@
         }
       },
       "has_intervals": true,
-      "has_dfa": false
+      "has_dfa": false,
+      "chat_notes": [
+        "Really couldn't get into this session. Legs just didn't feel like they had it, and then mentally, halfway through the second rep, I just lost it and I really struggled to motivate for the final two"
+      ]
     },
     {
       "id": "i187291976",
@@ -4282,7 +4285,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2655,
+      "steps": 3628,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4413,15 +4416,15 @@
     {
       "id": 134829636,
       "date": "2026-09-24",
-      "name": "Anaerobic (4x2 @ 161%)",
+      "name": "Anaerobic (4x2 @ 141%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 114,
+      "planned_tss": 92,
       "duration_hours": 1.41,
       "duration_formatted": "1h24m20s",
-      "workout_summary": "30m @151W | 20s @151W | 4\u00d72m @405W / 7m rec",
+      "workout_summary": "30m @151W | 20s @151W | 4\u00d72m @355W / 7m rec",
       "has_terrain": false,
-      "description": "- Warmup 30m 60%\n- Standing Start 20s 60%\n- Hill Rep 1 2m 161%\n- Recovery 7m 50%\n- Hill Rep 2 2m 161%\n- Recovery 7m 50%\n- Hill Rep 3 2m 161%\n- Recovery 7m 50%\n- Hill Rep 4 2m 161%\n- Cooldown 25m 55%"
+      "description": "- Warmup 30m 60%\n- Standing Start 20s 60%\n- Hill Rep 1 2m 141%\n- Recovery 7m 50%\n- Hill Rep 2 2m 141%\n- Recovery 7m 50%\n- Hill Rep 3 2m 141%\n- Recovery 7m 50%\n- Hill Rep 4 All Out 2m 141%\n- Cooldown 25m 55%"
     },
     {
       "id": 134775713,
@@ -4451,13 +4454,13 @@
     {
       "id": 134775715,
       "date": "2026-09-29",
-      "name": "Anaerobic (3x90s @ 159%)",
+      "name": "Anaerobic (3x90s @ 149%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 60,
+      "planned_tss": 53,
       "duration_hours": 0.74,
       "duration_formatted": "44m30s",
-      "workout_summary": "20m @151W | 3\u00d71m30s @400W / 5m rec",
+      "workout_summary": "20m @151W | 3\u00d71m30s @375W / 5m rec",
       "has_terrain": false
     },
     {
