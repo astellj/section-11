@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-17T06:09:13.074917",
+    "last_updated": "2026-09-17T11:43:25.452983",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -253,7 +253,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1160,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -598,7 +598,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.01,
+          "planned_tss_delta": 0.99,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
@@ -638,7 +638,7 @@
     "p_max": 991,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-17T06:09:13.073978",
+    "calculation_timestamp": "2026-09-17T11:43:25.452140",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -4182,7 +4182,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2354,
+      "steps": 3311,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4221,7 +4221,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1160,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4239,16 +4239,16 @@
       "name": "VO2 Max (4x2 @ 155%)",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 107,
-      "duration_hours": 1.41,
-      "duration_formatted": "1h24m20s",
-      "workout_summary": "30m @151W | 20s @151W | 4\u00d72m @390W / 7m rec",
+      "planned_tss": 103,
+      "duration_hours": 1.3,
+      "duration_formatted": "1h18m",
+      "workout_summary": "10m @103W | 8m @199W | 3m @100W | 3\u00d71m @239W / 1m rec | 30s @352W | 2m @100W | 30s @352W | 8m @100W | 2m @380W | 7m @100W | 3\u00d72m @390W / 7m rec",
       "has_terrain": false,
       "coach_notes": [
         "Stop-rule: rep 1 at 380 W, reps 2-4 at 390-395 W. If rep 3 averages under 370 W, skip rep 4 - quality per rep beats completion in this block. This IS the session where HR is the scorecard: expect 185-190 bpm by reps 3-4. Reference: 12 Sep 2x2 gave 393 W then 383 W, fresher and with no strength that morning."
       ],
       "indoor": true,
-      "description": "- Warmup 30m 60%\n- Standing Start 20s 60%\n- Hill Rep 1 2m 155%\n- Recovery 7m 50%\n- Hill Rep 2 2m 155%\n- Recovery 7m 50%\n- Hill Rep 3 2m 155%\n- Recovery 7m 50%\n- Hill Rep 4 2m 155%\n- Cooldown 25m 55%"
+      "description": "- Easy 10m ramp 32%-50%\n- Steady 8m 79%\n- Easy 3m 40%\n- Primer 1 1m 95%\n- Easy 1m 40%\n- Primer 2 1m 95%\n- Easy 1m 40%\n- Primer 3 1m 95%\n- Easy 2m 40%\n- Opener 1 30s 140%\n- Easy 2m 40%\n- Opener 2 30s 140%\n- Easy 8m 40%\n- Hill Rep 1 2m 151%\n- Recovery 7m 40%\n- Hill Rep 2 2m 155%\n- Recovery 7m 40%\n- Hill Rep 3 2m 155%\n- Recovery 7m 40%\n- Hill Rep 4 2m 155%\n- Cooldown 10m ramp 50%-35%"
     },
     {
       "id": 134777787,
