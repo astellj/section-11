@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-21T13:43:44.001683",
+    "last_updated": "2026-09-21T18:55:19.289015",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -256,7 +256,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1350,
+      "steps": 3552,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -645,7 +645,7 @@
     "p_max": 989,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-21T13:43:44.000503",
+    "calculation_timestamp": "2026-09-21T18:55:19.287918",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -687,14 +687,14 @@
       "work_kj": 549.8,
       "calories": 524,
       "carbs_used": 147,
-      "carbs_ingested": null,
+      "carbs_ingested": 0,
       "variability_index": 1.0472972,
       "decoupling": 2.3225904,
       "efficiency_factor": 1.1832061,
       "hrrc": null,
       "elevation_m": 257.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 2,
+      "rpe": 2,
       "effort_response": null,
       "zone_distribution": {
         "hr_zones": {
@@ -3829,7 +3829,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1350,
+      "steps": 3552,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3900,20 +3900,6 @@
       "description": "- Endurance 90m 70%"
     },
     {
-      "id": 134777790,
-      "date": "2026-09-24",
-      "name": "Strength B",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "indoor": true,
-      "description": ""
-    },
-    {
       "id": 134829636,
       "date": "2026-09-24",
       "name": "Anaerobic (4x2 @ 141%)",
@@ -3937,6 +3923,20 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "has_terrain": false,
+      "description": ""
+    },
+    {
+      "id": 134777790,
+      "date": "2026-09-27",
+      "name": "Strength B",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "indoor": true,
       "description": ""
     },
     {
