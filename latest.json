@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-22T11:57:44.408774",
+    "last_updated": "2026-09-22T16:47:03.447711",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -256,7 +256,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1623,
+      "steps": 2259,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -603,12 +603,12 @@
         },
         "stream_2": {
           "planned_tss_delta": 1.41,
-          "hard_sessions_planned": 2,
+          "hard_sessions_planned": 3,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 2,
+          "current_week_hard_days_total": 3,
           "race_proximity": 12,
           "next_week_load": 0.42,
-          "plan_coverage_current_week": 0.78,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.78
         },
         "data_quality": "good",
@@ -644,13 +644,13 @@
     "p_max": 988,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-22T11:57:44.407584",
+    "calculation_timestamp": "2026-09-22T16:47:03.446648",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
       "activities_7d": 7,
       "activities_28d": 38,
-      "planned_workouts_7d": 9,
+      "planned_workouts_7d": 11,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 148
@@ -662,7 +662,7 @@
       "id": "i189115792",
       "date": "2026-09-22T08:49:16",
       "type": "WeightTraining",
-      "name": "Morning Weight Training",
+      "name": "Strength A",
       "duration_hours": 1.37,
       "distance_km": 0.0,
       "tss": 22,
@@ -3879,7 +3879,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1623,
+      "steps": 2259,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3919,8 +3919,39 @@
       "coach_notes": [
         "Floats 165 W - do not coast below 150 W. Reps: highest average you can hold for all 39."
       ],
-      "indoor": true,
       "description": "- Easy 10m 45%\n- Steady 8m 79%\n- Easy 3m 40%\n- Primer 1 1m 95%\n- Easy 1m 40%\n- Primer 2 1m 95%\n- Easy 2m 40%\n- Opener 1 30s 140%\n- Easy 2m 40%\n- Opener 2 30s 140%\n- Easy 4m 60%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Set Recovery 3m 50%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Set Recovery 3m 50%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Cooldown 10m 40%"
+    },
+    {
+      "id": 138071982,
+      "date": "2026-09-22",
+      "name": "Activations",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "coach_notes": [
+        "Temp device workout - delete after the ride."
+      ],
+      "description": "- Ready - Lap to start 2m 50%\n- Steady 8m 79%\n- Easy 3m 40%\n- Primer 1 1m 95%\n- Easy 1m 40%\n- Primer 2 1m 95%\n- Easy 2m 40%\n- Opener 1 30s 140%\n- Easy 2m 40%\n- Opener 2 30s 140%\n- Easy 5m 60%"
+    },
+    {
+      "id": 138071983,
+      "date": "2026-09-22",
+      "name": "VO2 Max (13x30/15s @ 131/65%)",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": "2m @126W | 13\u00d730s @330W / 15s rec",
+      "has_terrain": false,
+      "coach_notes": [
+        "Temp device workout - run 3x, delete after the ride. Floats 165 W."
+      ],
+      "description": "- Ready - Lap to start 2m 50%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%\n- Recovery 15s 65%\n- Work 30s 131%"
     },
     {
       "id": 134829635,
@@ -4082,12 +4113,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 7,
-    "success": 4,
+    "attempted": 9,
+    "success": 5,
     "patternA": 0,
-    "patternB": 4,
+    "patternB": 5,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 8.6,
