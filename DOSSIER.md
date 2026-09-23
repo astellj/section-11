@@ -1,8 +1,8 @@
 # Athlete Training Dossier & Performance Roadmap
 
-**Dossier Version:** v1.1.2  
+**Dossier Version:** v1.3.1  
 **Protocol Compatibility:** Section 11 v11.6+  
-**Date:** 2026-05-12 
+**Date:** 2026-09-09 
 **Primary Source Systems:** Intervals.icu
 
 ---
@@ -14,9 +14,9 @@
 | Field | Value |
 |-------|-------|
 | Name | James |
-| Age | 25 |
+| Age | 26 |
 | Height | 180cm |
-| Current Weight | 66.5kg |
+| Current Weight | 68.6kg |
 | Target Weight | 68kg |
 | Location | United Kingdom |
 
@@ -36,9 +36,10 @@
 | 4w/kg FTP                              | Before end of 2026 |
 | 100 mile ride (informal, with friends) | Before end of 2026 |
 | Complete hard sportive (TBD)           | Late 2026          |
+| **Monsal Head hill climb — first hill climb event** | **2026-10-04** |
 
-**Current Phase:** Build Block 1 — Threshold + VO₂max (May–Aug 2026)
-**Training Style:** 8–12 hrs/week, 2 hard sessions/week, polarised (VO₂max + Threshold) with weekly long ride
+**Current Phase:** **Hill Climb Block (2026-09-08 → 2026-10-04)** — a 4-week focused block for the Monsal Head hill climb, interrupting the Aug–Oct off-block. See `HILL_CLIMB_PLAN.md` for the live plan. Off-block riding resumes 2026-10-05; winter structured block still planned from ~Nov 2026. Build Block 1 completed 2026-08-09.
+**Training Style:** Structured for the duration of the hill climb block — two quality cycling sessions per week (Tue + Thu PM, stacked on strength days), Z2 filler, Sunday long ride. Strength continues unchanged Tue + Thu AM (`STRENGTH_PLAN.md`). Reverts to unstructured riding by feel from 2026-10-05.
 
 ---
 
@@ -68,7 +69,7 @@
 
 | Modality | Equipment | Purpose |
 |----------|-----------|---------|
-| Strength Training | Barbell, dumbbells, squat rack, bench (home garage) | Injury prevention (back pain, knee history), on-bike force production, leg hypertrophy |
+| Strength Training | Home garage. Barbell + plates incl. micro plates (0.5 kg); adjustable dumbbells to 30 kg+ per hand; squat rack (**no safety bars / spotter arms**); adjustable incline bench; resistance bands (red/blue/black) + fixed anchor; box/step; ab wheel | Lower-body hypertrophy (quads and calves), general strength, trunk endurance for on-bike position |
 
 ### Environment
 
@@ -88,9 +89,17 @@
 
 ### Normal Weekly Schedule
 
-Schedule is irregular — weekends away are common, working pattern varies. No fixed day-by-day plan. Build each week from the session pool below. The table below is an **ideal week template**, not a fixed prescription.
+Schedule is irregular — weekends away are common, working pattern varies. No fixed day-by-day plan. Both the rules and the templates below come in two sets: the **off-block** set applies now (Aug–Oct 2026), and the **structured-block** set returns with the winter block (~Nov 2026). Templates are guides, not fixed prescriptions.
 
-**Rules:**
+> **Superseded 2026-09-08 → 2026-10-04 by the hill climb block** (`HILL_CLIMB_PLAN.md`). The off-block rules below resume on 2026-10-05.
+
+**Off-block rules (suspended until 2026-10-05):**
+- Strength Tue + Thu AM is the only fixed commitment. Do not skip it — it is the block's primary stimulus.
+- Ride when you want to, as hard as you want to. No intensity distribution target, no weekly volume target.
+- If a hard ride lands the same day as strength: strength first, ≥6h gap, and cut a set rather than cutting load.
+- Keep one genuinely easy or off day after the Saturday group ride.
+
+**Structured-block rules (return ~Nov 2026):**
 - 1 long ride every week (cornerstone — do not skip)
 - Maximum 2 hard cycling sessions per week (evidence: Seiler 2010 — a third hard session increases fatigue without proportional adaptation gain)
 - No back-to-back hard sessions
@@ -99,16 +108,46 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 - Primary cycling window: weekday evenings (WFH 4/5 days). Early mornings are low motivation and not a reliable window.
 - **Hard days hard, easy days easy (polarised principle):** the 80% of weekly training time at Z1–Z2 must be *done as volume*, not skipped. "Easy days easy" means easy intensity (Z1–Z2 spinning), not full rest. Stack stress days (strength + hard cycling on Tue/Thu) so the remaining days can be genuinely aerobic without driving fatigue. Evidence: Seiler 2010, Stöggl & Sperlich 2014.
 - **Strength stacks with hard cycling on Tue + Thu:** consolidates stress days, frees Mon/Wed/Fri/Sun for aerobic volume or rest. Evidence: Schumann et al. 2014/2017, Rønnestad 2014 — same-day concurrent training preserves both adaptations and reduces total weekly stress days vs scattered placement.
-- **Strength order on combined days: AM strength → ≥6h gap → PM cycling.** Reasons: (1) form integrity for injury prevention (knee + back history) requires fresh legs for strength; (2) long-term cycling adaptation is preserved with ≥6h gap (Robineau 2016 — 3–5% acute PM power drop, no FTP cost across weeks); (3) practical — evenings are the established cycling window. Carve-out: skip strength on FTP test days, race days, or after a flagged-readiness morning.
+- **Strength order on combined days: AM strength → ≥6h gap → PM cycling.** Reasons: (1) form integrity and load quality require fresh legs for strength; (2) long-term cycling adaptation is preserved with ≥6h gap (Robineau 2016 — 3–5% acute PM power drop, no FTP cost across weeks); (3) practical — evenings are the established cycling window. Carve-out: skip strength on FTP test days, race days, or after a flagged-readiness morning.
 - **The genuine rest day is Friday** (pre-cornerstone-long-ride freshness), not Sunday. A Z2 long ride is glycogen-depleting, not catabolic — Sunday Z1–Z2 spin aids recovery and adds aerobic volume without compromising Tuesday's hard day. Total weekly volume target (8–12 h) requires Sun + Mon to carry Z1–Z2 work, not be sat out.
+
+**Off-block (current, Aug–Oct 2026).** Only the two strength sessions are fixed. Riding fills in around them by feel and weather.
+
+| Day | Session | Duration | Notes |
+|-----|---------|----------|-------|
+| Sunday | Ride as desired | — | — |
+| Monday | Ride as desired / rest | — | — |
+| Tuesday | **Strength — Heavy Lower (AM)** | ~80 min | Fixed. Ride PM optional; ≥6h gap if hard |
+| Wednesday | Ride as desired / rest | — | — |
+| Thursday | **Strength — Hinge & Quad Volume (AM)** | ~79 min | Fixed. Ride PM optional; ≥6h gap if hard |
+| Friday | Ride as desired / rest | — | — |
+| Saturday | Group ride / long ride | — | Typically the hardest day of the week |
+
+> When strength and riding conflict during the off-block, **riding gives way** — strength is the stimulus with a goal attached. This reverses during the winter structured block.
+
+**Hill Climb Block template (active 2026-09-08 → 2026-10-04).** Full calendar in `HILL_CLIMB_PLAN.md`.
+
+| Day | Primary Session | Notes |
+|-----|-----------------|-------|
+| Sunday | Long ride Z2 (weather dependent) | Replaced by the Monsal dress rehearsal on 27 Sep |
+| Monday | Rest | — |
+| Tuesday | **Strength (AM)** + **MAP 30/15s (PM)** | ≥6h gap |
+| Wednesday | Z2 endurance 60′ | — |
+| Thursday | **Strength (AM)** + **2-min hill reps (PM)** | ≥6h gap; outdoor, on gradient |
+| Friday | Rest | — |
+| Saturday | Easy / openers | Monsal recon on 12 Sep |
+
+> Threshold and sweet spot are deliberately absent for this block — wrong energy systems for a ~2-minute effort, and they cost the freshness it needs. FTP is not a target until the winter block.
+
+**Structured-block template (returns ~Nov 2026)** — retained for reference:
 
 | Day | Primary Session | Duration | Secondary |
 |-----|-----------------|----------|-----------|
 | Sunday | Z1–Z2 Recovery Spin (or rest if Sat was ≥4h) | 45–90 min | Flush glycogen, light aerobic volume |
 | Monday | Z2 Endurance (or rest if Sun was 90'+) | 60–90 min | Aerobic base — Z2 is sub-threshold, doesn't compromise Tue |
-| Tuesday | **Strength A (AM)** + **Hard: VO₂max (PM)** | 45–60 min strength · 75–90 min cycling | ≥6h gap between sessions |
+| Tuesday | **Strength (AM)** + **Hard: VO₂max (PM)** | 45–75 min strength · 75–90 min cycling | ≥6h gap between sessions |
 | Wednesday | Z2 Endurance (optional) | 60–75 min or rest | — |
-| Thursday | **Strength B (AM)** + **Hard: Threshold (PM)** | 45–60 min strength · 75–90 min cycling | ≥6h gap between sessions |
+| Thursday | **Strength (AM)** + **Hard: Threshold (PM)** | 45–75 min strength · 75–90 min cycling | ≥6h gap between sessions |
 | Friday | **Rest or Z1 Recovery Spin** (pre-long-ride freshness — the genuine rest day) | rest or 30–45 min | — |
 | Saturday | Long Ride (cornerstone) | 2–5 h | — |
 
@@ -122,8 +161,8 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 | Endurance / Z2 | 56–75% FTP (141–189W); HR Z2 | 60–120 min steady | Aerobic base; fat oxidation; recovery between hard sessions |
 | Long Ride | Z2 primarily (NP 141–189W); HR <75% max | 3–5 h | Weekly cornerstone; durability; fat adaptation; 100-mile event preparation |
 | Recovery | <55% FTP (<139W); HR Z1 | 30–60 min | Active recovery; flush fatigue after hard days or long rides |
-| Strength A | Quad / Lower — squat, split squat, hip thrust, Nordic curl, core | 45–60 min | Leg hypertrophy; on-bike force; glute activation for knee and back health |
-| Strength B | Posterior Chain — RDL, step-up, good morning, clamshells, core | 45–60 min | Injury prevention (lower back, knee); hip hinge strength; spinal stability |
+| Strength — Heavy Lower (Tue) | Back squat, Bulgarian split squat, single-leg calf raise + Pallof superset, loaded back extension | ~80 min | Quad and calf hypertrophy; bilateral strength |
+| Strength — Hinge & Quad Volume (Thu) | Barbell RDL, narrow-stance squat, Nordic curl (from 10 Sep), standing + seated calf raise, core superset | ~79 min | Hamstring and calf development; high-rep quad volume |
 
 ### Recovery Protocol
 
@@ -168,8 +207,9 @@ Schedule is irregular — weekends away are common, working pattern varies. No f
 
 
 **Current FTP:** 252W (Indoor: 252W, tested 2026-05-12)
-**Max HR:** 196 bpm
-**Threshold HR:** Unknown (no LTHR test)
+**Max HR:** 195 bpm (highest observed 192; was listed as 196 — aligned to `ZONES.md` and intervals.icu)
+**Threshold HR (LTHR):** **177 bpm** — revised 2026-09-09 from 181. Estimate, not a test; plausible range 175–180, deliberately set conservative. The old 181 came from a 42-min chaingang at 216 W (sweet spot, in heat) and reflected cardiac drift rather than threshold. Zones updated in intervals.icu, Garmin and Strava. See `ZONES.md`.
+**LT1 (aerobic threshold):** ~150 bpm. **Practical cap for endurance rides: ≤150 bpm.**
 
 ### Current Fitness Markers
 
@@ -233,11 +273,16 @@ Protein shake, vegan pea protein mixed with water (if suitable) - ~23g protein p
 
 ### Current Adaptation Focus
 
-- [x] FTP retest completed 2026-05-12: 252W (+8W on previous 244W). Analysis identified that previous block was 83–98% Z1/Z2 with almost no threshold stimulus — the primary cause of modest gain.
-- [ ] 12-week structured Build block begins immediately (2026-05-12). Focus: polarised VO₂max + Threshold (not sweet spot). Target FTP ≥272W by end of block (~Aug 2026).
-- [ ] Establish strength programme 2×/week (injury prevention priority — back and knee history). Strength A (quad/lower) Monday, Strength B (posterior chain) Wednesday.
-- [ ] Hard sessions: outdoor on power meter (Favero Assioma). No Z3 grey zone on hard days — either properly threshold/VO₂max or properly Z2.
-- [ ] FTP retest target: ~Week 13 (early August 2026). Conditions: CTL ≥60, TSB +10 to +15, readiness green.
+- [x] FTP retest completed 2026-05-12: 252W (+8W on previous 244W).
+- [x] Build Block 1 completed 2026-08-09 (12 weeks, polarised VO₂max + Threshold).
+- [x] Strength programme established 2×/week and adhered to — 21 logged sessions May–Aug.
+- [ ] **Off-block through Aug–Oct 2026.** Unstructured riding for enjoyment and motivation. No FTP target, no prescribed intensity distribution. Deliberate reset before the winter block.
+- [ ] **Strength is the priority stimulus this period** — 2×/week, lower body and core, quad and calf hypertrophy focus. See `STRENGTH_PLAN.md`.
+- [ ] Slow lean weight gain: 68.3kg → ~69–70kg by winter, at ~0.2 kg/month. Protein 110–135 g/day.
+- [x] 100-mile ride completed 2026-09-05 — 164 km, 5h46, NP 174W, TSS 275, RPE 9.
+- [ ] **Monsal Head hill climb 2026-10-04 (RACE_A) — current focus.** ~2-minute maximal climb (617 m, 56 m, 9.1% avg, ~20% max, back-loaded). Primary target 2:05 (398 W); stretch 2:00 (417 W). Baseline was 2:14 at 360 W mid-ride on 2026-08-16. Full plan in `HILL_CLIMB_PLAN.md`.
+- [x] Monsal Head entry confirmed 2026-09-08 (CTT). First rider off 11:00.
+- [ ] Winter structured block from ~Nov 2026. FTP retest at block start.
 
 ### Deload Protocol
 
@@ -286,6 +331,7 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 |---------------|------|----------|-------------|--------------|
 | 100-mile informal ride (with friends) | 2026 | A | Completion | Z2 sustainable (137–183W NP) |
 | Hard sportive (TBD) | 2026 | A | Completion | Sustained Z3–Z4 on climbs |
+| **Monsal Head hill climb** | **2026** | **A** | **2:05 (stretch 2:00)** | **398 W (stretch 417 W)** |
 | UK competitive event (type TBD) | 2027 | A | TBD post event selection | TBD |
 
 > **Race tagging for automated protocol activation:** Tag races in Intervals.icu as `RACE_A`, `RACE_B`, or `RACE_C` using the event category selector. The race-week protocol (Section 11A) activates automatically for A and B races within 7 days. C races are training races — no taper adjustments. For best results, also set expected duration (`moving_time`) in the event to enable event-type modifiers (carb loading, opener intensity, TSB targets).
@@ -299,7 +345,13 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 - **Outdoor power meter:** Favero Assioma PRO RS-1 fitted April 2026. Single-sided (left pedal doubles to estimate total). Power targeting now possible outdoors. No formal outdoor FTP test yet — eFTP proxy of 240W is the working reference. Outdoor FTP test recommended post-May events once fatigue clears. Note: single-sided meters assume left/right symmetry; any significant leg imbalance would affect accuracy, but for trend tracking and zone-based guidance this is fit for purpose.
 - **Wellness data:** HRV, sleep, and sleep score auto-synced from Garmin Connect via Intervals.icu. Subjective wellness fields (mood, energy, soreness, RPE, feel) logged manually in Intervals.icu — recovery protocol triggers will become more reliable as this data accumulates.
 - **Coaching style:** Flexible structure. Athlete reorganises sessions around schedule changes frequently — key use case is "how do I rearrange this week to get the most out of it?" Build each week from the session pool; prioritise long ride and 2 hard sessions above everything else.
-- **Strength training:** 2×/week mandatory (injury prevention priority). Current back pain means avoid heavy spinal loading initially — prefer goblet squat, leg press (if available), and hip thrust over loaded back squat until back pain resolves. Strength A (quad/hypertrophy focus): back squat or goblet squat, Bulgarian split squat, hip thrust, Nordic curl/leg curl, calf raises, dead bug + plank. Strength B (posterior chain/injury prevention): Romanian deadlift (conservative load), step-ups, good mornings (very light), clamshells/lateral band walks (hip ER — knee tracking), bird dog + side plank (McGill Big 3). Both sessions 45–60 min, completed in morning or at lunch on double-training days. Progressive overload over 4–6 weeks. For leg hypertrophy: 8–12 rep range, 3–4 working sets, weekly load increase of 2.5–5kg once form is solid. Protein target: ≥1.6g/kg/day (≥106g/day at 66kg) — current recovery shake (23g protein) plus dietary sources.
+- **Strength training (rewritten 2026-08-24 — see `STRENGTH_PLAN.md` for the live plan):** 2×/week, Tuesday and Thursday AM. **Lower body and core only.** Primary goal is hypertrophy of quads and calves ("pro cyclist legs"), with strength carried alongside; secondary goal is trunk endurance for on-bike position. Tuesday = heavy lower (back squat, Bulgarian split squat, hip thrust, standing calf raise). Thursday = hinge and quad volume (barbell RDL, heels-elevated squat, Nordic curl, seated calf raise). Both close with a supersetted core pair. Loading is double progression at RPE 8–9; 0.5 kg micro plates allow fine increments. **Session durations are costed at 3.4 min/set, derived from 21 logged Strong sessions May–Aug 2026** — the previous plan's estimates understated real duration by ~40 min, which is why sessions ran to 1h45. Protein target 110–135 g/day (1.6–2.0 g/kg at 68.3kg) with a ~200–300 kcal surplus to support lean gain.
+- **Strength equipment note:** the rack has **no safety bars**, so bilateral squats are capped at RPE 8 (2 reps in reserve) and are never taken to failure. Spotter arms are the highest-value kit addition. Dumbbell loads in the Strong app are logged as **totals across both hands**, not per hand.
+- **Prior block review (May–Aug 2026):** all lifts progressed — squat 27.5→45kg, Bulgarian split squat 4→17kg, hip thrust 12.5→32.5kg, RDL 15→32kg, step-up 8→20kg (tracked in exercise notes, not the weight field). Hamstring curls were never performed once across the whole block (no workable equipment), and calf raises were limited by balance rather than load — both addressed in the new plan. Good mornings were flagged by the athlete as redundant after RDLs; correct, and dropped.
+- **Hand pressure (reported 2026-08-24):** pain in the hands on longer rides, suspected weight-on-hands. Primarily a fit/weight-distribution issue rather than a strength one. Fit leads: +10mm stem from the January fit, and the new saddle from the April re-fit (tilt/setback may not have carried over). Trainable component is trunk endurance — addressed via bench back extension and ab wheel. Escalate if numbness or tingling persists after riding.
+- **Monsal Head power model (built 2026-09-08, keep for future hill climb planning):** the climb is 617 m / 56 m gain / 9.1% average / ~20% max, and is **back-loaded** — gentle bottom, steepest near the top. A physics model of the course calibrated against the 2026-08-16 effort (2:14 at 360 W, 66.9 kg, mid-ride) **predicted 361 W against an actual 360 W — error +0.2%**. Two takeaways worth keeping: the power targets are trustworthy (2:05 = 398 W, 2:00 = 417 W at 68.6 kg; weight worth ~1.5 s/kg), and **the single-sided Assioma reads true** — no correction factor is needed when modelling his outdoor power. Gearing (52/36 + 11-32) is adequate: the whole climb fits in the small ring, 36×12 at the bottom to 36×32 on the final ramp at ~64 rpm.
+- **Knee risk during the hill climb block (flagged 2026-09-08):** this block stacks heavy squats and split squats (hypertrophy plan continuing unchanged, athlete's explicit decision after the W/kg trade-off was laid out) with maximal low-cadence, high-force, out-of-saddle grinding. Both load the same joint, on a rider with a documented right-knee history. Agreed rules: hill reps build into race gear (comfortable cadence week 2, race gear week 3, no grinding week 1); **any knee pain during a rep ends the session**, not just the rep; no low-cadence work beyond what is prescribed.
+- **Freshening for short maximal events:** the standing B-event rule (arrive semi-fresh, TSB ~−5 to 0, no taper) is for long events and **does not apply to a hill climb**. Anaerobic capacity is highly sensitive to residual fatigue — Monsal gets a real taper, projected TSB +8.7 on race morning.
 - **Back pain (current, 2026-04-28):** Begin strength programme conservatively. Avoid any exercise that aggravates. Prioritise hip hinge mechanics (RDL), glute activation (hip thrust), and core stability (McGill Big 3) — these directly address the most common cycling-related back pain causes (weak posterior chain + poor lumbar stability). If pain persists or worsens during/after strength, pause loaded hip hinge and seek physio assessment.
 
 ---
@@ -318,6 +370,14 @@ Achieve 4 W/kg FTP (≥272W at target weight 68kg) before end of 2026. This unde
 | 2026-04-28 | Dossier created              | Section 11 setup complete                                                          |
 | 2026-04-10 | Bike re-fit completed        | Shim under left foot cleat. New saddle fitted. Monitor comfort on longer sessions. |
 | 2026-05-12 | FTP test                     | 252W indoor. Zwift Standard FTP Test. Previous: 244W (2026-02-01). +8W (+3.3%) in 14.5 weeks. |
+| 2026-08-09 | Build Block 1 completed      | 12-week polarised threshold/VO₂max block ends. 21 strength sessions logged across the block. |
+| 2026-08-10 | Off-block begins             | Unstructured riding through Aug–Oct for motivation and enjoyment. Winter block planned ~Nov. |
+| 2026-08-24 | Strength plan rewritten      | New 2×/week lower-body + core plan. Quad/calf hypertrophy focus. See `STRENGTH_PLAN.md`. Previous plan archived as `STRENGTH_PLAN_ARCHIVE_2026-05_build-block-1.md`. |
+| 2026-08-24 | Knee and back symptom-free   | Athlete reports no knee or back symptoms in recent months. New strength plan written on an injury-free basis. Historical entries retained below for reference. |
+| 2026-08-24 | Hand pain reported           | Pain in hands on longer rides, suspected weight-on-hands. Fit review recommended before 2026-09-05 event. |
+| 2026-09-05 | 100-mile ride completed      | 164 km, 5h46, NP 174W, TSS 275, RPE 9. First 100-miler. Goal was completion — achieved. |
+| 2026-09-08 | Hill climb block begins      | 4-week focused block for Monsal Head (2026-10-04). Off-block suspended. See `HILL_CLIMB_PLAN.md`. |
+| 2026-09-09 | LTHR revised 181 → 177       | Old value derived from a sweet-spot chaingang in heat — measured drift, not threshold. All HR zones shifted −4 bpm across intervals.icu, Garmin and Strava. Lactate testing planned later in 2026 to confirm. See `ZONES.md`. |
 
 ---
 
@@ -362,6 +422,26 @@ This dossier follows the **Section 11 A/B AI Coach Guidance Protocol** for AI in
 ---
 
 ## Changelog
+
+### v1.3.1 (2026-09-09)
+- LTHR revised 181 → 177 (conservative estimate pending lactate testing); LT1 ~155 → ~150; all HR zone boundaries shifted −4 bpm. `ZONES.md` rewritten with the reasoning and the evidence table.
+- §4 Max HR corrected 196 → 195 to match `ZONES.md` and intervals.icu.
+- Endurance rides now capped at ≤150 bpm — holds at or below LT1 across the whole plausible LTHR range.
+
+### v1.3.0 (2026-09-08)
+- New **Hill Climb Block** (2026-09-08 → 2026-10-04) for Monsal Head; supersedes the off-block for four weeks. Plan lives in `HILL_CLIMB_PLAN.md`; 21 sessions pushed to intervals.icu.
+- §1 goals, §6 focus, §8 event targets and §10 timeline updated for the event; 100-mile ride marked complete.
+- §9 coach notes: added the calibrated Monsal power model and the knee-stacking risk for this block.
+- Age corrected 25 → 26; current weight 68.3 → 68.6 kg.
+
+### v1.2.0 (2026-08-24)
+- Build Block 1 marked complete (2026-08-09); phase changed to off-block unstructured riding through Aug–Oct 2026.
+- §3 weekly schedule split into a current off-block template (strength fixed Tue/Thu, riding by feel) and the retained structured-block template for the winter return.
+- §3 Session Details: Strength A/B replaced with the two new sessions.
+- §2 strength equipment inventory expanded to the full confirmed kit list, including the absence of safety bars.
+- §6 adaptation focus rewritten for the off-block period; strength named as the priority stimulus.
+- §9 coach notes: strength section rewritten against `STRENGTH_PLAN.md`; prior-block review added with actual logged progression; hand pressure noted.
+- Current weight updated 66.5kg → 68.3kg.
 
 ### v1.1.2 (2026-05-12)
 - Restructured §3 weekly schedule for polarised "hard days hard, easy days easy" stacking. Strength now combined with hard cycling on Tue + Thu (AM strength → ≥6h gap → PM cycling). Sun = Z1–Z2 recovery spin, Mon = Z2 endurance, Fri = the genuine rest day. Rationale captured inline in §3 Rules. Evidence: Schumann 2014/2017, Rønnestad 2014, Robineau 2016, Seiler 2010, Stöggl & Sperlich 2014.
