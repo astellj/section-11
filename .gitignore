@@ -1,2 +1,6 @@
 .DS_Store
 .sync_config.json
+__pycache__/
+*.py[cod]
+__MACOSX/
+._*
