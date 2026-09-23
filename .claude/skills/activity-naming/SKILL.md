@@ -17,6 +17,7 @@ Standardised activity titles across intervals.icu, Strava, and other platforms.
 - Include intensity as `@ %FTP` (e.g. `@ 112%`) — useful at a glance
 - No raw wattages in the title — use % FTP; structure tells the rest
 - Always use fixed values (no duration/intensity ranges)
+- Modifiers are tacked on at the end in square brackets — see Modifiers below
 - Keep concise where possible
 
 ## Session Types
@@ -73,6 +74,23 @@ Use parentheses: `3x(3x3)` — 3 sets of 3x3-minute intervals.
 Use `/` to encode the over/under pair — two fixed levels, in both the duration and the intensity:
 `2x(6x2/2) @ 105/93%` — 2 sets of 6 reps of (2min over / 2min under), at 105% over / 93% under.
 
+## Modifiers
+
+A modifier is tacked on at the **end**, in square brackets, after the parenthetical. The
+title still reads as its normal session type — the modifier is an annotation on the
+session, not part of its name — so sorting and searching by type still work.
+
+```
+VO2 Max (3x4 @ 105%) [Deload]
+```
+
+| Modifier | Meaning |
+|----------|---------|
+| `[Deload]` | Reduced-load version of the session, run during a deload week |
+
+These square brackets are **literal** — unlike `[Session Type]` in the format above, which
+is a placeholder. A session with no modifier carries no brackets at all.
+
 ## Examples
 
 Each example covers a distinct case:
@@ -82,6 +100,7 @@ Title: Endurance                         # bare label, no structure
 Title: VO2 Max (5x5 @ 112%)              # standard interval + intensity
 Title: Over-Unders (2x(6x2/2) @ 105/93%) # sets within sets + over/under split
 Title: Mixed Intervals 4 sets            # irregular structure
+Title: VO2 Max (3x4 @ 105%) [Deload]     # deload-week variant
 Title: Group Ride                        # unstructured, group-driven
 Title: Free Ride                         # unstructured, solo
 ```
@@ -94,4 +113,5 @@ Title: Free Ride                         # unstructured, solo
 | Intensity | `% FTP` format, e.g. `@ 92%` |
 | Sets within sets | parentheses `3x(3x3)` |
 | Over/under split | slash `2/2`, `105/93%` (two fixed levels) |
+| Modifiers | square brackets at the end, e.g. `[Deload]` |
 | Wattages | never in title |
