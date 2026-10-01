@@ -1,44 +1,10 @@
 {
-  "generated_at": "2026-09-30T23:55:57.192028",
+  "generated_at": "2026-10-01T05:06:53.027457",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i187291976",
-      "date": "2026-09-16",
-      "type": "VirtualRide",
-      "name": "Zwift - Endurance",
-      "interval_summary": [
-        "1x 1h12m 151w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "4341s@151w86rpm",
-          "duration_secs": 4341,
-          "avg_power": 151,
-          "max_power": 319,
-          "avg_hr": 131,
-          "max_hr": 154,
-          "avg_cadence": 86.197296,
-          "zone": 2,
-          "training_load": 44.23222,
-          "decoupling": -0.68734455
-        },
-        {
-          "type": "WORK",
-          "duration_secs": 27,
-          "avg_hr": 97,
-          "max_hr": 111,
-          "avg_cadence": 5.6296296,
-          "zone": 1,
-          "training_load": 0.03654363,
-          "decoupling": "NaN"
-        }
-      ]
-    },
     {
       "activity_id": "i187740430",
       "date": "2026-09-17",
