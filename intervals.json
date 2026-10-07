@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:31:27.586799",
+  "generated_at": "2026-10-07T13:57:51.256748",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1021,6 +1021,27 @@
           "zone": 1,
           "training_load": 4.439988,
           "decoupling": -4.7528267
+        }
+      ]
+    },
+    {
+      "activity_id": "i194646742",
+      "date": "2026-10-07",
+      "type": "VirtualRide",
+      "name": "Zwift - Endurance",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5099,
+          "avg_power": 151,
+          "max_power": 314,
+          "avg_hr": 133,
+          "max_hr": 154,
+          "avg_cadence": 84.31144,
+          "zone": 2,
+          "training_load": 52.10727,
+          "decoupling": -2.075901
         }
       ]
     }
