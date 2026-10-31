@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-31T14:41:09.931157",
+    "last_updated": "2026-10-31T18:47:21.594694",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -201,10 +201,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 59.36,
-      "atl": 97.96,
-      "tsb": -38.6,
-      "ramp_rate": 8.64,
+      "ctl": 56.39,
+      "atl": 81.18,
+      "tsb": -24.79,
+      "ramp_rate": 5.68,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -647,7 +647,7 @@
     "p_max": 963,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 59.0,
-    "calculation_timestamp": "2026-10-31T14:41:09.929983",
+    "calculation_timestamp": "2026-10-31T18:47:21.593527",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -689,15 +689,15 @@
       "work_kj": 2170.4,
       "calories": 2488,
       "carbs_used": 451,
-      "carbs_ingested": null,
+      "carbs_ingested": 169,
       "variability_index": 1.1172839,
       "decoupling": 9.271329,
       "efficiency_factor": 1.2482759,
       "hrrc": null,
       "elevation_m": 1357.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 4624,
@@ -868,7 +868,10 @@
         "clouds_pct": 78,
         "rain": 0.0,
         "snow": 0.0
-      }
+      },
+      "chat_notes": [
+        "Felt pretty done towards the last 45 minutes of the ride."
+      ]
     },
     {
       "id": "i203692665",
