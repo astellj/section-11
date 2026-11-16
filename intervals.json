@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T01:17:56.199402",
+  "generated_at": "2026-11-16T08:23:09.249934",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -147,6 +147,34 @@
           "zone": 1,
           "training_load": 4.673611,
           "decoupling": -10.415857
+        }
+      ]
+    },
+    {
+      "activity_id": "i210601859",
+      "date": "2026-11-16",
+      "type": "EBikeRide",
+      "name": "E-Bike Ride",
+      "interval_summary": [
+        "1x 31m59s 78bpm",
+        "1x 4s 88bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1919s@78bpm",
+          "duration_secs": 1919,
+          "avg_hr": 78,
+          "max_hr": 122,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "4s@88bpm",
+          "duration_secs": 4,
+          "avg_hr": 88,
+          "max_hr": 89,
+          "zone": 1
         }
       ]
     }
