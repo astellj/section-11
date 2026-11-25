@@ -6,10 +6,16 @@ Read and write tools for runtimes that can execute code or trigger GitHub Action
 |------|---------|
 | `push.py` | **Write** to Intervals.icu: manage planned workouts (push, list, move, delete), update sport-specific thresholds, annotate activities |
 | `pull.py` | **Read** raw Intervals.icu data on demand: per-second activity streams (latlng, altitude, watts, HR, …) and athlete unit preferences. Used when `terrain_summary`/`weather_summary` in `latest.json` aren't enough and the AI needs the underlying GPS/sensor track |
-| `EXTERNAL_APIS.md` | Endpoint reference for the external APIs used by the agentic platform: Strava, MET Norway (yr.no), Open-Meteo, Intervals.icu streams + weather |
+| `EXTERNAL_APIS.md` | Endpoint reference for Strava, MET Norway (yr.no), Open-Meteo and Intervals.icu streams + weather; planned-route forecasts come from sync.py's brief and maps |
 | [fit-file-and-merger/](fit-file-and-merger/) | Documentation for a multi-source FIT workflow: rewrite a virtual-ride FIT to a trainer identity, merge head-unit donor streams into it, upload to Garmin, re-check the stored result, then remove source duplicates. Cleanup gates and post-delete confirmation differ per platform, and current gaps are documented alongside them. Cycling-tested. Documentation only, no scripts published |
 
-`push.py` requires safety preview/confirm. `pull.py` is read-only and has no confirm gate.
+The `push.py` CLI requires safety preview/confirm. `pull.py` is read-only and has no confirm gate.
+
+For local use, run the examples below from your data folder using the managed
+tools in `section11/examples/agentic/`. The local installer removes root `push.py`
+and `pull.py`; update external commands and Python imports to these paths.
+Personal overrides are explicit choices, not root-file precedence. The GitHub
+dispatch setup below is a separate workflow installation.
 
 ---
 
@@ -19,13 +25,13 @@ Write, read, move, delete, and annotate planned workouts on an athlete's Interva
 
 ### Safety: Preview by Default
 
-All write operations (push, move, delete, set-threshold, annotate) default to **preview mode**. Nothing is written unless you add `--confirm`.
+All CLI write operations (push, move, delete, set-threshold, annotate) default to **preview mode**. Nothing is written unless you add `--confirm`.
 
 **Agent rule:** Always run without `--confirm` first. Show the preview to the athlete. Add `--confirm` only after the athlete approves.
 
 ```bash
 # Step 1: Agent runs preview
-python push.py push --json week.json
+python3 section11/examples/agentic/push.py push --json week.json
 # → Returns preview JSON showing what WOULD be pushed
 
 # Step 2: Agent shows athlete the summary
@@ -33,13 +39,13 @@ python push.py push --json week.json
 # Step 3: Athlete says "looks good" / "go" / "yes" / etc.
 
 # Step 4: Agent runs with --confirm
-python push.py push --json week.json --confirm
+python3 section11/examples/agentic/push.py push --json week.json --confirm
 # → Actually writes to calendar
 ```
 
 Read operations (`list`) have no safety gate. They never modify anything.
 
-**Scope:** All write operations (push, move, delete) operate on planned events only (future calendar items). Completed activities and training history cannot be modified or deleted through push.py.
+**Scope:** Push, move and delete operate on planned events only. Annotate can add notes to completed activities or planned events; set-threshold updates sport-specific settings. Completed activities cannot be moved or deleted through push.py.
 
 ### Setup
 
@@ -47,9 +53,14 @@ Read operations (`list`) have no safety gate. They never modify anything.
 
 For anyone already running auto-sync. Uses the same `ATHLETE_ID` and `INTERVALS_KEY` secrets (zero new credential setup).
 
-1. Copy `push.py` to your data repo root (next to `sync.py`)
-2. Copy `push-workout.yml` to `.github/workflows/push-workout.yml`
-3. Done. Your agent triggers the workflow via GitHub API dispatch.
+1. Complete the [verified GitHub installation](../json-auto-sync/SETUP.md) first.
+2. Copy the thin `push-workout.yml` to `.github/workflows/push-workout.yml`.
+3. Your agent uses the existing workflow dispatch URL and inputs. The stub calls
+   `section11/examples/agentic/push.py`; no root tool copy is kept.
+
+The managed dispatcher preserves the v0.8 inputs. Its optional `time` input is strict local HH:MM for `command: move`. Keep `date` equal to the event's current date to change only the time; leave `time` empty to preserve the existing time. It validates a nonempty time before invoking the command and rejects that input for other commands. For `command: push`, put `"time": "09:30"` inside each workout in the `workouts` JSON instead; omission still writes unset midnight.
+
+For example, dispatch inputs `{"command":"move","event_id":"42","date":"2026-10-20","time":"09:30","confirm":"false"}` preview that update. Read the result and obtain user confirmation before dispatching the same change with `confirm: "true"`. Replace the illustrative event/date with the verified planned event. Existing pre-read, one-attempt writes and outcome verification remain in push.py; an unknown result is not permission to dispatch again.
 
 **How the agent triggers it (Python):**
 
@@ -60,6 +71,7 @@ workouts = [
     {
         "name": "Sweet Spot 3x15",
         "date": "2026-03-10",
+        "time": "09:30",
         "type": "Ride",
         "description": "- 15m 55%\n\n3x\n- 15m 88-92%\n- 5m 55%\n\n- 10m 50%",
         "duration_minutes": 85,
@@ -97,41 +109,41 @@ For agents running locally with direct filesystem access.
 
 ```bash
 # Single workout (preview)
-python push.py push --name "Sweet Spot 3x15" --date 2026-03-10 --type Ride \
+python3 section11/examples/agentic/push.py push --name "Sweet Spot 3x15" --date 2026-03-10 --type Ride \
   --description "- 15m 55%\n\n3x\n- 15m 88-92%\n- 5m 55%\n\n- 10m 50%" \
   --duration 85 --tss 75
 
 # Batch from JSON file (execute)
-python push.py push --json week.json --confirm
+python3 section11/examples/agentic/push.py push --json week.json --confirm
 ```
 
 Credentials loaded from (first match wins):
 1. CLI args: `--athlete-id`, `--api-key`
-2. `.sync_config.json` in working directory (same file sync.py uses)
+2. `.sync_config` in working directory (same file sync.py uses)
 3. Environment: `ATHLETE_ID`, `INTERVALS_KEY`
 
-`ATHLETE_ID` must include the leading `i`, e.g. `i<ATHLETE_NUMBER>`, not `<ATHLETE_NUMBER>`. `INTERVALS_KEY` is the raw API key string from Intervals.icu → Settings → Developer.
+`ATHLETE_ID` must match the ID shown in Intervals.icu Settings exactly: usually `i` followed by digits (`i<ATHLETE_NUMBER>`), or digits only (`<ATHLETE_NUMBER>`) for some early accounts. Don't add or remove the `i`. `INTERVALS_KEY` is the raw API key string from Intervals.icu → Settings → Developer.
 
 ```bash
 # CLI flags
-python push.py list --athlete-id i123456 --api-key abc123...
+python3 section11/examples/agentic/push.py list --athlete-id i123456 --api-key abc123...
 
 # Env vars
 export ATHLETE_ID=i123456
 export INTERVALS_KEY=abc123...
-python push.py list
+python3 section11/examples/agentic/push.py list
 
-# .sync_config.json (next to push.py)
+# .sync_config (in the data folder)
 # {"athlete_id": "i123456", "intervals_key": "abc123..."}
-python push.py list
+python3 section11/examples/agentic/push.py list
 ```
 
-To keep your local JSON data fresh automatically (so push.py and your agent always have current data), see [json-local-sync](../json-local-sync/SETUP.md).
+For scheduled refreshes of your local JSON data, see [json-local-sync](../json-local-sync/SETUP.md).
 
-Python import also works:
+Python import also works, but library write methods write directly without the CLI preview/confirmation gate. Obtain the athlete's approval before calling them; use the CLI for the preview-first flow:
 
 ```python
-from push import IntervalsPush
+from section11.examples.agentic.push import IntervalsPush
 pusher = IntervalsPush(athlete_id, api_key)
 result = pusher.push_workout({
     "name": "Sweet Spot 3x15",
@@ -149,9 +161,9 @@ result = pusher.push_workout({
 #### push: Add workouts to calendar
 
 ```bash
-python push.py push --json week.json                    # preview
-python push.py push --json week.json --confirm           # execute
-python push.py push --name "Endurance" --date 2026-03-10 --type Ride --confirm
+python3 section11/examples/agentic/push.py push --json week.json                    # preview
+python3 section11/examples/agentic/push.py push --json week.json --confirm           # execute
+python3 section11/examples/agentic/push.py push --name "Endurance" --date 2026-03-10 --type Ride --confirm
 ```
 
 Output (preview):
@@ -167,10 +179,10 @@ Output (execute):
 #### list: Show planned workouts
 
 ```bash
-python push.py list                          # this week (today → +6 days)
-python push.py list --newest +13             # next two weeks
-python push.py list --oldest 2026-03-01 --newest 2026-03-31  # March
-python push.py list --category RACE_A        # races only
+python3 section11/examples/agentic/push.py list                          # this week (today → +6 days)
+python3 section11/examples/agentic/push.py list --newest +13             # next two weeks
+python3 section11/examples/agentic/push.py list --oldest 2026-03-01 --newest 2026-03-31  # March
+python3 section11/examples/agentic/push.py list --category RACE_A        # races only
 ```
 
 Read-only (no `--confirm` needed). Supports `+N` syntax for relative dates.
@@ -178,31 +190,43 @@ Read-only (no `--confirm` needed). Supports `+N` syntax for relative dates.
 #### move: Move a workout to a different date
 
 ```bash
-python push.py move --event-id 33375903 --date 2026-03-06          # preview
-python push.py move --event-id 33375903 --date 2026-03-06 --confirm # execute
+python3 section11/examples/agentic/push.py move --event-id 33375903 --date 2026-03-06          # preview
+python3 section11/examples/agentic/push.py move --event-id 33375903 --date 2026-03-06 --confirm # execute
 ```
 
-Preview shows old date → new date.
+push.py v0.8 preserves the existing local time of day, including seconds, when `--time` is omitted. Preview shows both old/new date and time. To set only the time, keep the existing date:
+
+```bash
+python3 section11/examples/agentic/push.py move --event-id 33375903 --date 2026-10-20 --time 09:30
+# After the user approves that preview:
+python3 section11/examples/agentic/push.py move --event-id 33375903 --date 2026-10-20 --time 09:30 --confirm
+```
+
+`push` accepts optional per-workout JSON `"time": "09:30"`, or `--time 09:30` for a single CLI workout. Use strict local HH:MM (00:00 through 23:59); omitted time still writes T00:00:00. A JSON batch uses each workout's own time, not a batch-wide `--time`. Malformed existing timestamps stop a move without a write unless an explicit valid time resolves them. Date-only/missing existing times remain unset midnight.
+
+Route weather treats exact midnight/date-only as unset and labels its configured 10:00 default as ASSUMED. Ask the athlete for their actual start or ask them to set it in Intervals.icu. With verified capability, preview the time update and wait for their confirmation before applying it; sync.py stays read-only and the next sync refreshes the binding. A genuine midnight ride is indistinguishable: use 00:01/23:59 or the configurable weather default. Changing the default to 00:00 still labels it assumed. Existing pre-write reads, one-attempt PUT and exact readback verification are unchanged.
+
+After a provided or assumed start passes, sync can supply a rolling departure rounded to the next quarter hour while the ride is unfinished on that local date. It remains ASSUMED, with `assumed_reason: "start_passed"` and the original `planned_local`. Use that bound brief and ask "When are you leaving?"; never retime a cached forecast yourself. Completion and local-day expiry are handled by sync as `completed` and `missed`, as specified in SECTION_11.
 
 #### delete: Remove a workout
 
 ```bash
-python push.py delete --event-id 33375903              # preview (shows what would be deleted)
-python push.py delete --event-id 33375903 --confirm    # execute
+python3 section11/examples/agentic/push.py delete --event-id 33375903              # preview (shows what would be deleted)
+python3 section11/examples/agentic/push.py delete --event-id 33375903 --confirm    # execute
 ```
 
 #### set-threshold: Update sport-specific thresholds
 
 ```bash
 # Preview (shows current → new values)
-python push.py set-threshold --sport cycling --ftp 295
+python3 section11/examples/agentic/push.py set-threshold --sport cycling --ftp 295
 
 # Execute after athlete confirms
-python push.py set-threshold --sport cycling --ftp 295 --indoor-ftp 283 --confirm
+python3 section11/examples/agentic/push.py set-threshold --sport cycling --ftp 295 --indoor-ftp 283 --confirm
 
 # Other sports
-python push.py set-threshold --sport run --lthr 172 --max-hr 192 --confirm
-python push.py set-threshold --sport swim --threshold-pace 0.82 --confirm
+python3 section11/examples/agentic/push.py set-threshold --sport run --lthr 172 --max-hr 192 --confirm
+python3 section11/examples/agentic/push.py set-threshold --sport swim --threshold-pace 0.82 --confirm
 ```
 
 Accepts sport families (`cycling`, `run`, `swim`, `walk`, `ski`, `rowing`) or Intervals.icu activity types (`Ride`, `Run`, `Swim`, etc.). Only sends fields you provide; omitted fields stay unchanged.
@@ -214,19 +238,19 @@ Accepts sport families (`cycling`, `run`, `swim`, `walk`, `ski`, `rowing`) or In
 **Completed activities**: prepends `NOTE:` line to activity description (default):
 
 ```bash
-python push.py annotate --activity-id i12345:abc123 --message "Cut short - knee pain" --confirm
+python3 section11/examples/agentic/push.py annotate --activity-id i12345:abc123 --message "Cut short - knee pain" --confirm
 ```
 
 To post to the activity's chat/messages panel instead, add `--chat`:
 
 ```bash
-python push.py annotate --activity-id i12345:abc123 --message "Cut short - knee pain" --chat --confirm
+python3 section11/examples/agentic/push.py annotate --activity-id i12345:abc123 --message "Cut short - knee pain" --chat --confirm
 ```
 
 **Planned workouts**: prepends a `NOTE:` line to the workout description:
 
 ```bash
-python push.py annotate --event-id 33375903 --message "Focus on cadence >90rpm" --confirm
+python3 section11/examples/agentic/push.py annotate --event-id 33375903 --message "Focus on cadence >90rpm" --confirm
 ```
 
 This shows up in Intervals.icu as:
@@ -280,7 +304,7 @@ says so.
 
 | Command | Safe to re-run as-is? | Notes |
 |---|---|---|
-| `move` | Yes | The same PUT sets the same date. Re-running converges |
+| `move` | Check current time first | An explicit --time repeats the same date/time. Without it, a new run preserves the time found by its fresh pre-read, which may reflect a concurrent edit. A fresh deliberate run still needs the applicable user authorization |
 | `set-threshold` | Yes | The same values are re-sent. Re-running converges |
 | `annotate --event-id` | Yes | If the note is already the first line, push.py issues no request and returns `applied` with `unchanged: true` |
 | `annotate --activity-id` (description) | Yes | Same duplicate suppression as above |
@@ -308,6 +332,7 @@ re-run provably safe.
 |-------|----------|------|-------------|
 | `name` | Yes | string | Workout name |
 | `date` | Yes | string | YYYY-MM-DD, must be today or future |
+| `time` | No | string | Local HH:MM; omitted writes unset T00:00:00. Included in preview |
 | `type` | No | string | Activity type (default: Ride) |
 | `description` | No | string | Intervals.icu workout syntax (see below) |
 | `duration_minutes` | No | number | Planned duration (max 720) |
@@ -342,7 +367,7 @@ The `description` field uses Intervals.icu's native workout builder syntax. When
 
 - Steps start with `-`
 - Blank lines required around repeat blocks
-- Text before duration becomes step cue
+- Text before the duration or power specification becomes the step's text prompt
 - Case-insensitive keywords
 - Nested repeats NOT supported
 
@@ -358,26 +383,41 @@ The `description` field uses Intervals.icu's native workout builder syntax. When
 - 10m 50%
 ```
 
+#### Workout step text (optional)
+
+Most modern AIs can usually understand a workout from its structure, durations and targets. A clear workout name or description is often enough. If you want to make the intended role of a step even clearer, you can optionally add a short label such as “Recovery.”
+
+This can be useful for distinguishing recovery from an active connector, or adding context to over-under, warm-up and cool-down sections.
+
+You can place it wherever it reads clearly. When Section 11 writes a workout description or example, its house style is to put the text after the step's executable details:
+
+```
+- 5m 55% Recovery
+```
+
+Other clear forms work too, such as `- 5m 55% - Recovery` or `- Recovery 5m 55%`. This is not a required grammar. In Intervals.icu, text before the duration or power specification becomes the step's *text prompt* (see Structure above); text in other placements is ordinary workout step text.
+
 ### Template Mappings
 
-Maps Section 11 Workout Reference template IDs to Intervals.icu description syntax. **Use these as inspiration and adapt to the athlete**. Don't copy-paste templates without considering current fitness, goals, and constraints. **Always use %FTP ranges, not absolute watts**. Intervals.icu resolves % to the athlete's current FTP.
+Maps Section 11 Workout Reference template IDs to Intervals.icu description syntax. **Adapt these examples to the athlete within the referenced template's permitted variants and constraints**. Follow Section 11's readiness and progression rules. Don't copy-paste templates without considering current fitness, goals, and constraints. **Always use %FTP ranges, not absolute watts**. Intervals.icu resolves % to the athlete's current FTP.
 
 | Template ID | Name | Description Syntax |
 |-------------|------|--------------------|
-| AE-1 | Recovery Spin | `- 5m ramp 40%-50%\n- 30m 50-55%\n- 5m ramp 50%-40%` |
-| AE-2 | Medium Endurance | `- 10m ramp 50%-65%\n- 90m 65-75%\n- 10m ramp 65%-50%` |
-| AE-3 | Long Endurance | `- 15m ramp 50%-65%\n- 150m 65-75%\n- 15m ramp 65%-50%` |
-| SS-1 | Sweet Spot 3x15 | `- 15m ramp 50%-75%\n\n3x\n- 15m 88-92%\n- 5m 55%\n\n- 10m 50%` |
-| SS-2 | Sweet Spot 2x20 | `- 15m ramp 50%-75%\n\n2x\n- 20m 88-92%\n- 5m 55%\n\n- 10m 50%` |
-| SS-3 | Sweet Spot 2x30 | `- 15m ramp 50%-75%\n\n2x\n- 30m 88-92%\n- 5m 55%\n\n- 10m 50%` |
-| TH-1 | Threshold 3x10 | `- 15m ramp 50%-75%\n\n3x\n- 10m 95-105%\n- 5m 55%\n\n- 10m 50%` |
-| TH-2 | Threshold 2x15 | `- 15m ramp 50%-75%\n\n2x\n- 15m 95-105%\n- 5m 55%\n\n- 10m 50%` |
-| TH-3 | Threshold 2x20 | `- 15m ramp 50%-75%\n\n2x\n- 20m 95-105%\n- 5m 55%\n\n- 10m 50%` |
-| VO2-1 | VO2max 5x4 | `- 15m ramp 50%-75%\n\n5x\n- 4m 106-120%\n- 3m Z1\n\n- 10m 50%` |
-| VO2-2 | VO2max 4x5 | `- 15m ramp 50%-75%\n\n4x\n- 5m 106-120%\n- 4m Z1\n\n- 10m 50%` |
-| VO2-3 | VO2max 6x3 | `- 15m ramp 50%-75%\n\n6x\n- 3m 106-120%\n- 3m Z1\n\n- 10m 50%` |
-| AN-1 | Anaerobic 8x30s | `- 15m ramp 50%-75%\n\n8x\n- 30s 150%\n- 4m30s Z1\n\n- 10m 50%` |
-| AN-2 | Anaerobic 10x1m | `- 15m ramp 50%-75%\n\n10x\n- 1m 130-150%\n- 3m Z1\n\n- 10m 50%` |
+| AE-1 | Steady-State Endurance (Short) | `- 10m ramp 50%-65%\n- 55m 65-75%\n- 10m ramp 65%-50%` |
+| AE-2 | Steady-State Endurance (Medium) | `- 10m ramp 50%-65%\n- 90m 65-75%\n- 10m ramp 65%-50%` |
+| AE-3 | Long Durability Ride | `- 15m ramp 50%-65%\n- 150m 65-75%\n- 15m ramp 65%-50%` |
+| AE-4 | Active Recovery | `- 5m ramp 40%-50%\n- 30m 50-55%\n- 5m ramp 50%-40%` |
+| SS-1 | Sustained Sweet Spot 3x15 | `- 15m ramp 50%-75%\n\n3x\n- 15m 88-92%\n- 5m 55%\n\n- 10m 50%` |
+| SS-2 | Progressive Sweet Spot 12/15/20 | `- 15m ramp 50%-75%\n- 12m 88-92%\n- 5m 55%\n- 15m 88-92%\n- 5m 55%\n- 20m 88-92%\n- 10m 50%` |
+| SS-3 | Over-Unders 3x9 | `- 15m ramp 50%-75%\n\n3x\n- 2m 90-95%\n- 1m 106-110%\n\n- 5m 55%\n\n3x\n- 2m 90-95%\n- 1m 106-110%\n\n- 5m 55%\n\n3x\n- 2m 90-95%\n- 1m 106-110%\n\n- 10m 50%` |
+| TH-1 | Classic Threshold 3x12 | `- 15m ramp 50%-75%\n\n3x\n- 12m 95-105%\n- 5m 55%\n\n- 10m 50%` |
+| TH-1 | Classic Threshold 2x20 (variant) | `- 15m ramp 50%-75%\n\n2x\n- 20m 95-105%\n- 6m 55%\n\n- 10m 50%` |
+| TH-2 | Seiler-Style Long Intervals 4x8 | `- 15m ramp 50%-75%\n\n4x\n- 8m 102-108%\n- 2m 55%\n\n- 10m 50%` |
+| VO2-1 | Classic Long Intervals 5x4 | `- 15m ramp 50%-75%\n\n5x\n- 4m 106-120%\n- 3m Z1\n\n- 10m 50%` |
+| VO2-2 | Short-Short Intervals 2x10 30/15 | `- 15m ramp 50%-75%\n\n10x\n- 30s 120%\n- 15s Z1\n\n- 5m Z1\n\n10x\n- 30s 120%\n- 15s Z1\n\n- 10m 50%` |
+| VO2-3 | Descending Rest Intervals 5x3 | `- 15m ramp 50%-75%\n- 3m 106-120%\n- 3m Z1\n- 3m 106-120%\n- 2m30s Z1\n- 3m 106-120%\n- 2m Z1\n- 3m 106-120%\n- 1m30s Z1\n- 3m 106-120%\n- 10m 50%` |
+| AN-1 | Short Power Repeats 8x30s | `- 15m ramp 50%-75%\n\n8x\n- 30s 150%\n- 3m Z1\n\n- 10m 50%` |
+| AN-2 | Sprint Intervals 6x15s | `- 15m ramp 50%-70%\n\n6x\n- 15s 200%\n- 5m Z1\n\n- 20m 65-75%\n- 10m 50%` |
 
 ### What NOT To Do
 
@@ -390,7 +430,7 @@ Maps Section 11 Workout Reference template IDs to Intervals.icu description synt
 
 ### Troubleshooting
 
-- **`403 Access denied`**: `ATHLETE_ID` is missing the leading `i` (e.g. `<ATHLETE_NUMBER>` instead of `i<ATHLETE_NUMBER>`), the API key is wrong, or the key doesn't belong to that athlete
+- **`403 Access denied`**: `ATHLETE_ID` doesn't match the ID shown in Intervals.icu Settings exactly (an `i` added or dropped), the API key is wrong, or the key has no access to that athlete
 - **Error saying `requests` is not installed**: push.py is running under a Python interpreter that doesn't have `requests` installed; run `pip install requests` in the same env as `sync.py`, or invoke that env's Python explicitly (same applies to `pull.py`)
 - **Command appears to have done nothing**: preview is the default for all write operations. Add `--confirm` to actually write
 
@@ -407,7 +447,7 @@ No `--confirm` gate: `pull.py` never modifies anything on the Intervals.icu side
 Same credential model as `push.py`:
 
 1. CLI args: `--athlete-id`, `--api-key`
-2. `.sync_config.json` (the same file `sync.py` and `push.py` use)
+2. `.sync_config` (the same file `sync.py` and `push.py` use)
 3. Environment: `ATHLETE_ID`, `INTERVALS_KEY`
 
 No GitHub Actions workflow: `pull.py` is local-execution only. The streams responses can be ~1-3 MB per activity (1Hz over a multi-hour ride), which is fine to handle locally but unsuitable for committing back to a data repo.
@@ -418,13 +458,13 @@ No GitHub Actions workflow: `pull.py` is local-execution only. The streams respo
 
 ```bash
 # All available streams (1Hz: time, distance, latlng, altitude, watts, HR, cadence, …)
-python pull.py trace --activity-id i142557875
+python3 section11/examples/agentic/pull.py trace --activity-id i142557875
 
 # Just GPS + altitude — smaller payload, common subset for terrain analysis
-python pull.py trace --activity-id i142557875 --types latlng,altitude
+python3 section11/examples/agentic/pull.py trace --activity-id i142557875 --types latlng,altitude
 
 # Save to disk for downstream analysis (e.g. feeding into custom scripts)
-python pull.py trace --activity-id i142557875 --out /tmp/ride.json
+python3 section11/examples/agentic/pull.py trace --activity-id i142557875 --out /tmp/ride.json
 ```
 
 The streams response is a JSON list of stream objects. **Important shape gotcha:** the `latlng` stream uses two parallel arrays: `data` holds latitudes, `data2` holds longitudes. This is **not** Strava's paired-array convention. See `EXTERNAL_APIS.md` for full details and the list of available stream types.
@@ -432,7 +472,7 @@ The streams response is a JSON list of stream objects. **Important shape gotcha:
 #### units: Show the athlete's unit preferences
 
 ```bash
-python pull.py units
+python3 section11/examples/agentic/pull.py units
 ```
 
 Returns the athlete's wind/temp/rain/distance/weight unit settings from Intervals. `sync.py` already reads this on every run to label `weather_summary.units` correctly; `pull.py units` is for ad-hoc inspection (debugging unit mismatches, confirming what `latest.json` will show).
@@ -444,11 +484,19 @@ Returns the athlete's wind/temp/rain/distance/weight unit settings from Interval
 Operational reference for the external APIs used by the agentic platform:
 
 - **Strava**: segment data, athlete effort history, starred segments (pre-ride enrichment)
-- **MET Norway (yr.no)**: multi-day weather forecasts (pre-ride briefings)
-- **Open-Meteo**: high-resolution weather forecasts (pre-ride briefings)
+- **MET Norway (yr.no)**: sync.py's route-weather fallback; direct calls only outside sync coverage
+- **Open-Meteo**: sync.py's primary route-weather provider; direct calls only outside sync coverage
 - **Intervals.icu**: activity streams (per-second GPS/sensor data) and pre-computed weather summaries on the activity list endpoint
 
-Section 11 protocol defines the reasoning rules for what to do with this data. `EXTERNAL_APIS.md` covers how to get it: endpoints, auth, response shapes, gotchas. Read it when implementing a new agentic flow that touches any of these APIs.
+For planned rides with routes, read `latest.json.data_overview`, the matching route-weather brief and its maps. Do not fetch another forecast for the same route/time. Direct Open-Meteo/MET calls are only for locations or times sync does not cover: no route, beyond 120 h, or an ad-hoc place. Label such forecasts as separate point/location forecasts.
+
+For an on-request report with no planned ride having a usable route within 120 h, follow the [weather report template](../reports/WEATHER_REPORT_TEMPLATE.md): explain the missing routes, list the rides and suggest attaching a GPX/TCX in Intervals.icu. A separate **Weather at home** block with labelled Place/source and Time lines requires actual, permitted weather-fetch capability and the shared [Point-weather location](../../SECTION_11.md#point-weather-location) rule: explicit current-chat statement `(you said)` first, then `athlete_profile.location` in current `latest.json` `(from Intervals.icu)` as the default, then the current official dossier's Home region `(from dossier)` only when the profile location is null/empty. The chat override lasts only for that conversation, never from memory or earlier chats. Heartbeat configuration is not a weather-location source. Route data for the session takes precedence; if travel is indicated but unresolved, omit weather or ask.
+
+Geocode city-level text using [EXTERNAL_APIS.md](EXTERNAL_APIS.md#geocoding-for-point-weather); ambiguity or failure means unavailable with the reason, never guessed coordinates or a fallback to a lower-priority location. Show the selected place/source. GeoNames attribution remains in API documentation and other geocoding displays, not a separate report line. Fetch weather from Open-Meteo first and MET Norway fallback. Report text ends with one linked line, "Weather data by Open-Meteo, CC BY 4.0.", without a transformation note; map footers stay unchanged. Give labelled facts per planned ride day at its planned time where known; label a daily window if the time is unknown. No wind classes, sections, bands, maps, ETA or route claims, and never substitute this block inside a ride block. Without fetch capability, say "A home forecast isn't available in this setup." If all location sources are empty, say "A home forecast isn't available: no home location. Add your city/country to your Intervals.icu athlete profile, or a Home region in your dossier." A failed weather fetch gets its actual reason and no values. Never use completed-activity `weather_summary` or old snapshots as a forecast. No planned rides at all gets the template's single no-rides line, with the home block optional under the same gates. A stale brief or missing map is not missing route coverage; the normal handling applies. Disabled weather is not permission for an alternate fetch.
+
+Use the actual provider name for fallback: "Weather data by MET Norway, CC BY 4.0." If separate blocks use both providers, name both on the single final attribution line.
+
+Section 11 protocol defines the reasoning rules for what to do with this data. `EXTERNAL_APIS.md` covers endpoints, auth, response shapes and gotchas for those permitted uses.
 
 ---
 
@@ -456,8 +504,8 @@ Section 11 protocol defines the reasoning rules for what to do with this data. `
 
 | File | Goes to | Description |
 |------|---------|-------------|
-| `push.py` | Data repo root (next to sync.py) | Validates and manages workouts + thresholds |
-| `pull.py` | Repo tool (`section-11/examples/agentic/pull.py`): run from your data repo root, or copy alongside sync.py for convenience | Read-only fetcher for activity streams + athlete units |
+| `push.py` | `section11/examples/agentic/push.py` | Validates and manages workouts + thresholds |
+| `pull.py` | `section11/examples/agentic/pull.py`, run from your data folder | Read-only fetcher for activity streams + athlete units |
 | `push-workout.yml` | `.github/workflows/push-workout.yml` | GitHub Actions workflow for dispatch |
-| `EXTERNAL_APIS.md` | Reference only (stays in section-11) | External API reference (Strava, yr.no, Open-Meteo, Intervals streams/weather) |
+| `EXTERNAL_APIS.md` | Reference only (stays in section-11) | External endpoints; read sync's brief/maps for covered planned-route weather, call providers only outside that coverage |
 | `README.md` | Reference only (stays in section-11) | This file |
